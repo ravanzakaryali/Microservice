@@ -1,0 +1,12 @@
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\obj\Debug\net6.0\BlogService.Application.csproj.AssemblyReference.cache
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\obj\Debug\net6.0\BlogService.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\obj\Debug\net6.0\BlogService.Application.AssemblyInfoInputs.cache
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\obj\Debug\net6.0\BlogService.Application.AssemblyInfo.cs
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\obj\Debug\net6.0\BlogService.Application.csproj.CoreCompileInputs.cache
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\bin\Debug\net6.0\BlogService.Application.deps.json
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\bin\Debug\net6.0\BlogService.Application.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\bin\Debug\net6.0\BlogService.Application.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\obj\Debug\net6.0\BlogService.Application.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\obj\Debug\net6.0\refint\BlogService.Application.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\obj\Debug\net6.0\BlogService.Application.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\core\BlogService.Application\obj\Debug\net6.0\ref\BlogService.Application.dll
