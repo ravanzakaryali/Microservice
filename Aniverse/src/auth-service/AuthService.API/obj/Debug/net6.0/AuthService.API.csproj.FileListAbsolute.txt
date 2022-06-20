@@ -56,3 +56,8 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.A
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\obj\Debug\net6.0\AuthService.API.csproj.CopyComplete
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\obj\Debug\net6.0\AuthService.API.genruntimeconfig.cache
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\obj\Debug\net6.0\ref\AuthService.API.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
