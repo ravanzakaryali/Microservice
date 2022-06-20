@@ -1,4 +1,5 @@
-﻿using AuthService.API.DataAccessLayer.Entites;
+﻿using AuthService.API.Common;
+using AuthService.API.DataAccessLayer.Entites;
 using AuthService.API.DTO_s.Login;
 using AuthService.API.DTO_s.TOken;
 using AuthService.API.Service.Abstractions;
@@ -11,16 +12,19 @@ namespace AuthService.API.Service.Implementations
     public class AuthService
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ITokenService _tokenService;
         private readonly IConfiguration _config;
 
         public AuthService(UserManager<AppUser> userManager,
                            ITokenService tokenService,
-                           IConfiguration config)
+                           IConfiguration config, 
+                           RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _tokenService = tokenService;
             _config = config;
+            _roleManager = roleManager;
         }
 
         public async Task<LoginResult> Login(Login login)
@@ -72,5 +76,20 @@ namespace AuthService.API.Service.Implementations
                 RefreshToken = newRefreshToken
             };
         }
+        #region CreateRoles
+        public async Task CreateRoles()
+        {
+            foreach (var item in Enum.GetValues(typeof(Roles)))
+            {
+                if (!(await _roleManager.RoleExistsAsync(item.ToString())))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole
+                    {
+                        Name = item.ToString()
+                    });
+                }
+            }
+        }
+        #endregion
     }
 }
