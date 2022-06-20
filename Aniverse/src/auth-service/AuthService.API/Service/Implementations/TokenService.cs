@@ -2,6 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace AuthService.API.Service.Implementations
@@ -9,7 +10,6 @@ namespace AuthService.API.Service.Implementations
     public class TokenService : ITokenService
     {
         private readonly IConfiguration _config;
-
         public TokenService(IConfiguration config)
         {
             _config = config;
@@ -47,6 +47,13 @@ namespace AuthService.API.Service.Implementations
                 throw new SecurityTokenException("Invalid token");
             }
             return principal;
+        }
+        public string GenerateRefreshToken()
+        {
+            var randomNumber = new byte[64];
+            using var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(randomNumber);
+            return Convert.ToBase64String(randomNumber);
         }
     }
 }

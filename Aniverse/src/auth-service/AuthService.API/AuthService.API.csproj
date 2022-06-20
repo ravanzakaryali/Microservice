@@ -11,8 +11,4 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.19.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTO_s\" />
-  </ItemGroup>
-
 </Project>
