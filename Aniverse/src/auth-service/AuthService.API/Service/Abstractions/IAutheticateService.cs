@@ -3,7 +3,7 @@ using AuthService.API.DTO_s.TOken;
 
 namespace AuthService.API.Service.Abstractions
 {
-    public interface IAuthService
+    public interface IAutheticateService
     {
         public Task<LoginResult> Login(Login login);
         public Task<TokenModel> RefreshToken(TokenModel tokenModel);

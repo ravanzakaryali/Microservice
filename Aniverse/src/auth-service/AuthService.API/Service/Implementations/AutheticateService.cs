@@ -1,30 +1,35 @@
 ﻿using AuthService.API.Common;
 using AuthService.API.DataAccessLayer.Entites;
 using AuthService.API.DTO_s.Login;
+using AuthService.API.DTO_s.Register;
 using AuthService.API.DTO_s.TOken;
 using AuthService.API.Service.Abstractions;
+using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
 namespace AuthService.API.Service.Implementations
 {
-    public class AuthService : IAuthService
+    public class AutheticateService : IAutheticateService
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ITokenService _tokenService;
         private readonly IConfiguration _config;
+        private readonly IMapper _mapper;
 
-        public AuthService(UserManager<AppUser> userManager,
+        public AutheticateService(UserManager<AppUser> userManager,
                            ITokenService tokenService,
-                           IConfiguration config, 
-                           RoleManager<IdentityRole> roleManager)
+                           IConfiguration config,
+                           RoleManager<IdentityRole> roleManager, 
+                           IMapper mapper)
         {
             _userManager = userManager;
             _tokenService = tokenService;
             _config = config;
             _roleManager = roleManager;
+            _mapper = mapper;
         }
 
         public async Task<LoginResult> Login(Login login)
@@ -75,6 +80,32 @@ namespace AuthService.API.Service.Implementations
                 AccessToken = new JwtSecurityTokenHandler().WriteToken(newAccessToken),
                 RefreshToken = newRefreshToken
             };
+        }
+        public async Task<RegisterResult> Register(Register register)
+        {
+            RegisterResult registerResult = new();
+            AppUser isEmail = await _userManager.FindByNameAsync(register.Email);
+            if (isEmail != null) throw new Exception("Already exception");
+            AppUser user = _mapper.Map<AppUser>(register);
+            user.UserName = await GenerateUsername($"{register.Name} + {register.Surname}");
+            IdentityResult result = await _userManager.CreateAsync(user, register.Password);
+            if (!result.Succeeded)
+            {
+                return registerResult;
+            };
+            registerResult.Username = user.UserName;
+            await _userManager.AddToRoleAsync(user, Roles.User.ToString());
+            return registerResult;
+        }
+        private async Task<string> GenerateUsername(string fullname)
+        {
+            string username = Helper.GeneratorString(fullname);
+            AppUser isUserName = await _userManager.FindByNameAsync(username);
+            if (isUserName != null)
+            {
+                await GenerateUsername(fullname);
+            }
+            return username;
         }
         #region CreateRoles
         public async Task CreateRoles()
