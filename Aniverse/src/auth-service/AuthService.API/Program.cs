@@ -24,7 +24,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 
 }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddEndpointsApiExplorer(); 
 
 builder.Services.AddSingleton<ITokenService, TokenService>();
 builder.Services.AddSingleton<IAutheticateService, AutheticateService>();
