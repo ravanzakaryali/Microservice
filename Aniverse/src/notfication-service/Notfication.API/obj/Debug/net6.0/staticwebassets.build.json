@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "64tlSZ6ph7WXzpvmQBe9jLVQoF7gysfWIEGhy8xPVgM=",
+  "Source": "Notfication.API",
+  "BasePath": "_content/Notfication.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "w841skDpsRiKcNcZxpjEmNri+c/KERQ2rXeW3llG9BY=",
+  "Source": "AuthService.API",
+  "BasePath": "_content/AuthService.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
