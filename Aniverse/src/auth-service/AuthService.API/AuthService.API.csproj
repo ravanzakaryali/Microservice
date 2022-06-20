@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="DTO_s\" />
-    <Folder Include="Service\Abstractions\" />
   </ItemGroup>
 
 </Project>
