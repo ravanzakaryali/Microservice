@@ -9,7 +9,7 @@ using System.Security.Claims;
 
 namespace AuthService.API.Service.Implementations
 {
-    public class AuthService
+    public class AuthService : IAuthService
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
