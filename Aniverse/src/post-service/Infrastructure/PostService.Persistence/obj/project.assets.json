@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "PostService.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PostService.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PostService.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PostService.Application.dll": {}
+        }
+      },
+      "PostService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PostService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PostService.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PostService.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/PostService.Application/PostService.Application.csproj",
+      "msbuildProject": "../../Core/PostService.Application/PostService.Application.csproj"
+    },
+    "PostService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Core/PostService.Domain/PostService.Domain.csproj",
+      "msbuildProject": "../../Core/PostService.Domain/PostService.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "PostService.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Admin\\.nuget\\packages\\": {},
@@ -38,7 +75,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Application\\PostService.Application.csproj": {
+              "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Application\\PostService.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

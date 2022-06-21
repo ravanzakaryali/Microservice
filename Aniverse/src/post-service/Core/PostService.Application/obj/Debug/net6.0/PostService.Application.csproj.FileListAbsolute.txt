@@ -10,3 +10,6 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostServ
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Application\obj\Debug\net6.0\refint\PostService.Application.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Application\obj\Debug\net6.0\PostService.Application.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Application\obj\Debug\net6.0\ref\PostService.Application.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Application\bin\Debug\net6.0\PostService.Domain.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Application\bin\Debug\net6.0\PostService.Domain.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Application\obj\Debug\net6.0\PostService.Application.csproj.CopyComplete

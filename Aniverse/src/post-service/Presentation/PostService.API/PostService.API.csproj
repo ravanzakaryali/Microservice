@@ -14,4 +14,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\PostService.Application\PostService.Application.csproj" />
+  </ItemGroup>
+
 </Project>

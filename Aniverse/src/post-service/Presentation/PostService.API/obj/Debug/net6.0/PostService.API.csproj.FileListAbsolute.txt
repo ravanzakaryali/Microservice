@@ -25,3 +25,7 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.genruntimeconfig.cache
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\ref\PostService.API.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Application.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Domain.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Application.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Domain.pdb

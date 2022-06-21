@@ -7,14 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "PostService.Infrastructure/1.0.0": {
+        "dependencies": {
+          "PostService.Application": "1.0.0"
+        },
         "runtime": {
           "PostService.Infrastructure.dll": {}
+        }
+      },
+      "PostService.Application/1.0.0": {
+        "dependencies": {
+          "PostService.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PostService.Application.dll": {}
+        }
+      },
+      "PostService.Domain/1.0.0": {
+        "runtime": {
+          "PostService.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "PostService.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PostService.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PostService.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
