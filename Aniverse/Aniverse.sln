@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "share", "share", "{AEC325FD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8FC859B5-550B-4F89-9AB1-5CBAA544F78A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "blog-service", "blog-service", "{BB81DFD7-2D85-44E9-A2AE-F124AD45F80D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "post-service", "post-service", "{BB81DFD7-2D85-44E9-A2AE-F124AD45F80D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "share\ApiGateway\ApiGateway.csproj", "{827BE4CB-9993-463F-8A6A-1712B475EDF0}"
 EndProject
@@ -22,22 +22,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notfication-service", "notfication-service", "{1BC63D4E-46BC-4C44-8B99-13786CADAC29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notfication.API", "src\notfication-service\Notfication.API\Notfication.API.csproj", "{DE177DB0-01D9-480A-B734-DA82FE6C0FEC}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{6539EDEA-9519-48E6-88AA-BDF25DD58106}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0B91666C-129A-4F3D-83B3-02AC56457B65}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F0CC7682-F8C0-4B12-B77F-3FE02ABC9DFF}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogService.Application", "src\blog-service\core\BlogService.Application\BlogService.Application.csproj", "{A4D9BC17-71F7-452F-BFC9-5246F91CC32E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogService.Domain", "src\blog-service\core\BlogService.Domain\BlogService.Domain.csproj", "{AB51527D-0517-4E32-BA24-D6DCCB3206F1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogService.Infrastructure", "src\blog-service\Infrastructure\BlogService.Infrastructure\BlogService.Infrastructure.csproj", "{C668AFAC-FD69-473D-BDBF-3648C1EA1664}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogService.API", "src\blog-service\Presentation\BlogService.API\BlogService.API.csproj", "{3C832D22-3374-4900-9D4E-8C2B85CA0835}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogService.Persistence", "src\blog-service\Infrastructure\BlogService.Persistence\BlogService.Persistence.csproj", "{30273AAC-E8BF-44CF-8051-5D42825895EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
