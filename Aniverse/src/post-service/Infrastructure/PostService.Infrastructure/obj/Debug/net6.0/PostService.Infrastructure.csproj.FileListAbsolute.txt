@@ -1,0 +1,12 @@
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Infrastructure.deps.json
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Infrastructure.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Infrastructure.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.csproj.AssemblyReference.cache
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.AssemblyInfoInputs.cache
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.AssemblyInfo.cs
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\refint\PostService.Infrastructure.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\ref\PostService.Infrastructure.dll
