@@ -10,4 +10,8 @@
     <ProjectReference Include="..\PostService.Domain\PostService.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTO\" />
+  </ItemGroup>
+
 </Project>
