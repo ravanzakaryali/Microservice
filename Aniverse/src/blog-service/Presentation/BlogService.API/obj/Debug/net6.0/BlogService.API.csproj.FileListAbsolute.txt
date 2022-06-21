@@ -25,3 +25,14 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\obj\Debug\net6.0\BlogService.API.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\obj\Debug\net6.0\BlogService.API.genruntimeconfig.cache
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\obj\Debug\net6.0\ref\BlogService.API.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\BlogService.Application.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\BlogService.Domain.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\BlogService.Infrastructure.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\BlogService.Persistence.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\BlogService.Application.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\BlogService.Infrastructure.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\BlogService.Persistence.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Presentation\BlogService.API\bin\Debug\net6.0\BlogService.Domain.pdb

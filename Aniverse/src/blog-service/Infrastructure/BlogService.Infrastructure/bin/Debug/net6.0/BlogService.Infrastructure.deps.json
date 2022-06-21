@@ -7,14 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "BlogService.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BlogService.Application": "1.0.0"
+        },
         "runtime": {
           "BlogService.Infrastructure.dll": {}
+        }
+      },
+      "BlogService.Application/1.0.0": {
+        "dependencies": {
+          "BlogService.Domain": "1.0.0"
+        },
+        "runtime": {
+          "BlogService.Application.dll": {}
+        }
+      },
+      "BlogService.Domain/1.0.0": {
+        "runtime": {
+          "BlogService.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "BlogService.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogService.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogService.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

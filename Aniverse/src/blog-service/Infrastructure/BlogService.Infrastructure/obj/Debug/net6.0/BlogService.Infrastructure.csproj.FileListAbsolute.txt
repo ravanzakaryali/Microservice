@@ -10,3 +10,8 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructur
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Infrastructure\obj\Debug\net6.0\refint\BlogService.Infrastructure.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Infrastructure\obj\Debug\net6.0\BlogService.Infrastructure.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Infrastructure\obj\Debug\net6.0\ref\BlogService.Infrastructure.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Infrastructure\bin\Debug\net6.0\BlogService.Application.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Infrastructure\bin\Debug\net6.0\BlogService.Domain.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Infrastructure\bin\Debug\net6.0\BlogService.Application.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Infrastructure\bin\Debug\net6.0\BlogService.Domain.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Infrastructure\obj\Debug\net6.0\BlogService.Infrastructure.csproj.CopyComplete

@@ -10,5 +10,6 @@ namespace BlogService.Domain.Entities
         public ICollection<string> Images { get; set; }
         public ICollection<Like> Likes { get; set; }
         public ICollection<Comment> Comments { get; set; }
+        public ICollection<Share> Shares { get; set; }  
     }
 }

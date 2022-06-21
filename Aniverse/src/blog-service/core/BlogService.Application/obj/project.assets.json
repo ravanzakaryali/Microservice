@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "BlogService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BlogService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogService.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BlogService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BlogService.Domain/BlogService.Domain.csproj",
+      "msbuildProject": "../BlogService.Domain/BlogService.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "BlogService.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Admin\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\blog-service\\core\\BlogService.Domain\\BlogService.Domain.csproj": {
+              "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\blog-service\\core\\BlogService.Domain\\BlogService.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -14,4 +14,10 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\BlogService.Application\BlogService.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\BlogService.Infrastructure\BlogService.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\BlogService.Persistence\BlogService.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
