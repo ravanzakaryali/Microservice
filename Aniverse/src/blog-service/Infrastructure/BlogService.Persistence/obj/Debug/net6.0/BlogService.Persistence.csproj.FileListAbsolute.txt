@@ -15,3 +15,5 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructur
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Persistence\bin\Debug\net6.0\BlogService.Application.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Persistence\bin\Debug\net6.0\BlogService.Domain.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Persistence\obj\Debug\net6.0\BlogService.Persistence.csproj.CopyComplete
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Persistence\bin\Debug\net6.0\BlogService.Persistence.runtimeconfig.json
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\blog-service\Infrastructure\BlogService.Persistence\obj\Debug\net6.0\BlogService.Persistence.genruntimeconfig.cache
