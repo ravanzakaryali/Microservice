@@ -19,8 +19,4 @@
     <ProjectReference Include="..\..\Core\PostService.Application\PostService.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Configuration\" />
-  </ItemGroup>
-
 </Project>
