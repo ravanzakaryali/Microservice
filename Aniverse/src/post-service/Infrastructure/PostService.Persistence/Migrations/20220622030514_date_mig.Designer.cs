@@ -12,8 +12,8 @@ using PostService.Persistence.DataContext;
 namespace PostService.Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220621135154_int_mig")]
-    partial class int_mig
+    [Migration("20220622030514_date_mig")]
+    partial class date_mig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,16 +30,26 @@ namespace PostService.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
+                    b.Property<Guid?>("CommentId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Descreption")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(369)
+                        .HasColumnType("nvarchar(369)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<Guid>("PostId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ReplyCommentId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("UpdatedDate")
@@ -49,6 +59,8 @@ namespace PostService.Persistence.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CommentId");
 
                     b.HasIndex("PostId");
 
@@ -65,7 +77,9 @@ namespace PostService.Persistence.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -80,6 +94,7 @@ namespace PostService.Persistence.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -125,11 +140,14 @@ namespace PostService.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Content")
+                        .HasMaxLength(369)
+                        .HasColumnType("nvarchar(369)");
 
-                    b.Property<string>("Descreption")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("CreatedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -152,7 +170,9 @@ namespace PostService.Persistence.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -161,10 +181,13 @@ namespace PostService.Persistence.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("PostTitle")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("PostUrl")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<Guid>("ReceivedUserId")
                         .HasColumnType("uniqueidentifier");
@@ -184,6 +207,10 @@ namespace PostService.Persistence.Migrations
 
             modelBuilder.Entity("PostService.Domain.Entities.Comment", b =>
                 {
+                    b.HasOne("PostService.Domain.Entities.Comment", null)
+                        .WithMany("ReplyComment")
+                        .HasForeignKey("CommentId");
+
                     b.HasOne("PostService.Domain.Entities.Post", null)
                         .WithMany("Comments")
                         .HasForeignKey("PostId")
@@ -232,6 +259,8 @@ namespace PostService.Persistence.Migrations
             modelBuilder.Entity("PostService.Domain.Entities.Comment", b =>
                 {
                     b.Navigation("Likes");
+
+                    b.Navigation("ReplyComment");
                 });
 
             modelBuilder.Entity("PostService.Domain.Entities.Post", b =>

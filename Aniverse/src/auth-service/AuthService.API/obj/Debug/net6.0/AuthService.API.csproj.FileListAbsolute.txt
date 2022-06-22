@@ -87,3 +87,4 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.A
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\AutoMapper.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\libman.json
