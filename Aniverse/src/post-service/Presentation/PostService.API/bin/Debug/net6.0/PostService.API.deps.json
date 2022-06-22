@@ -9,7 +9,6 @@
       "PostService.API/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Tools": "6.0.6",
-          "PostService.Application": "1.0.0",
           "PostService.Persistence": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },

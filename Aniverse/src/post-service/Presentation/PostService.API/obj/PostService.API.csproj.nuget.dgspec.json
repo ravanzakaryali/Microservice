@@ -236,9 +236,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Application\\PostService.Application.csproj": {
-                "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Application\\PostService.Application.csproj"
-              },
               "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj": {
                 "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj"
               }

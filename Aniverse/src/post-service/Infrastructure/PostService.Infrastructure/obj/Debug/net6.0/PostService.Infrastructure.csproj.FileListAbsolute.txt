@@ -10,8 +10,3 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructur
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\refint\PostService.Infrastructure.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\ref\PostService.Infrastructure.dll
-D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Application.dll
-D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Domain.dll
-D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Application.pdb
-D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Domain.pdb
-D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.csproj.CopyComplete

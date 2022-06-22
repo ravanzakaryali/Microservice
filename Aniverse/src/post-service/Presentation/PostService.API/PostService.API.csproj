@@ -20,7 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\PostService.Application\PostService.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\PostService.Persistence\PostService.Persistence.csproj" />
   </ItemGroup>
 

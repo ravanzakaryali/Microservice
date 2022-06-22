@@ -29,15 +29,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{504298BA-E4A1-4DDF-8C81-4750F9633B8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostService.Domain", "src\post-service\Core\PostService.Domain\PostService.Domain.csproj", "{90166189-3FF1-4F35-AC2A-0759EE5AA2C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Domain", "src\post-service\Core\PostService.Domain\PostService.Domain.csproj", "{90166189-3FF1-4F35-AC2A-0759EE5AA2C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostService.Application", "src\post-service\Core\PostService.Application\PostService.Application.csproj", "{F0128161-5F27-4716-A370-74A21B57E6C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Infrastructure", "src\post-service\Infrastructure\PostService.Infrastructure\PostService.Infrastructure.csproj", "{65D4C4BD-57E3-474E-9171-568BD40932E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostService.Infrastructure", "src\post-service\Infrastructure\PostService.Infrastructure\PostService.Infrastructure.csproj", "{65D4C4BD-57E3-474E-9171-568BD40932E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Persistence", "src\post-service\Infrastructure\PostService.Persistence\PostService.Persistence.csproj", "{012CA297-AD56-41F4-AC11-6F7F5609BC9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostService.Persistence", "src\post-service\Infrastructure\PostService.Persistence\PostService.Persistence.csproj", "{012CA297-AD56-41F4-AC11-6F7F5609BC9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.API", "src\post-service\Presentation\PostService.API\PostService.API.csproj", "{761848F3-130B-42FF-A9EB-3D719EA7AA16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostService.API", "src\post-service\Presentation\PostService.API\PostService.API.csproj", "{761848F3-130B-42FF-A9EB-3D719EA7AA16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostService.Repository", "src\post-service\Infrastructure\PostService.Repository\PostService.Repository.csproj", "{84EBB4D7-502C-44C9-9827-6B5B3935A304}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Application", "src\post-service\Core\PostService.Application\PostService.Application.csproj", "{D3320702-75C5-4AF7-B47E-615FA2332BB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +67,6 @@ Global
 		{90166189-3FF1-4F35-AC2A-0759EE5AA2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90166189-3FF1-4F35-AC2A-0759EE5AA2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90166189-3FF1-4F35-AC2A-0759EE5AA2C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F0128161-5F27-4716-A370-74A21B57E6C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0128161-5F27-4716-A370-74A21B57E6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0128161-5F27-4716-A370-74A21B57E6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0128161-5F27-4716-A370-74A21B57E6C5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{65D4C4BD-57E3-474E-9171-568BD40932E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{65D4C4BD-57E3-474E-9171-568BD40932E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65D4C4BD-57E3-474E-9171-568BD40932E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,6 +79,14 @@ Global
 		{761848F3-130B-42FF-A9EB-3D719EA7AA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{761848F3-130B-42FF-A9EB-3D719EA7AA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{761848F3-130B-42FF-A9EB-3D719EA7AA16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84EBB4D7-502C-44C9-9827-6B5B3935A304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EBB4D7-502C-44C9-9827-6B5B3935A304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EBB4D7-502C-44C9-9827-6B5B3935A304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EBB4D7-502C-44C9-9827-6B5B3935A304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3320702-75C5-4AF7-B47E-615FA2332BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3320702-75C5-4AF7-B47E-615FA2332BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3320702-75C5-4AF7-B47E-615FA2332BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3320702-75C5-4AF7-B47E-615FA2332BB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,10 +104,11 @@ Global
 		{1C5063CD-782E-465B-ABEC-A33341E1717F} = {F7E7CED8-942C-42BC-8FA4-B9967914A3DA}
 		{504298BA-E4A1-4DDF-8C81-4750F9633B8C} = {F7E7CED8-942C-42BC-8FA4-B9967914A3DA}
 		{90166189-3FF1-4F35-AC2A-0759EE5AA2C7} = {1C159406-9F48-4571-9FD0-5FA744A2604C}
-		{F0128161-5F27-4716-A370-74A21B57E6C5} = {1C159406-9F48-4571-9FD0-5FA744A2604C}
 		{65D4C4BD-57E3-474E-9171-568BD40932E5} = {1C5063CD-782E-465B-ABEC-A33341E1717F}
 		{012CA297-AD56-41F4-AC11-6F7F5609BC9E} = {1C5063CD-782E-465B-ABEC-A33341E1717F}
 		{761848F3-130B-42FF-A9EB-3D719EA7AA16} = {504298BA-E4A1-4DDF-8C81-4750F9633B8C}
+		{84EBB4D7-502C-44C9-9827-6B5B3935A304} = {1C5063CD-782E-465B-ABEC-A33341E1717F}
+		{D3320702-75C5-4AF7-B47E-615FA2332BB7} = {1C159406-9F48-4571-9FD0-5FA744A2604C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7B944EC-67E1-49C4-A57C-E429820D1C51}
