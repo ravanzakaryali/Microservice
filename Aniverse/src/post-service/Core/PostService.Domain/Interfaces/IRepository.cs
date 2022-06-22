@@ -6,7 +6,6 @@ namespace PostService.Domain.Interfaces
 {
     public interface IRepository<T> where T : BaseEntity
     {
-        DbSet<T> Table { get; }
         Task<List<T>> GetAllAsync(Expression<Func<T, bool>> exp = null, 
                                   bool tracking = true,
                                   params string[] includes);
@@ -15,6 +14,7 @@ namespace PostService.Domain.Interfaces
                                             Expression<Func<T, TOrderBy>> orderBy, 
                                             Expression<Func<T, bool>> exp = null, 
                                             bool tracking = true,
+                                            bool isOrderBy = true,
                                             params string[] includes);
         Task<T> GetAsync(Expression<Func<T, bool>> predicate = null, 
                         bool tracking = true, 
@@ -23,9 +23,7 @@ namespace PostService.Domain.Interfaces
                          bool tracking = true, 
                          params string[] include);
         Task<T> AddAsync(T entity);
-        Task<List<T>> AddRangeAsync(List<T> listModel);
         T Remove(T entity);
-        List<T> RemoveRange(List<T> listModel);
         Task<T> RemoveAsync(string id);
         T Update(T entity);
         Task<int> SaveAsync();

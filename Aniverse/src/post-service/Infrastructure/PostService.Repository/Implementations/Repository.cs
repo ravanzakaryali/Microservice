@@ -16,57 +16,107 @@ namespace PostService.Repository.Implementations
         }
         public DbSet<T> Table => _context.Set<T>();
 
-        public Task<List<T>> GetAllAsync(Expression<Func<T, bool>> exp = null, bool tracking = true, params string[] includes)
+        public async Task<T> GetAsync(Expression<Func<T, bool>> predicate = null,
+                                      bool tracking = true,
+                                      params string[] includes)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = GetQuery(includes);
+            if (!tracking)
+                query = Table.AsNoTracking();
+            return predicate is null
+                ? await query.FirstOrDefaultAsync()
+                : await query.Where(predicate).FirstOrDefaultAsync();
+        }
+        public async Task<T> GetAsync(string id,
+                                      bool tracking = true,
+                                      params string[] includes)
+        {
+            IQueryable<T> query = GetQuery(includes);
+            if (!tracking)
+                query = Table.AsNoTracking();
+            return id is null
+                ? await query.FirstOrDefaultAsync()
+                : await query.FirstOrDefaultAsync(x => x.Id == Guid.Parse(id));
+        }
+        public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> predicate = null,
+                                         bool tracking = true,
+                                         params string[] includes)
+        {
+            IQueryable<T> query = GetQuery(includes);
+            if (!tracking)
+                query = Table.AsNoTracking();
+            return predicate is null
+                ? await query.ToListAsync()
+                : await query.Where(predicate).ToListAsync();
         }
 
-        public Task<List<T>> GetAllAsync<TOrderBy>(int page, int size, Expression<Func<T, TOrderBy>> orderBy, Expression<Func<T, bool>> exp = null, bool tracking = true, params string[] includes)
+        public async Task<List<T>> GetAllAsync<TOrderBy>(int page, int size,
+                                                  Expression<Func<T, TOrderBy>> orderBy,
+                                                  Expression<Func<T, bool>> predicate = null,
+                                                  bool tracking = true,
+                                                  bool isOrderBy = true,
+                                                  params string[] includes)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = GetQuery(includes);
+            if (!tracking)
+                query = Table.AsNoTracking();
+            return predicate is null
+                ? await query.ToListAsync()
+                : isOrderBy ?
+                await query.Where(predicate).OrderBy(orderBy).Skip((page - 1) * size).Take(size).ToListAsync()
+                :
+                await query.Where(predicate).OrderByDescending(orderBy).Skip((page - 1) * size).Take(size).ToListAsync();
         }
-
-        public Task<T> GetAsync(Expression<Func<T, bool>> predicate = null, bool tracking = true, params string[] include)
+        public async Task<T> AddAsync(T entity)
         {
-            throw new NotImplementedException();
+            var newEntity = await _context.Set<T>().AddAsync(entity);
+            return newEntity.Entity;
         }
-
-        public Task<T> GetAsync(string id, bool tracking = true, params string[] include)
+        public async Task<bool> IsAddAsync(T entity)
         {
-            throw new NotImplementedException();
-        }
-        public Task<T> AddAsync(T entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> AddRangeAsync(List<T> listModel)
-        {
-            throw new NotImplementedException();
-        }
+            return await _context.Set<T>().AddAsync(entity) is null;
+        }   
         public T Remove(T entity)
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().Remove(entity).Entity;
         }
-
-        public Task<T> RemoveAsync(string id)
+        public bool IsRemove(T entity)
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().Remove(entity) is null;
         }
-
-        public List<T> RemoveRange(List<T> listModel)
+        public async Task<T> RemoveAsync(string id)
         {
-            throw new NotImplementedException();
+            return await _context.Set<T>().FirstOrDefaultAsync(e => e.Id == Guid.Parse(id));
         }
-
-        public Task<int> SaveAsync()
+        public async Task<bool> IsRemoveAsync(string id)
         {
-            throw new NotImplementedException();
+            return await _context.Set<T>().FirstOrDefaultAsync(e => e.Id == Guid.Parse(id)) is null;
+        }
+        public async Task<int> SaveAsync()
+        {
+            return await _context.SaveChangesAsync();
         }
 
         public T Update(T entity)
         {
-            throw new NotImplementedException();
+           return _context.Set<T>().Update(entity).Entity;
         }
+        public bool IsUpdate(T entity)
+        {
+            return _context.Set<T>().Update(entity).Entity is null;
+        }
+        private IQueryable<T> GetQuery(params string[] includes)
+        {
+            var query = _context.Set<T>().AsQueryable();
+            if (includes != null)
+            {
+                foreach (var item in includes)
+                {
+                    query = query.Include(item);
+                }
+            }
+            return query;
+        }
+
     }
 }
