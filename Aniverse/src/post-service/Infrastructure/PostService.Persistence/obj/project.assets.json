@@ -651,6 +651,9 @@
       "PostService.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.6"
+        },
         "compile": {
           "bin/placeholder/PostService.Domain.dll": {}
         },

@@ -490,6 +490,9 @@
         }
       },
       "PostService.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.6"
+        },
         "runtime": {
           "PostService.Domain.dll": {}
         }

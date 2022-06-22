@@ -1,0 +1,365 @@
+﻿++Solution 'Aniverse' ‎(9 of 9 projects)
+i:{00000000-0000-0000-0000-000000000000}:Aniverse.sln
+++share
+i:{00000000-0000-0000-0000-000000000000}:share
+++ApiGateway
+i:{aec325fd-de0a-4339-a1fc-c955e8167041}:ApiGateway
+++Connected Services 
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:>1169
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:>1168
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:>1167
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:>1165
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:>1166
+++Dependencies
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:>1163
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:>1160
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:>1164
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:>1162
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:>631
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:>633
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:>1161
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:>634
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:>632
+++Properties
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:d:\aniverse\aniverseprogramming\aniverse\aniverse\share\apigateway\properties\
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\properties\
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\chat-service\chatservice.api\properties\
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\notfication-service\notfication.api\properties\
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\presentation\postservice.api\properties\
+++appsettings.json
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:d:\aniverse\aniverseprogramming\aniverse\aniverse\share\apigateway\appsettings.json
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\appsettings.json
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\chat-service\chatservice.api\appsettings.json
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\notfication-service\notfication.api\appsettings.json
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\presentation\postservice.api\appsettings.json
+++ocelot.json
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:d:\aniverse\aniverseprogramming\aniverse\aniverse\share\apigateway\ocelot.json
+++Program.cs
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:d:\aniverse\aniverseprogramming\aniverse\aniverse\share\apigateway\program.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\program.cs
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\chat-service\chatservice.api\program.cs
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\notfication-service\notfication.api\program.cs
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\presentation\postservice.api\program.cs
+++Startup.cs
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:d:\aniverse\aniverseprogramming\aniverse\aniverse\share\apigateway\startup.cs
+++No service dependencies discovered
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:>1170
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:>1172
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:>1174
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:>1173
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:>1171
+++Analyzers
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:analyzers
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:analyzers
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:analyzers
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:analyzers
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:analyzers
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:analyzers
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:analyzers
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:analyzers
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:analyzers
+++Frameworks
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:frameworks
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:frameworks
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:frameworks
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:frameworks
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:frameworks
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:frameworks
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:frameworks
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:frameworks
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:frameworks
+++Packages
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:packages
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:packages
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:packages
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:packages
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:packages
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:packages
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:packages
+++launchSettings.json
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:d:\aniverse\aniverseprogramming\aniverse\aniverse\share\apigateway\properties\launchsettings.json
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\properties\launchsettings.json
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\chat-service\chatservice.api\properties\launchsettings.json
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\notfication-service\notfication.api\properties\launchsettings.json
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\presentation\postservice.api\properties\launchsettings.json
+++appsettings.Development.json
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:d:\aniverse\aniverseprogramming\aniverse\aniverse\share\apigateway\appsettings.development.json
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\appsettings.development.json
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\chat-service\chatservice.api\appsettings.development.json
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\notfication-service\notfication.api\appsettings.development.json
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\presentation\postservice.api\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.AspNetCore.App
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:d:\aniverse\aniverseprogramming\aniverse\aniverse\share\apigateway\microsoft.aspnetcore.app
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\microsoft.aspnetcore.app
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\chat-service\chatservice.api\microsoft.aspnetcore.app
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\notfication-service\notfication.api\microsoft.aspnetcore.app
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\presentation\postservice.api\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:d:\aniverse\aniverseprogramming\aniverse\aniverse\share\apigateway\microsoft.netcore.app
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\microsoft.netcore.app
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\chat-service\chatservice.api\microsoft.netcore.app
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\notfication-service\notfication.api\microsoft.netcore.app
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.infrastructure\microsoft.netcore.app
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\microsoft.netcore.app
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\presentation\postservice.api\microsoft.netcore.app
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\microsoft.netcore.app
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.application\microsoft.netcore.app
+++Ocelot (17.0.1)
+i:{827be4cb-9993-463f-8a6a-1712b475edf0}:>1229
+++src
+i:{00000000-0000-0000-0000-000000000000}:src
+++auth-service
+i:{8fc859b5-550b-4f89-9ab1-5cbaa544f78a}:auth-service
+++AuthService.API
+i:{b8876b3b-0e7f-4e76-a9d9-f4996f9aac9c}:AuthService.API
+++Common
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\common\
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\common\
+++DataAccessLayer
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dataaccesslayer\
+++DTO_s
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dto_s\
+++Mappers
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\mappers\
+++Service
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\service\
+++libman.json
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\libman.json
+++Helper.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\common\helper.cs
+++DB
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dataaccesslayer\db\
+++Entites
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dataaccesslayer\entites\
+++Login
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dto_s\login\
+++Register
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dto_s\register\
+++Token
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dto_s\token\
+++Mapper.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\mappers\mapper.cs
+++Abstractions
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\service\abstractions\
+++Implementations
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\service\implementations\
+++Microsoft.AspNetCore.App.Analyzers
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\users\admin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.6\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:c:\users\admin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.6\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\users\admin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.6\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:c:\users\admin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.6\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:c:\users\admin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.6\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:c:\users\admin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.6\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:c:\users\admin\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:c:\users\admin\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:c:\users\admin\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:c:\users\admin\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:>1263
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.6)
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:>1265
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.6)
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:>1262
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:>1276
+++System.IdentityModel.Tokens.Jwt (6.19.0)
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:>1264
+++AppDbContext.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dataaccesslayer\db\appdbcontext.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\datacontext\appdbcontext.cs
+++AppUser.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dataaccesslayer\entites\appuser.cs
+++Login.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dto_s\login\login.cs
+++LoginResult.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dto_s\login\loginresult.cs
+++Register.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dto_s\register\register.cs
+++RegisterResult.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dto_s\register\registerresult.cs
+++TokenModel.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\dto_s\token\tokenmodel.cs
+++IAutheticateService.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\service\abstractions\iautheticateservice.cs
+++ITokenService.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\service\abstractions\itokenservice.cs
+++AutheticateService.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\service\implementations\autheticateservice.cs
+++TokenService.cs
+i:{3da296aa-1d4d-4d5c-bf50-5fb726e81cf1}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\auth-service\authservice.api\service\implementations\tokenservice.cs
+++chat-service
+i:{8fc859b5-550b-4f89-9ab1-5cbaa544f78a}:chat-service
+++ChatService.API
+i:{697210e0-6cbd-4df4-8c01-1e3015602840}:ChatService.API
+++Swashbuckle.AspNetCore (6.2.3)
+i:{664eb297-f9e9-4b2f-9544-7220f4c8ac4c}:>1295
+i:{de177db0-01d9-480a-b734-da82fe6c0fec}:>1251
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:>1216
+++notfication-service
+i:{8fc859b5-550b-4f89-9ab1-5cbaa544f78a}:notfication-service
+++Notfication.API
+i:{1bc63d4e-46bc-4c44-8b99-13786cadac29}:Notfication.API
+++post-service
+i:{8fc859b5-550b-4f89-9ab1-5cbaa544f78a}:post-service
+++Infrastructure
+i:{f7e7ced8-942c-42bc-8fa4-b9967914a3da}:Infrastructure
+++PostService.Infrastructure
+i:{1c5063cd-782e-465b-abec-a33341e1717f}:PostService.Infrastructure
+++Projects
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:projects
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:projects
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:projects
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:projects
+++PostService.Application
+i:{65d4c4bd-57e3-474e-9171-568bd40932e5}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.application\postservice.application.csproj
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.application\bin\debug\net6.0\postservice.application.dll
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.application\bin\debug\net6.0\postservice.application.dll
+i:{1c159406-9f48-4571-9fd0-5fa744a2604c}:PostService.Application
+++PostService.Persistence
+i:{1c5063cd-782e-465b-abec-a33341e1717f}:PostService.Persistence
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\bin\debug\net6.0\postservice.persistence.dll
+++Configuration
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\configuration\
+++BaseEntityConfiguration.cs
+++BlogConfiguration.cs
+++CommentConfiguration.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\configuration\commentconfiguration.cs
+++ShareConfiguration.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\configuration\shareconfiguration.cs
+++DataContext
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\datacontext\
+++Migrations
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\migrations\
+++20220621165028_int_mig.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\migrations\20220621165028_int_mig.cs
+++AppDbContextModelSnapshot.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\migrations\appdbcontextmodelsnapshot.cs
+++20220621165028_int_mig.Designer.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\migrations\20220621165028_int_mig.designer.cs
+++Microsoft.EntityFrameworkCore (6.0.6)
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:>1275
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:>1344
+++Microsoft.EntityFrameworkCore.Tools (6.0.6)
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:>1277
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:>1220
+++Presentation
+i:{f7e7ced8-942c-42bc-8fa4-b9967914a3da}:Presentation
+++PostService.API
+i:{504298ba-e4a1-4ddf-8c81-4750f9633b8c}:PostService.API
+++Controllers
+i:{761848f3-130b-42ff-a9eb-3d719ea7aa16}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\presentation\postservice.api\controllers\
+++Core
+i:{f7e7ced8-942c-42bc-8fa4-b9967914a3da}:Core
+++PostService.Domain
+i:{1c159406-9f48-4571-9fd0-5fa744a2604c}:PostService.Domain
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\postservice.domain.csproj
+++Entities
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\entities\
+++Comment.cs
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\entities\comment.cs
+++Like.cs
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\entities\like.cs
+++LikeType.cs
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\entities\liketype.cs
+++Post.cs
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\entities\post.cs
+++Share.cs
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\entities\share.cs
+++BaseEntity.cs
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\common\baseentity.cs
+++DTO
+i:{f0128161-5f27-4716-a370-74a21b57e6c5}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.application\dto\
+++PostConfiguration.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\configuration\postconfiguration.cs
+++LikeConfiguration.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\configuration\likeconfiguration.cs
+++20220622015216_conf_mig.cs
+++20220622015216_conf_mig.Designer.cs
+++20220622021345_conf_mig.cs
+++20220622021345_conf_mig.Designer.cs
+++20220622022136_conf_mig.cs
+++20220622022136_conf_mig.Designer.cs
+++20220622022751_conf_mig.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\migrations\20220622022751_conf_mig.cs
+++20220622022751_conf_mig.Designer.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\migrations\20220622022751_conf_mig.designer.cs
+++20220622030514_date_mig.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\migrations\20220622030514_date_mig.cs
+++20220622030514_date_mig.Designer.cs
+i:{012ca297-ad56-41f4-ac11-6f7f5609bc9e}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\infrastructure\postservice.persistence\migrations\20220622030514_date_mig.designer.cs
+++NewFolder
+++Interfaces
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\interfaces\
+++IRepository.cs
+i:{90166189-3ff1-4f35-ac2a-0759ee5aa2c7}:d:\aniverse\aniverseprogramming\aniverse\aniverse\src\post-service\core\postservice.domain\interfaces\irepository.cs
