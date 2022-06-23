@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "PostService.Repository/1.0.0": {
         "dependencies": {
-          "PostService.Domain": "1.0.0",
+          "PostService.Interfaces": "1.0.0",
           "PostService.Persistence": "1.0.0"
         },
         "runtime": {
@@ -457,14 +457,6 @@
           }
         }
       },
-      "PostService.Application/1.0.0": {
-        "dependencies": {
-          "PostService.Domain": "1.0.0"
-        },
-        "runtime": {
-          "PostService.Application.dll": {}
-        }
-      },
       "PostService.Domain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.6"
@@ -473,11 +465,20 @@
           "PostService.Domain.dll": {}
         }
       },
+      "PostService.Interfaces/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "PostService.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PostService.Interfaces.dll": {}
+        }
+      },
       "PostService.Persistence/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
-          "PostService.Application": "1.0.0"
+          "PostService.Domain": "1.0.0"
         },
         "runtime": {
           "PostService.Persistence.dll": {}
@@ -771,12 +772,12 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "PostService.Application/1.0.0": {
+    "PostService.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "PostService.Domain/1.0.0": {
+    "PostService.Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

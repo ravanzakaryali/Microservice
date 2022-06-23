@@ -10,9 +10,7 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructur
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Persistence\obj\Debug\net6.0\refint\PostService.Persistence.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Persistence\obj\Debug\net6.0\PostService.Persistence.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Persistence\obj\Debug\net6.0\ref\PostService.Persistence.dll
-D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Persistence\bin\Debug\net6.0\PostService.Application.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Persistence\bin\Debug\net6.0\PostService.Domain.dll
-D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Persistence\bin\Debug\net6.0\PostService.Application.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Persistence\bin\Debug\net6.0\PostService.Domain.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Persistence\obj\Debug\net6.0\PostService.Persistence.csproj.CopyComplete
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Infrastructure\PostService.Persistence\bin\Debug\net6.0\PostService.Persistence.runtimeconfig.json

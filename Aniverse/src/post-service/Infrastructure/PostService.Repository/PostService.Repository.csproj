@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\PostService.Domain\PostService.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\PostService.Interfaces\PostService.Interfaces.csproj" />
     <ProjectReference Include="..\PostService.Persistence\PostService.Persistence.csproj" />
   </ItemGroup>
 

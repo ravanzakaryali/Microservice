@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\PostService.Application\PostService.Application.csproj" />
+    <ProjectReference Include="..\..\Core\PostService.Domain\PostService.Domain.csproj" />
   </ItemGroup>
 
 </Project>

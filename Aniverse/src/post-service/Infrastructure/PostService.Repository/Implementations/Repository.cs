@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PostService.Domain.Common;
-using PostService.Domain.Interfaces;
+using PostService.Inerfaces.Interfaces;
 using PostService.Persistence.DataContext;
 using System.Linq.Expressions;
 

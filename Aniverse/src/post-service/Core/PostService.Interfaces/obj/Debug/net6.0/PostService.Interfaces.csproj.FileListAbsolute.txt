@@ -1,0 +1,15 @@
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\PostService.Interfaces.csproj.AssemblyReference.cache
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\PostService.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\PostService.Interfaces.AssemblyInfoInputs.cache
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\PostService.Interfaces.AssemblyInfo.cs
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\PostService.Interfaces.csproj.CoreCompileInputs.cache
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\bin\Debug\net6.0\PostService.Interfaces.deps.json
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\bin\Debug\net6.0\PostService.Interfaces.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\bin\Debug\net6.0\PostService.Interfaces.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\bin\Debug\net6.0\PostService.Domain.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\bin\Debug\net6.0\PostService.Domain.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\PostService.Interfaces.csproj.CopyComplete
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\PostService.Interfaces.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\refint\PostService.Interfaces.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\PostService.Interfaces.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Core\PostService.Interfaces\obj\Debug\net6.0\ref\PostService.Interfaces.dll
