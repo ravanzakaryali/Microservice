@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\PostService.Application\PostService.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\PostService.Persistence\PostService.Persistence.csproj" />
   </ItemGroup>

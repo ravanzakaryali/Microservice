@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using PostService.Application.DTO_s.Common;
 using PostService.Application.DTO_s.Post;
+using PostService.Application.Exceptions.CommonExceptions;
 using PostService.Application.Services.Interfaces;
 using PostService.Domain.Entities;
 using PostService.Inerfaces;
@@ -21,7 +22,7 @@ namespace PostService.Application.Services.Implementations
             Post post = await _unitOfWork.PostRepository.GetAsync(p => p.Id == Guid.Parse(id) && !p.IsDeleted);
             if(post is null)
             {
-                throw new ("Null referance exception");
+                throw new NotFoundException("Post not found");
             }
             return _mapper.Map<GetPostDto>(post);
         }
