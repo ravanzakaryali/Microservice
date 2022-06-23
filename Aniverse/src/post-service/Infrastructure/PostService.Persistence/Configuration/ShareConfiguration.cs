@@ -12,6 +12,7 @@ namespace PostService.Persistence.Configuration
             builder.Property(s => s.PostUrl).IsRequired()
                                             .HasMaxLength(100);
             builder.Property(s => s.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+            builder.Property(s => s.Id).HasDefaultValueSql("NEWID()");
         }
     }
 }

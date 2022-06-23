@@ -6,11 +6,11 @@ using PostService.Repository.Implementations;
 
 namespace PostService.Repository
 {
-    public class UnitOfWorkService : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContext _context;
         private IPostRepository _postRepository;
-        public UnitOfWorkService(AppDbContext context)
+        public UnitOfWork(AppDbContext context)
         {
             _context = context;
         }

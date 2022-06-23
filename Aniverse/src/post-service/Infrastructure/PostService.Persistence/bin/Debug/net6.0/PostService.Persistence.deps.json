@@ -11,7 +11,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.6",
-          "PostService.Domain": "1.0.0"
+          "PostService.Interfaces": "1.0.0"
         },
         "runtime": {
           "PostService.Persistence.dll": {}
@@ -491,6 +491,15 @@
         "runtime": {
           "PostService.Domain.dll": {}
         }
+      },
+      "PostService.Interfaces/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "PostService.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PostService.Interfaces.dll": {}
+        }
       }
     }
   },
@@ -802,6 +811,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "PostService.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PostService.Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

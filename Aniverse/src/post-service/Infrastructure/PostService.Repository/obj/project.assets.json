@@ -631,7 +631,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
-          "PostService.Domain": "1.0.0"
+          "PostService.Interfaces": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PostService.Persistence.dll": {}

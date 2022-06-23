@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PostService.Domain.Common;
 using PostService.Domain.Entities;
 using PostService.Persistence.Configuration;
 

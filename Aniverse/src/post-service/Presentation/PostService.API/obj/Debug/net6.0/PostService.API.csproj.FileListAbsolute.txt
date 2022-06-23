@@ -63,3 +63,11 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Persistence.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Humanizer.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\AutoMapper.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Interfaces.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Interfaces.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Application.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Repository.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Application.pdb
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Repository.pdb

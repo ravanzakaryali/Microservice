@@ -10,6 +10,8 @@ namespace PostService.Persistence.Configuration
         {
             builder.Property(l=>l.UserId).IsRequired();
             builder.Property(l => l.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+            builder.Property(l => l.Id).HasDefaultValueSql("NEWID()");
+
         }
     }
 }

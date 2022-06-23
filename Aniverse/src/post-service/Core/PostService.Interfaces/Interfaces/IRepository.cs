@@ -6,15 +6,15 @@ namespace PostService.Inerfaces.Interfaces
 {
     public interface IRepository<T> where T : BaseEntity
     {
-        Task<List<T>> GetAllAsync(Expression<Func<T, bool>> exp = null, 
+        Task<List<T>> GetAllAsync(Expression<Func<T, bool>> predicate = null, 
                                   bool tracking = true,
                                   params string[] includes);
         Task<List<T>> GetAllAsync<TOrderBy>(int page,
                                             int size,
                                             Expression<Func<T, TOrderBy>> orderBy, 
-                                            Expression<Func<T, bool>> exp = null, 
-                                            bool tracking = true,
+                                            Expression<Func<T, bool>> predicate = null, 
                                             bool isOrderBy = true,
+                                            bool tracking = true,
                                             params string[] includes);
         Task<T> GetAsync(Expression<Func<T, bool>> predicate = null, 
                         bool tracking = true, 

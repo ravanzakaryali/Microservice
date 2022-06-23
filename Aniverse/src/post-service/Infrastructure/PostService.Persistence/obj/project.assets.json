@@ -647,6 +647,20 @@
         "runtime": {
           "bin/placeholder/PostService.Domain.dll": {}
         }
+      },
+      "PostService.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "PostService.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PostService.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PostService.Interfaces.dll": {}
+        }
       }
     }
   },
@@ -1872,6 +1886,11 @@
       "type": "project",
       "path": "../../Core/PostService.Domain/PostService.Domain.csproj",
       "msbuildProject": "../../Core/PostService.Domain/PostService.Domain.csproj"
+    },
+    "PostService.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../../Core/PostService.Interfaces/PostService.Interfaces.csproj",
+      "msbuildProject": "../../Core/PostService.Interfaces/PostService.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1879,7 +1898,7 @@
       "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.6",
-      "PostService.Domain >= 1.0.0"
+      "PostService.Interfaces >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1914,8 +1933,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj": {
-              "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj"
+            "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj": {
+              "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj"
             }
           }
         }
