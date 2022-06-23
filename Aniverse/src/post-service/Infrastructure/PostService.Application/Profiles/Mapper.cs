@@ -8,7 +8,7 @@ namespace PostService.Application.Profiles
     {
         public Mapper()
         {
-            CreateMap<Post, PostGetDto>();
+            CreateMap<Post, GetAllPostDto>();
         }
     }
 }

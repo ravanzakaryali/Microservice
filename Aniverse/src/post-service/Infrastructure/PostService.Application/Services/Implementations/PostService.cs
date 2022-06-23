@@ -15,14 +15,14 @@ namespace PostService.Application.Services.Implementations
             _mapper = mapper;
         }
 
-        public Task<PostGetDto> GetAsync(string id)
+        public async Task<GetPostDto> GetAsync(string id)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<GetPostDto>(await _unitOfWork.PostRepository.GetAsync(p => p.Id == Guid.Parse(id) && !p.IsDeleted));
         }
 
-        public async Task<List<PostGetDto>> GetAll(int page = 1, int size = 4)
+        public async Task<List<GetAllPostDto>> GetAllAsync(int page = 1, int size = 4)
         {
-            return _mapper.Map<List<PostGetDto>>(await _unitOfWork.PostRepository.GetAllAsync(page, size, p => p.CreatedDate, p => p.IsDeleted == false, true));
+            return _mapper.Map<List<GetAllPostDto>>(await _unitOfWork.PostRepository.GetAllAsync(page, size, p => p.CreatedDate, p => p.IsDeleted == false, true));
         }
     }
 }
