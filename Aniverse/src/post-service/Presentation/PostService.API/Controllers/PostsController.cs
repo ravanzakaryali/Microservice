@@ -16,11 +16,26 @@ namespace PostService.API.Controllers
             _service = service;
         }
         [HttpGet]
-        public async Task<ActionResult> GetAll(QueryPaginate query)
+        public async Task<ActionResult> GetAllAsync(QueryPaginate query)
         {
             try
             {
                 return  Ok(await _service.PostService.GetAllAsync(query));
+            }
+            catch (Exception exception)
+            {
+                return StatusCode(StatusCodes.Status502BadGateway, new Response
+                {
+                    Status = "Error",
+                    Message = exception.Message
+                });
+            }
+        }
+        public async Task<ActionResult> GetAsync(string postname)
+        {
+            try
+            {
+                return Ok(await _service.PostService.GetAsync(postname));
             }
             catch (NotFoundException exception)
             {

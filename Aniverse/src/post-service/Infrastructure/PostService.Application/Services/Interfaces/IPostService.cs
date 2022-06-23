@@ -7,6 +7,6 @@ namespace PostService.Application.Services.Interfaces
     public interface IPostService
     {
         public Task<List<GetAllPostDto>> GetAllAsync(QueryPaginate query);
-        public Task<GetPostDto> GetAsync(string id);
+        public Task<GetPostDto> GetAsync(string postname);
     }
 }

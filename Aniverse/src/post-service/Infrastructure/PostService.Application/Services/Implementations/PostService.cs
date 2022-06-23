@@ -17,9 +17,9 @@ namespace PostService.Application.Services.Implementations
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
-        public async Task<GetPostDto> GetAsync(string id)
+        public async Task<GetPostDto> GetAsync(string postname)
         {
-            Post post = await _unitOfWork.PostRepository.GetAsync(p => p.Id == Guid.Parse(id) && !p.IsDeleted);
+            Post post = await _unitOfWork.PostRepository.GetAsync(p => p.Id == Guid.Parse(postname) && !p.IsDeleted);
             if(post is null)
             {
                 throw new NotFoundException("Post not found");
