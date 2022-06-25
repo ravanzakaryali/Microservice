@@ -8,5 +8,6 @@ namespace PostService.Application.Services.Interfaces
     {
         public Task<List<GetAllPostDto>> GetAllAsync(QueryPaginate query);
         public Task<GetPostDto> GetAsync(string postname);
+        public Task<GetPostDto> Create(PostCreateDto createDto);
     }
 }

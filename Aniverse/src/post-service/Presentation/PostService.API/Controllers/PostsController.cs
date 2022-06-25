@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PostService.Application.DTO_s.Common;
+using PostService.Application.DTO_s.Post;
 using PostService.Application.Exceptions.CommonExceptions;
 using PostService.Application.Services;
 
@@ -10,8 +11,8 @@ namespace PostService.API.Controllers
     [ApiController]
     public class PostsController : ControllerBase
     {
-        private readonly UnitOfWorkService _service;
-        public PostsController(UnitOfWorkService service)
+        private readonly IUnitOfWorkService _service;
+        public PostsController(IUnitOfWorkService service)
         {
             _service = service;
         }
@@ -20,7 +21,7 @@ namespace PostService.API.Controllers
         {
             try
             {
-                return  Ok(await _service.PostService.GetAllAsync(query));
+                return Ok(await _service.PostService.GetAllAsync(query));
             }
             catch (Exception exception)
             {
@@ -31,6 +32,7 @@ namespace PostService.API.Controllers
                 });
             }
         }
+        [HttpGet("{postname}")]
         public async Task<ActionResult> GetAsync(string postname)
         {
             try
@@ -51,6 +53,22 @@ namespace PostService.API.Controllers
                 {
                     Status = "Error",
                     Message = exception.Message
+                });
+            }
+        }
+        [HttpPost]
+        public async Task<ActionResult> Create(PostCreateDto post)
+        {
+            try
+            {
+                return Ok(await _service.PostService.Create(post));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status502BadGateway, new Response
+                {
+                    Status = "Error",
+                    Message = ex.Message
                 });
             }
         }
