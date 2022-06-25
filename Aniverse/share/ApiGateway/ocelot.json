@@ -15,10 +15,10 @@
         "Post"
       ],
       "RouteIsCaseSensitive": false,
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "TestKey",
-        "AllowedScopes": []
-      }
+      //"AuthenticationOptions": {
+        //"AuthenticationProviderKey": "TestKey",
+        //"AllowedScopes": []
+      //}
     },
     {
       "DownstreamPathTemplate": "/api/notfication",

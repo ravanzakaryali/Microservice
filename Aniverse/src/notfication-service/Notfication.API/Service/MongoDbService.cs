@@ -5,7 +5,7 @@ using Notfication.API.DataAccessLayer.Entities;
 
 namespace Notfication.API.Service
 {
-    public class MongoDbService
+    public class MongoDbService : IMongoDbService
     {
         private readonly IMongoCollection<DataAccessLayer.Entities.Notfication> _playlistCollection;
         public MongoDbService(IOptions<MongoDbSettings> mongoDBSettings)
