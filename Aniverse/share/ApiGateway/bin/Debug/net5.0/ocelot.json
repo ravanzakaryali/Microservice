@@ -15,10 +15,10 @@
         "Post"
       ],
       "RouteIsCaseSensitive": false,
-      //"AuthenticationOptions": {
-        //"AuthenticationProviderKey": "TestKey",
-        //"AllowedScopes": []
-      //}
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/api/notfication",
@@ -30,7 +30,12 @@
         }
       ],
       "UpstreamPathTemplate": "/api/notfication",
-      "UpstreamHttpMethod": [ "Get", "Post" ]
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "RouteIsCaseSensitive": false,
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/api/auth/register",
@@ -42,7 +47,19 @@
         }
       ],
       "UpstreamPathTemplate": "/api/auth/register",
-      "UpstreamHttpMethod": [ "Get", "Post" ]
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/role",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7031
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth/role",
+      "UpstreamHttpMethod": [ "Post" ]
     },
     {
       "DownstreamPathTemplate": "/api/auth/login",
@@ -50,7 +67,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7041
+          "Port": 7031
         }
       ],
       "UpstreamPathTemplate": "/api/auth/login",

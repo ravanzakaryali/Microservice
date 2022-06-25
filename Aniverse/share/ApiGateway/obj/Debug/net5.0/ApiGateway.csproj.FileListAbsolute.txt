@@ -64,3 +64,11 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\obj\Debug\net
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.pdb
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.genruntimeconfig.cache
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\obj\Debug\net5.0\ref\ApiGateway.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\share\ApiGateway\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

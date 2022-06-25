@@ -68,3 +68,11 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfic
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\MongoDB.Driver.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -25,14 +25,12 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer(); 
-
-builder.Services.AddSingleton<ITokenService, TokenService>();
-builder.Services.AddSingleton<IAutheticateService, AutheticateService>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IAutheticateService, AutheticateService>();
 var app = builder.Build();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
-
 app.Run();

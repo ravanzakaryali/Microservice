@@ -88,3 +88,5 @@ D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.A
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\AutoMapper.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\libman.json
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\Humanizer.dll
+D:\Aniverse\AniverseProgramming\Aniverse\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
