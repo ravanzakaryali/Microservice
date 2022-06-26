@@ -1,6 +1,22 @@
 {
   "Routes": [
     {
+      "DownstreamPathTemplate": "/api/notfication",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7021
+        }
+      ],
+      "UpstreamPathTemplate": "/api/notfication",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/blog",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -13,29 +29,7 @@
       "UpstreamHttpMethod": [
         "Get",
         "Post"
-      ],
-      "RouteIsCaseSensitive": false,
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "TestKey",
-        "AllowedScopes": []
-      }
-    },
-    {
-      "DownstreamPathTemplate": "/api/notfication",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 7021
-        }
-      ],
-      "UpstreamPathTemplate": "/api/notfication",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
-      "RouteIsCaseSensitive": false,
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "TestKey",
-        "AllowedScopes": []
-      }
+      ]
     },
     {
       "DownstreamPathTemplate": "/api/auth/register",

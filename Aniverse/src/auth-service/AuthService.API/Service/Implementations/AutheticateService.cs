@@ -14,6 +14,7 @@ namespace AuthService.API.Service.Implementations
     public class AutheticateService : IAutheticateService
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ITokenService _tokenService;
         private readonly IConfiguration _config;
@@ -22,21 +23,25 @@ namespace AuthService.API.Service.Implementations
         public AutheticateService(UserManager<AppUser> userManager,
                            ITokenService tokenService,
                            IConfiguration config,
-                           RoleManager<IdentityRole> roleManager, 
-                           IMapper mapper)
+                           RoleManager<IdentityRole> roleManager,
+                           IMapper mapper,
+                           SignInManager<AppUser> signInManager)
         {
             _userManager = userManager;
             _tokenService = tokenService;
             _config = config;
             _roleManager = roleManager;
             _mapper = mapper;
+            _signInManager = signInManager;
         }
 
         public async Task<LoginResult> Login(Login login)
         {
             AppUser user = await _userManager.FindByNameAsync(login.Username);
             if (user is null) throw new Exception("User not found");
-            if (!await _userManager.CheckPasswordAsync(user, login.Password)) throw new UnauthorizedAccessException();
+            SignInResult result = await _signInManager.CheckPasswordSignInAsync(user, login.Password, false);
+            if (!result.Succeeded) throw new UnauthorizedAccessException();
+
             var roles = _userManager.GetRolesAsync(user).Result;
             List<Claim> authClaims = new()
             {
@@ -46,16 +51,18 @@ namespace AuthService.API.Service.Implementations
             };
             authClaims.AddRange(roles.Select(userRole => new Claim(ClaimTypes.Role, userRole)));
             var token = _tokenService.CreateToken(authClaims);
-            var refreshToken = _tokenService.GenerateRefreshToken();
-            _ = int.TryParse(_config["JWT:RefreshTokenValidityInDays"], out int refreshTokenValidityInDays);
-            user.RefreshTokenExpiryTime = DateTime.Now.AddDays(refreshTokenValidityInDays);
-            user.RefreshToken = refreshToken;
-            await _userManager.UpdateAsync(user);
+
+            //var refreshToken = _tokenService.GenerateRefreshToken();
+            //_ = int.TryParse(_config["JWT:RefreshTokenValidityInDays"], out int refreshTokenValidityInDays);
+            //user.RefreshTokenExpiryTime = DateTime.Now.AddDays(refreshTokenValidityInDays);
+            //user.RefreshToken = refreshToken;
+            //await _userManager.UpdateAsync(user);
+
             return new LoginResult
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
-                RefreshToken = refreshToken,
                 Expiration = token.ValidTo
+                //RefreshToken = refreshToken,
             };
         }
         public async Task<TokenModel> RefreshToken(TokenModel tokenModel)

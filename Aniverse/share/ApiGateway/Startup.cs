@@ -19,29 +19,27 @@ namespace ApiGateway
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddOcelot();
-            string authenticationProviderKey = "TestKey";
             SymmetricSecurityKey signInKey = new(Encoding.UTF8.GetBytes(Configuration["JWT:Security"]));
-            services.AddAuthentication(options => {
-                options.DefaultAuthenticateScheme = authenticationProviderKey;
-            })
+            string authenticationProviderKey = "TestKey";
+            services.AddAuthentication(option => option.DefaultAuthenticateScheme = authenticationProviderKey)
                 .AddJwtBearer(authenticationProviderKey, options =>
                 {
                     options.RequireHttpsMetadata = false;
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = signInKey,
                         ValidateIssuer = true,
-                        ValidIssuer = Configuration["JWT:Issuer"],
                         ValidateAudience = true,
-                        ValidAudience = Configuration["JWT:Audience"],
                         ValidateLifetime = true,
-                        RequireExpirationTime = true
+                        IssuerSigningKey = signInKey,
+                        ValidIssuer = Configuration["JWT:Issuer"],
+                        ValidAudience = Configuration["JWT:Audience"],
                     };
                 });
+            services.AddOcelot();
+            services.AddControllers();
         }
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -49,10 +47,15 @@ namespace ApiGateway
             }
 
             app.UseHttpsRedirection();
+
+
             app.UseRouting();
+
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseOcelot().Wait();
+
+            await app.UseOcelot();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -16,12 +16,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
     options.Password.RequireLowercase = true;
     options.Password.RequiredLength = 6;
     
-    options.Lockout.MaxFailedAccessAttempts = 5;
-    options.Lockout.AllowedForNewUsers = false;
-    
     options.User.RequireUniqueEmail = true;
-    options.SignIn.RequireConfirmedAccount = true;
-
 }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer(); 

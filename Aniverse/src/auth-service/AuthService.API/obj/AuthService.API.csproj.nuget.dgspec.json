@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj": {}
+    "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj": {}
   },
   "projects": {
-    "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj": {
+    "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
+        "projectUniqueName": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
         "projectName": "AuthService.API",
-        "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
+        "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\auth-service\\AuthService.API\\obj\\",
+        "outputPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,7 +64,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.19.0, )"
+              "version": "[6.20.0, )"
             }
           },
           "imports": [

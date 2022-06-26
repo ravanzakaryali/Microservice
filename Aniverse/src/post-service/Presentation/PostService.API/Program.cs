@@ -10,9 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 string authenticationProviderKey = "TestKey";
 SymmetricSecurityKey signInKey = new(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Security"]));
-builder.Services.AddAuthentication(options => {
-    options.DefaultAuthenticateScheme = authenticationProviderKey;
-})
+builder.Services.AddAuthentication(options => options.DefaultAuthenticateScheme = authenticationProviderKey)
     .AddJwtBearer(authenticationProviderKey, options =>
     {
         options.RequireHttpsMetadata = false;

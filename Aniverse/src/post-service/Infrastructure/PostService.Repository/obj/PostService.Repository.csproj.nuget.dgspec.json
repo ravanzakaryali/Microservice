@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj": {}
+    "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj": {}
   },
   "projects": {
-    "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj": {
+    "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj",
+        "projectUniqueName": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj",
         "projectName": "PostService.Domain",
-        "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj",
+        "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\obj\\",
+        "outputPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj": {
+    "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj",
+        "projectUniqueName": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj",
         "projectName": "PostService.Interfaces",
-        "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj",
+        "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\obj\\",
+        "outputPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj": {
-                "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj"
+              "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj": {
+                "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Domain\\PostService.Domain.csproj"
               }
             }
           }
@@ -136,14 +136,14 @@
         }
       }
     },
-    "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj": {
+    "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj",
+        "projectUniqueName": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj",
         "projectName": "PostService.Persistence",
-        "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj",
+        "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\obj\\",
+        "outputPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -164,8 +164,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj": {
-                "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj"
+              "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj": {
+                "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj"
               }
             }
           }
@@ -214,14 +214,14 @@
         }
       }
     },
-    "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj": {
+    "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj",
+        "projectUniqueName": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj",
         "projectName": "PostService.Repository",
-        "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj",
+        "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\obj\\",
+        "outputPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -242,11 +242,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj": {
-                "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj"
+              "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj": {
+                "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Core\\PostService.Interfaces\\PostService.Interfaces.csproj"
               },
-              "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj": {
-                "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj"
+              "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj": {
+                "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj"
               }
             }
           }

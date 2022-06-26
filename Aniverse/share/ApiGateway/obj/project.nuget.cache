@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5JQTbott/OZhNo5OcOOhAdluDG05piLeg+h9+AB0oEw9IAesB2UGua2wj7vN38zNoNp7QE2OM3mSqU6umxSMLg==",
+  "dgSpecHash": "2q9RRHIcEG5dl7xXGdboxFgzpV+OjRpeogHWwyFSUiqqee/QDiOsBg2Vw2uc0H+TCQU670aquqh2fJ2VTB3SPA==",
   "success": true,
-  "projectFilePath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\share\\ApiGateway\\ApiGateway.csproj",
+  "projectFilePath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\share\\ApiGateway\\ApiGateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.17\\microsoft.aspnetcore.authentication.jwtbearer.5.0.17.nupkg.sha512",

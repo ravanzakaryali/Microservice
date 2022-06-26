@@ -58,16 +58,16 @@
           "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {}
         }
       },
-      "Microsoft.IdentityModel.JsonWebTokens/6.10.0": {
+      "Microsoft.IdentityModel.JsonWebTokens/6.20.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "6.10.0"
+          "Microsoft.IdentityModel.Tokens": "6.20.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
       "Microsoft.IdentityModel.Logging/6.20.0": {
@@ -343,17 +343,17 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "System.IdentityModel.Tokens.Jwt/6.10.0": {
+      "System.IdentityModel.Tokens.Jwt/6.20.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "6.10.0",
-          "Microsoft.IdentityModel.Tokens": "6.10.0"
+          "Microsoft.IdentityModel.JsonWebTokens": "6.20.0",
+          "Microsoft.IdentityModel.Tokens": "6.20.0"
         },
         "compile": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
@@ -576,10 +576,10 @@
         "microsoft.identitymodel.abstractions.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.JsonWebTokens/6.10.0": {
-      "sha512": "0qjS31rN1MQTc46tAYbzmMTSRfdV5ndZxSjYxIGqKSidd4wpNJfNII/pdhU5Fx8olarQoKL9lqqYw4yNOIwT0Q==",
+    "Microsoft.IdentityModel.JsonWebTokens/6.20.0": {
+      "sha512": "ov/c3pdHerzipMDMc4zfPAYLeRmHjpnAFXufSsvZWDs9SsZmyMpcnnXBXBOa8MPnoKDOFzUGocyMs9EsJFQT4w==",
       "type": "package",
-      "path": "microsoft.identitymodel.jsonwebtokens/6.10.0",
+      "path": "microsoft.identitymodel.jsonwebtokens/6.20.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -589,9 +589,11 @@
         "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/net472/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.6.20.0.nupkg.sha512",
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
@@ -1007,10 +1009,10 @@
         "version.txt"
       ]
     },
-    "System.IdentityModel.Tokens.Jwt/6.10.0": {
-      "sha512": "C+Q5ORsFycRkRuvy/Xd0Pv5xVpmWSAvQYZAGs7VQogmkqlLhvfZXTgBIlHqC3cxkstSoLJAYx6xZB7foQ2y5eg==",
+    "System.IdentityModel.Tokens.Jwt/6.20.0": {
+      "sha512": "yallJBcQCF34rkf4Ebakou/gCT74XtlgvR8q3M96S1uP9X/XgLp9sjQ6wJRewYLeBYGgi4o5WSY/XaI9aQjRXw==",
       "type": "package",
-      "path": "system.identitymodel.tokens.jwt/6.10.0",
+      "path": "system.identitymodel.tokens.jwt/6.20.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1020,9 +1022,11 @@
         "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
         "lib/net472/System.IdentityModel.Tokens.Jwt.dll",
         "lib/net472/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net6.0/System.IdentityModel.Tokens.Jwt.xml",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
-        "system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.6.20.0.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
@@ -1229,7 +1233,8 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.6",
       "Microsoft.IdentityModel.Tokens >= 6.20.0",
       "MongoDB.Driver >= 2.16.1",
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "Swashbuckle.AspNetCore >= 6.2.3",
+      "System.IdentityModel.Tokens.Jwt >= 6.20.0"
     ]
   },
   "packageFolders": {
@@ -1239,11 +1244,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
+      "projectUniqueName": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
       "projectName": "Notfication.API",
-      "projectPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
+      "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\notfication-service\\Notfication.API\\obj\\",
+      "outputPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1291,6 +1296,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
+          },
+          "System.IdentityModel.Tokens.Jwt": {
+            "target": "Package",
+            "version": "[6.20.0, )"
           }
         },
         "imports": [

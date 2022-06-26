@@ -16,17 +16,16 @@ namespace AuthService.API.Service.Implementations
         }
         public JwtSecurityToken CreateToken(List<Claim> authClaims)
         {
-            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JWT:Security"]));
-            _ = int.TryParse(_config["JWT:TokenValidityInMinutes"], out int tokenValidityInMinutes);
+            SymmetricSecurityKey securityKey = new(Encoding.UTF8.GetBytes(_config["JWT:Security"]));
 
-            var token = new JwtSecurityToken(
+            JwtSecurityToken token = new(
                 issuer: _config["JWT:Issuer"],
                 audience: _config["JWT:Audience"],
-                expires: DateTime.Now.AddMinutes(tokenValidityInMinutes),
-                claims: authClaims,
-                signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
+                expires: DateTime.Now.AddDays(2),
+                notBefore: DateTime.Now,
+                signingCredentials: new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256)
+                //claims: authClaims,
                 );
-
             return token;
         }
         public ClaimsPrincipal GetPrincipalFromExpiredToken(string token)

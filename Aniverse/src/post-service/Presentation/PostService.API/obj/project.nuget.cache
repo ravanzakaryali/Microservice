@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iiZm7xEV9cRTgE5V881ret2HqtqawAdRCeVdhjswBTHD0O+eK4oaZYUlGpnlMn43+TEtxnpqHJtzjngp8B3CuA==",
+  "dgSpecHash": "OtvtTdhy0NtquU7fHk7WobX+cG0Ho3JRDtUUwJZCKVVa7KNBf+/xmS5qFR8sxxYqOaXs+R/Am9GAyT6aOnPm/w==",
   "success": true,
-  "projectFilePath": "D:\\Aniverse\\AniverseProgramming\\Aniverse\\Aniverse\\src\\post-service\\Presentation\\PostService.API\\PostService.API.csproj",
+  "projectFilePath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Presentation\\PostService.API\\PostService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
