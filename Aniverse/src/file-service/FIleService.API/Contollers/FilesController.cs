@@ -12,7 +12,7 @@ namespace FileService.API.Contollers
         {
             _environment = environment;
         }
-        [HttpPost("upload-images")]
+        [HttpPost("upload-images")] 
         public async Task<IActionResult> UploadImages()
         {
             string upload = Path.Combine(_environment.WebRootPath, "resource/product-images");
