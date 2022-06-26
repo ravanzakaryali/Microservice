@@ -2129,11 +2129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
+      "projectUniqueName": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
       "projectName": "AuthService.API",
-      "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
+      "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\obj\\",
+      "outputPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

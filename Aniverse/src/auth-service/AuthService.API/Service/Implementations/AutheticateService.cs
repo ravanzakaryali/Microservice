@@ -52,17 +52,17 @@ namespace AuthService.API.Service.Implementations
             authClaims.AddRange(roles.Select(userRole => new Claim(ClaimTypes.Role, userRole)));
             var token = _tokenService.CreateToken(authClaims);
 
-            //var refreshToken = _tokenService.GenerateRefreshToken();
-            //_ = int.TryParse(_config["JWT:RefreshTokenValidityInDays"], out int refreshTokenValidityInDays);
-            //user.RefreshTokenExpiryTime = DateTime.Now.AddDays(refreshTokenValidityInDays);
-            //user.RefreshToken = refreshToken;
-            //await _userManager.UpdateAsync(user);
+            var refreshToken = _tokenService.GenerateRefreshToken();
+            _ = int.TryParse(_config["JWT:RefreshTokenValidityInDays"], out int refreshTokenValidityInDays);
+            user.RefreshTokenExpiryTime = DateTime.Now.AddDays(refreshTokenValidityInDays);
+            user.RefreshToken = refreshToken;
+            await _userManager.UpdateAsync(user);
 
             return new LoginResult
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
-                Expiration = token.ValidTo
-                //RefreshToken = refreshToken,
+                Expiration = token.ValidTo,
+                RefreshToken = refreshToken
             };
         }
         public async Task<TokenModel> RefreshToken(TokenModel tokenModel)

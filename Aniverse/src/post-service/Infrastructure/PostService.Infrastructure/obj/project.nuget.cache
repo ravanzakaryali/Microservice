@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CHFSWyD77PXg9lJCajsLoZGxisd1/NGiEUlx45jpsVDvKsF3icWAHNiqxBEU1pnDUf2j+P85zuMrcEU5n0WjJw==",
+  "dgSpecHash": "dw7v4yC7jcvTGpRfir3hm49zGdvfH0+O+7Ul20DQSjTIRRmdfCC3gbbV1htWtCosJZoxDRYECSufTGsOGJ4Qcw==",
   "success": true,
-  "projectFilePath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Infrastructure\\PostService.Infrastructure.csproj",
+  "projectFilePath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Infrastructure\\PostService.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

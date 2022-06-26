@@ -22,3 +22,15 @@ D:\AniverseGithub\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostS
 D:\AniverseGithub\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\refint\PostService.Infrastructure.dll
 D:\AniverseGithub\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.pdb
 D:\AniverseGithub\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\ref\PostService.Infrastructure.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Infrastructure.deps.json
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Infrastructure.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Infrastructure.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.csproj.AssemblyReference.cache
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.AssemblyInfoInputs.cache
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.AssemblyInfo.cs
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\refint\PostService.Infrastructure.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\ref\PostService.Infrastructure.dll

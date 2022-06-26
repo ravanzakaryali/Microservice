@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bu6m9mGdiIpyHVFqGgfpjP6WHuWZ95yH/FpRxHv7vUnaG2dYOY9IBrhOkFRzVa2SejHZMFciGtJWRYbokHTr0A==",
+  "dgSpecHash": "FDotsENUd9F+a2d8z7gTbsdb97nUshEbACZN5aNi0AdqKYfXo30iV5oslI2A8KxRw4zXOed1iN8o3Hk7a6Qbzw==",
   "success": true,
-  "projectFilePath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\chat-service\\ChatService.API\\ChatService.API.csproj",
+  "projectFilePath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\chat-service\\ChatService.API\\ChatService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "81UsvF1KGu0YfWYQf2AEi+YGHSbi7VVaVgPzfugjVs+WW/kcIIh+QvYsGmAS5RHOz6eUBAmqiVr1SuLXRY/2Xw==",
+  "dgSpecHash": "5xai+Mn1Ol9v1YsyFb8tdYC3gLnTolvWUlVbnP2cS+XXjDzfL0RE7V4LUTpBPPSI/IW3aZd+dBxKd5njTgLDQQ==",
   "success": true,
-  "projectFilePath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
+  "projectFilePath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.6\\microsoft.aspnetcore.authentication.jwtbearer.6.0.6.nupkg.sha512",

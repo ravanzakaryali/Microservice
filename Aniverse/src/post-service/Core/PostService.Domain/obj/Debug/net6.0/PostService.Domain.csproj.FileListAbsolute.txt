@@ -22,3 +22,15 @@ D:\AniverseGithub\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Dom
 D:\AniverseGithub\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\refint\PostService.Domain.dll
 D:\AniverseGithub\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\PostService.Domain.pdb
 D:\AniverseGithub\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\ref\PostService.Domain.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\bin\Debug\net6.0\PostService.Domain.deps.json
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\bin\Debug\net6.0\PostService.Domain.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\bin\Debug\net6.0\PostService.Domain.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\PostService.Domain.csproj.AssemblyReference.cache
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\PostService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\PostService.Domain.AssemblyInfoInputs.cache
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\PostService.Domain.AssemblyInfo.cs
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\PostService.Domain.csproj.CoreCompileInputs.cache
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\PostService.Domain.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\refint\PostService.Domain.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\PostService.Domain.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Core\PostService.Domain\obj\Debug\net6.0\ref\PostService.Domain.dll

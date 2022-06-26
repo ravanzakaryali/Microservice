@@ -1244,11 +1244,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
+      "projectUniqueName": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
       "projectName": "Notfication.API",
-      "projectPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
+      "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\obj\\",
+      "outputPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7w9E08tlHr9UaQ6/rX8LCjs05sqlrkd8D2f+br6g/l9R02e8v3VE7ouDLBfwX17SXSHphicYinQu/wYpyTm9NQ==",
+  "dgSpecHash": "s6I6zY6ZKd8M1AbUZiSUziIeWggPltbXEpAHrh8/pm98cVbwdYuD73IvqQ9NOEZb49VgAUs1HQGYr3JwAYVkNA==",
   "success": true,
-  "projectFilePath": "D:\\AniverseGithub\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
+  "projectFilePath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

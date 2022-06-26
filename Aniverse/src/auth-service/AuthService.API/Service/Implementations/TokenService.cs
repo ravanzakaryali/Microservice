@@ -23,8 +23,8 @@ namespace AuthService.API.Service.Implementations
                 audience: _config["JWT:Audience"],
                 expires: DateTime.Now.AddDays(2),
                 notBefore: DateTime.Now,
-                signingCredentials: new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256)
-                //claims: authClaims,
+                signingCredentials: new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256),
+                claims: authClaims
                 );
             return token;
         }
