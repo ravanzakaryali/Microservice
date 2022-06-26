@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FIleService.API\\FIleService.API.csproj": {}
+    "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FileService.API\\FileService.API.csproj": {}
   },
   "projects": {
-    "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FIleService.API\\FIleService.API.csproj": {
+    "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FileService.API\\FileService.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FIleService.API\\FIleService.API.csproj",
-        "projectName": "FIleService.API",
-        "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FIleService.API\\FIleService.API.csproj",
+        "projectUniqueName": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FileService.API\\FileService.API.csproj",
+        "projectName": "FileService.API",
+        "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FileService.API\\FileService.API.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FIleService.API\\obj\\",
+        "outputPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FileService.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,6 +60,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

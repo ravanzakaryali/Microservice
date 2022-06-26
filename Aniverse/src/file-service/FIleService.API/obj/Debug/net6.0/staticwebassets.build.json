@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "z6aYOazOr4Z0mdXzUFZwrhAuKM5Mj+UAAAhT98qm/DQ=",
+  "Source": "FileService.API",
+  "BasePath": "_content/FileService.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FileService.API\\wwwroot",
+      "Source": "FileService.API",
+      "ContentRoot": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FileService.API\\wwwroot\\",
+      "BasePath": "_content/FileService.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

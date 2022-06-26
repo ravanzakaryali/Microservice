@@ -32,6 +32,20 @@
       ]
     },
     {
+      "DownstreamPathTemplate": "/api/files/upload-images",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7041
+        }
+      ],
+      "UpstreamPathTemplate": "/api/files/upload-images",
+      "UpstreamHttpMethod": [
+        "Post"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/auth/register",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
