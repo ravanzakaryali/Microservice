@@ -13,19 +13,23 @@ namespace FileService.API.Services.Implementations.Storage.Azure
         {
             _blobServiceClient = new BlobServiceClient(config["Storage:Azure"]);
         }
-        public Task DeleteAsync(string containerName, string file)
+        public async Task DeleteAsync(string containerName, string file)
         {
-            throw new NotImplementedException();
+            _blobContainerClinet = _blobServiceClient.GetBlobContainerClient(containerName);
+            BlobClient blobClient = _blobContainerClinet.GetBlobClient(file);
+            await blobClient.DeleteAsync();
         }
 
         public List<string> GetFiles(string containerName)
         {
-            throw new NotImplementedException();
+            _blobContainerClinet = _blobServiceClient.GetBlobContainerClient(containerName);
+            return _blobContainerClinet.GetBlobs().Select(b => b.Name).ToList();
         }
 
         public bool HasFile(string containerName, string fileName)
         {
-            throw new NotImplementedException();
+            _blobContainerClinet = _blobServiceClient.GetBlobContainerClient(containerName);
+            return _blobContainerClinet.GetBlobs().Any(b => b.Name == fileName);
         }
 
         public async Task<List<UploadResponse>> UploadAsync(string containerName, IFormFileCollection files)
@@ -37,7 +41,7 @@ namespace FileService.API.Services.Implementations.Storage.Azure
             List<UploadResponse> response = new();
             foreach (var file in files)
             {
-                BlobClient blobClient =  _blobContainerClinet.GetBlobClient(file.Name);
+                BlobClient blobClient =  _blobContainerClinet.GetBlobClient(file.FileName);
                 await blobClient.UploadAsync(file.OpenReadStream());
                 response.Add(new UploadResponse
                 {

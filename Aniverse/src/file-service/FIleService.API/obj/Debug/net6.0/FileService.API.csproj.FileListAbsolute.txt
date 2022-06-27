@@ -26,3 +26,9 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\obj\Debug\
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\obj\Debug\net6.0\FileService.API.genruntimeconfig.cache
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\obj\Debug\net6.0\ref\FileService.API.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\FileService.API.staticwebassets.runtime.json
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Azure.Core.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Azure.Storage.Common.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\System.IO.Hashing.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\System.Memory.Data.dll
