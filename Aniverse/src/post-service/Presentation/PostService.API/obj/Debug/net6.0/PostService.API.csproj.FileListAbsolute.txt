@@ -225,3 +225,8 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.A
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\MassTransit.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\MassTransit.Abstractions.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\RabbitMQ.Client.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\System.Text.Json.dll

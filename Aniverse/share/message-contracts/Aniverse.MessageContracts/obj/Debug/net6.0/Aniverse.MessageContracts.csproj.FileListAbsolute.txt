@@ -1,0 +1,12 @@
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\bin\Debug\net6.0\Aniverse.MessageContracts.deps.json
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\bin\Debug\net6.0\Aniverse.MessageContracts.dll
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\bin\Debug\net6.0\Aniverse.MessageContracts.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\obj\Debug\net6.0\Aniverse.MessageContracts.csproj.AssemblyReference.cache
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\obj\Debug\net6.0\Aniverse.MessageContracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\obj\Debug\net6.0\Aniverse.MessageContracts.AssemblyInfoInputs.cache
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\obj\Debug\net6.0\Aniverse.MessageContracts.AssemblyInfo.cs
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\obj\Debug\net6.0\Aniverse.MessageContracts.csproj.CoreCompileInputs.cache
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\obj\Debug\net6.0\Aniverse.MessageContracts.dll
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\obj\Debug\net6.0\refint\Aniverse.MessageContracts.dll
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\obj\Debug\net6.0\Aniverse.MessageContracts.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\share\message-contracts\Aniverse.MessageContracts\obj\Debug\net6.0\ref\Aniverse.MessageContracts.dll

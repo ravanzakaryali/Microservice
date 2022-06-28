@@ -2,5 +2,11 @@
 {
     public class RabbitMqConstants
     {
+        public const string Hostname = "localhost";
+        public const string Username = "guest";
+        public const string Password = "guest";
+        public const int Port = 5672;
+        public const bool IsSSL = false;
+        public const string NotificationServiceQueue = "notification.service";
     }
 }

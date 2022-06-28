@@ -30,7 +30,7 @@ namespace PostService.API.Controllers
             }
             catch (Exception exception)
             {
-                return StatusCode(StatusCodes.Status502BadGateway, new Response
+                return StatusCode(StatusCodes.Status502BadGateway, new Application.DTO_s.Common.Response
                 {
                     Status = "Error",
                     Message = exception.Message
@@ -46,7 +46,7 @@ namespace PostService.API.Controllers
             }
             catch (NotFoundException exception)
             {
-                return StatusCode(StatusCodes.Status404NotFound, new Response
+                return StatusCode(StatusCodes.Status404NotFound, new Application.DTO_s.Common.Response
                 {
                     Status = "Error",
                     Message = exception.Message
@@ -54,7 +54,7 @@ namespace PostService.API.Controllers
             }
             catch (Exception exception)
             {
-                return StatusCode(StatusCodes.Status502BadGateway, new Response
+                return StatusCode(StatusCodes.Status502BadGateway, new Application.DTO_s.Common.Response
                 {
                     Status = "Error",
                     Message = exception.Message
