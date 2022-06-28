@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using MassTransit;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PostService.Application.DTO_s.Common;
@@ -13,10 +14,12 @@ namespace PostService.API.Controllers
     [Authorize]
     public class PostsController : ControllerBase
     {
-        private readonly IUnitOfWorkService _service;
-        public PostsController(IUnitOfWorkService service)
+        readonly IUnitOfWorkService _service;
+        readonly IPublishEndpoint _publishEndpoint;
+        public PostsController(IUnitOfWorkService service, IPublishEndpoint publishEndpoint)
         {
             _service = service;
+            _publishEndpoint = publishEndpoint;
         }
         [HttpGet]
         public async Task<ActionResult> GetAllAsync([FromQuery] QueryPaginate query)
@@ -63,11 +66,15 @@ namespace PostService.API.Controllers
         {
             try
             {
+                await _publishEndpoint.Publish<PostCreateDto>(new PostCreateDto
+                {
+                    Content = post.Content
+                });
                 return Ok(await _service.PostService.Create(post));
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status502BadGateway, new Response
+                return StatusCode(StatusCodes.Status502BadGateway, new Application.DTO_s.Common.Response
                 {
                     Status = "Error",
                     Message = ex.Message

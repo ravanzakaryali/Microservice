@@ -4,12 +4,28 @@ using PostService.Application;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using PostService.Application.Services;
+using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddEndpointsApiExplorer();
-string authenticationProviderKey = "TestKey";
 
+builder.Services.AddMassTransit(config =>
+{
+    config.UsingRabbitMq();
+});
+
+builder.Services.AddOptions<MassTransitHostOptions>()
+    .Configure(options =>
+    {
+        options.WaitUntilStarted = true;
+        options.StartTimeout = TimeSpan.FromSeconds(10);
+        options.StopTimeout = TimeSpan.FromSeconds(30);
+    });
+
+string authenticationProviderKey = "TestKey";
 SymmetricSecurityKey signInKey = new(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Security"]));
 
 builder.Services.AddAuthentication(options => options.DefaultAuthenticateScheme = authenticationProviderKey)
