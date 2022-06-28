@@ -220,3 +220,8 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.A
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.pdb
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.genruntimeconfig.cache
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\ref\PostService.API.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

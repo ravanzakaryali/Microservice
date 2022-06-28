@@ -70,6 +70,7 @@ namespace PostService.Repository.Implementations
         public async Task<T> AddAsync(T entity)
         {
             var newEntity = await _context.Set<T>().AddAsync(entity);
+            await SaveAsync();
             return newEntity.Entity;
         }
         public async Task<bool> IsAddAsync(T entity)

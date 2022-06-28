@@ -19,7 +19,7 @@ namespace PostService.API.Controllers
             _service = service;
         }
         [HttpGet]
-        public async Task<ActionResult> GetAllAsync(QueryPaginate query)
+        public async Task<ActionResult> GetAllAsync([FromQuery] QueryPaginate query)
         {
             try
             {

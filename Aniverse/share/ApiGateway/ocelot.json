@@ -17,7 +17,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/blog",
+      "DownstreamPathTemplate": "/api/posts",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -25,11 +25,15 @@
           "Port": 7011
         }
       ],
-      "UpstreamPathTemplate": "/api/blog",
+      "UpstreamPathTemplate": "/api/posts",
       "UpstreamHttpMethod": [
         "Get",
         "Post"
-      ]
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/api/files/upload-images",

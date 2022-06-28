@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using PostService.Application.DTO_s.Common;
 using PostService.Application.DTO_s.Post;
 using PostService.Application.Exceptions.CommonExceptions;
+using PostService.Application.Extensions;
 using PostService.Application.Services.Interfaces;
 using PostService.Domain.Entities;
 using PostService.Inerfaces;
@@ -12,10 +14,12 @@ namespace PostService.Application.Services.Implementations
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        public PostService(IUnitOfWork unitOfWork, IMapper mapper)
+        private readonly IHttpContextAccessor _accessor;
+        public PostService(IUnitOfWork unitOfWork, IMapper mapper, IHttpContextAccessor accessor)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _accessor = accessor;
         }
         public async Task<GetPostDto> GetAsync(string postname)
         {
@@ -32,6 +36,7 @@ namespace PostService.Application.Services.Implementations
         }
         public async Task<GetPostDto> Create(PostCreateDto createDto)
         {
+            createDto.UserId = _accessor.HttpContext.User.GetUserId();
             return _mapper.Map<GetPostDto>(await _unitOfWork.PostRepository.AddAsync(_mapper.Map<Post>(createDto)));
         }
     }

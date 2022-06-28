@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Notfication.API.Extensions;
 using Notfication.API.Service;
 
 namespace Notfication.API.Controllers
@@ -11,9 +12,11 @@ namespace Notfication.API.Controllers
     public class NotficationController : ControllerBase
     {
         private readonly IMongoDbService _service;
-        public NotficationController(IMongoDbService service)
+        private readonly IHttpContextAccessor _context;
+        public NotficationController(IMongoDbService service, IHttpContextAccessor context)
         {
             _service = service;
+            _context = context;
         }
         [HttpGet]
         public async Task<List<DataAccessLayer.Entities.Notfication>> Get()
