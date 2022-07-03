@@ -178,3 +178,10 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\obj
 D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\obj\Debug\net6.0\Notfication.API.pdb
 D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\obj\Debug\net6.0\Notfication.API.genruntimeconfig.cache
 D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\obj\Debug\net6.0\ref\Notfication.API.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\MassTransit.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\MassTransit.Abstractions.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\RabbitMQ.Client.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\System.Text.Json.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\Aniverse.MessageContracts.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\notfication-service\Notfication.API\bin\Debug\net6.0\Aniverse.MessageContracts.pdb

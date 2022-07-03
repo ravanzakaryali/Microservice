@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Aniverse.MessageContracts;
+using MassTransit;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Notfication.API.Extensions;
@@ -26,6 +28,7 @@ namespace Notfication.API.Controllers
         [HttpPost]  
         public async Task<IActionResult> Post(DataAccessLayer.Entities.Notfication nofication)
         {
+
             await _service.CreateAsync(nofication);
             return CreatedAtAction(nameof(Get), new { id = nofication.Id }, nofication);
         }

@@ -1,6 +1,7 @@
-﻿using MassTransit;
+﻿using Aniverse.MessageContracts;
+using Aniverse.MessageContracts.Commands;
+using MassTransit;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PostService.Application.DTO_s.Common;
 using PostService.Application.DTO_s.Post;
@@ -15,11 +16,11 @@ namespace PostService.API.Controllers
     public class PostsController : ControllerBase
     {
         readonly IUnitOfWorkService _service;
-        readonly IPublishEndpoint _publishEndpoint;
-        public PostsController(IUnitOfWorkService service, IPublishEndpoint publishEndpoint)
+        readonly IBus _bus;
+        public PostsController(IUnitOfWorkService service, IBus bus)
         {
             _service = service;
-            _publishEndpoint = publishEndpoint;
+            _bus = bus;
         }
         [HttpGet]
         public async Task<ActionResult> GetAllAsync([FromQuery] QueryPaginate query)
@@ -66,10 +67,9 @@ namespace PostService.API.Controllers
         {
             try
             {
-                await _publishEndpoint.Publish<PostCreateDto>(new PostCreateDto
-                {
-                    Content = post.Content
-                });
+                Uri uri = new($"{ RabbitMqConstants.URI }/{RabbitMqConstants.NotificationServiceQueue}");
+                var endPoint = await _bus.GetSendEndpoint(uri);
+                await endPoint.Send<IPostCommand>(post);
                 return Ok(await _service.PostService.Create(post));
             }
             catch (Exception ex)

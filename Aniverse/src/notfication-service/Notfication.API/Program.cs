@@ -1,12 +1,38 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Aniverse.MessageContracts;
+using MassTransit;
 using Microsoft.IdentityModel.Tokens;
+using Notfication.API.Consumers;
 using Notfication.API.DataAccessLayer.Entities;
 using Notfication.API.Service;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<PostNotficationConsumer>();
+
+builder.Services.AddMassTransit(config =>
+{
+    config.AddConsumer<PostNotficationConsumer>();
+    config.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(new Uri(RabbitMqConstants.URI), h =>
+        {
+            h.Username(RabbitMqConstants.Username);
+            h.Password(RabbitMqConstants.Password);
+        });
+        cfg.ReceiveEndpoint(RabbitMqConstants.NotificationServiceQueue, ep =>
+        {
+            ep.UseMessageRetry(r => r.Interval(2, 100));
+            ep.Consumer<PostNotficationConsumer>(context);
+        });
+    });
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
+
+
 string authenticationProviderKey = "TestKey";
 builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = authenticationProviderKey)
     .AddJwtBearer(authenticationProviderKey,options =>

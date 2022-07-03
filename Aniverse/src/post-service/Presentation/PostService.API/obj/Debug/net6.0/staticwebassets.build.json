@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "cou/XT2p2u3V8vvGwESmzt1gHUJ5sh4FiM2hgfjE+JA=",
+  "Hash": "BsXKiIlx72JtzDLRIuukbQHc6W4sUFyDDI8ycze3AN0=",
   "Source": "PostService.API",
   "BasePath": "_content/PostService.API",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\notfication-service\\Notfication.API\\Notfication.API.csproj",
+      "Version": 2,
+      "Source": "Notfication.API",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

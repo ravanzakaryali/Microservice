@@ -1,6 +1,5 @@
 ﻿using PostService.Application.DTO_s.Common;
 using PostService.Application.DTO_s.Post;
-using PostService.Domain.Entities;
 
 namespace PostService.Application.Services.Interfaces
 {

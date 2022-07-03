@@ -3,27 +3,27 @@ using PostService.Persistence.DataContext;
 using PostService.Application;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using PostService.Application.Services;
 using MassTransit;
+using Aniverse.MessageContracts;
+using Notfication.API.Consumers;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddMassTransit(x =>
+{
+    x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
+    {
+        config.Host(new Uri(RabbitMqConstants.URI), h =>
+        {
+            h.Username(RabbitMqConstants.Username);
+            h.Password(RabbitMqConstants.Password);
+        });
+    }));
+});
+builder.Services.AddMassTransitHostedService();
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddEndpointsApiExplorer();
-
-builder.Services.AddMassTransit(config =>
-{
-    config.UsingRabbitMq();
-});
-
-builder.Services.AddOptions<MassTransitHostOptions>()
-    .Configure(options =>
-    {
-        options.WaitUntilStarted = true;
-        options.StartTimeout = TimeSpan.FromSeconds(10);
-        options.StopTimeout = TimeSpan.FromSeconds(30);
-    });
 
 string authenticationProviderKey = "TestKey";
 SymmetricSecurityKey signInKey = new(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Security"]));

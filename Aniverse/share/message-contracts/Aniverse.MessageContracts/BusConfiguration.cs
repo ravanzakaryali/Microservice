@@ -8,7 +8,7 @@ namespace Aniverse.MessageContracts
         {
             return Bus.Factory.CreateUsingRabbitMq(factory =>
             {
-                factory.Host(RabbitMqConstants.Hostname, configurator =>
+                factory.Host(RabbitMqConstants.URI, configurator =>
                 {
                     configurator.Username(RabbitMqConstants.Username);
                     configurator.Password(RabbitMqConstants.Password);
