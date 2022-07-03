@@ -20,7 +20,8 @@ namespace FileService.API.Services.Implementations.Storage
         public bool HasFile(string containerName, string fileName) => 
             _storage.HasFile(containerName, fileName);
 
-        public Task<List<UploadResponse>> UploadAsync(string containerName, IFormFileCollection files) => 
-            _storage.UploadAsync(containerName, files);
+        public Task<List<UploadResponse>> UploadAsync(string containerName, IFormFileCollection files, string
+             username = "") => 
+            _storage.UploadAsync(containerName, files,username);
     }
 }

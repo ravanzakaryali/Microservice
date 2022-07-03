@@ -16,4 +16,8 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\share\common\ProjectCommon\ProjectCommon.csproj" />
+  </ItemGroup>
+
 </Project>

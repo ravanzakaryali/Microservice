@@ -9,6 +9,7 @@
       "FileService.API/1.0.0": {
         "dependencies": {
           "Azure.Storage.Blobs": "12.12.0",
+          "ProjectCommon": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -135,7 +136,12 @@
       "System.Numerics.Vectors/4.5.0": {},
       "System.Text.Encodings.Web/4.7.2": {},
       "System.Text.Json/4.7.2": {},
-      "System.Threading.Tasks.Extensions/4.5.4": {}
+      "System.Threading.Tasks.Extensions/4.5.4": {},
+      "ProjectCommon/1.0.0": {
+        "runtime": {
+          "ProjectCommon.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -262,6 +268,11 @@
       "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "ProjectCommon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

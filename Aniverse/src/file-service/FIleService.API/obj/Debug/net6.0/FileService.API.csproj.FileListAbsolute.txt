@@ -32,3 +32,5 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\System.IO.Hashing.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\ProjectCommon.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\ProjectCommon.pdb

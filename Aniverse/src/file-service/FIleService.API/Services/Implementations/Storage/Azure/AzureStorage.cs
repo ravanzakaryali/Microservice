@@ -5,7 +5,7 @@ using FileService.API.Services.Abstractions.Storage.Azure;
 
 namespace FileService.API.Services.Implementations.Storage.Azure
 {
-    public class AzureStorage : IAzureStorage
+    public class AzureStorage : Storage, IAzureStorage
     {
         readonly BlobServiceClient _blobServiceClient;
         BlobContainerClient _blobContainerClinet;
@@ -32,7 +32,7 @@ namespace FileService.API.Services.Implementations.Storage.Azure
             return _blobContainerClinet.GetBlobs().Any(b => b.Name == fileName);
         }
 
-        public async Task<List<UploadResponse>> UploadAsync(string containerName, IFormFileCollection files)
+        public async Task<List<UploadResponse>> UploadAsync(string containerName, IFormFileCollection files, string username = "")
         {
             _blobContainerClinet = _blobServiceClient.GetBlobContainerClient(containerName);
             await _blobContainerClinet.CreateIfNotExistsAsync();
@@ -41,12 +41,19 @@ namespace FileService.API.Services.Implementations.Storage.Azure
             List<UploadResponse> response = new();
             foreach (var file in files)
             {
-                BlobClient blobClient =  _blobContainerClinet.GetBlobClient(file.FileName);
+                FileRenameDto fileRenameDto = new()
+                {
+                    ContainerName = containerName,
+                    Filename = file.Name,
+                    Username = username,
+                };
+                string fileNewName = FileRename(fileRenameDto, HasFile);
+                BlobClient blobClient = _blobContainerClinet.GetBlobClient(file.FileName);
                 await blobClient.UploadAsync(file.OpenReadStream());
                 response.Add(new UploadResponse
                 {
-                     ContainerName = containerName,
-                     FileName = file.Name,  
+                    ContainerName = containerName,
+                    FileName = file.Name,
                 });
             }
             return response;

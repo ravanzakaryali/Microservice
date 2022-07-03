@@ -67,8 +67,7 @@ namespace PostService.API.Controllers
         {
             try
             {
-                Uri uri = new($"{ RabbitMqConstants.URI }/{RabbitMqConstants.NotificationServiceQueue}");
-                var endPoint = await _bus.GetSendEndpoint(uri);
+                ISendEndpoint endPoint = await _bus.GetSendEndpoint(new Uri(RabbitMqConstants.SendNotfication));
                 await endPoint.Send<IPostCommand>(post);
                 return Ok(await _service.PostService.Create(post));
             }
