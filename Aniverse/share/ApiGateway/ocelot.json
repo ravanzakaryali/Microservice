@@ -84,6 +84,55 @@
       ],
       "UpstreamPathTemplate": "/api/auth/login",
       "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/posts/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7011
+        }
+      ],
+      "UpstreamPathTemplate": "/api/posts/{id}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ],
+      "Key":  "Product",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/files?postid={id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7041
+        }
+      ],
+      "UpstreamPathTemplate": "/api/files?postid={id}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ],
+      "Key":  "Files",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+    }
+  ],
+  "Aggregates": [
+    {
+      "RouteKeys": [
+        "Product",
+        "Files"
+      ],
+      "UpstreamPathTemplate": "/api/post/{id}"
     }
   ],
   "GlobalConfiguration": {

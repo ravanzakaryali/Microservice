@@ -17,7 +17,6 @@ namespace Notfication.API.Service
         public async Task CreateAsync(DataAccessLayer.Entities.Notfication notfication)
         {
             await _playlistCollection.InsertOneAsync(notfication);
-            return;
         }
         public async Task<List<DataAccessLayer.Entities.Notfication>> GetAsync()
         {

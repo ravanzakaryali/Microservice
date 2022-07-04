@@ -38,12 +38,12 @@ namespace PostService.API.Controllers
                 });
             }
         }
-        [HttpGet("{postname}")]
-        public async Task<ActionResult> GetAsync(string postname)
+        [HttpGet("{postid}")]
+        public async Task<ActionResult> GetAsync(string postid)
         {
             try
             {
-                return Ok(await _service.PostService.GetAsync(postname));
+                return Ok(await _service.PostService.GetAsync(postid));
             }
             catch (NotFoundException exception)
             {

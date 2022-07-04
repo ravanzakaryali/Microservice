@@ -6,6 +6,7 @@ using AuthService.API.DTO_s.TOken;
 using AuthService.API.Service.Abstractions;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
+using ProjectCommon.ExtensionNameOperations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
@@ -106,7 +107,7 @@ namespace AuthService.API.Service.Implementations
         }
         private async Task<string> GenerateUsername(string fullname)
         {
-            string username = Helper.GeneratorString(fullname);
+            string username = NameOperations.CharacterRegulatory(fullname,30);
             AppUser isUserName = await _userManager.FindByNameAsync(username);
             if (isUserName != null)
             {
@@ -114,7 +115,6 @@ namespace AuthService.API.Service.Implementations
             }
             return username;
         }
-        #region CreateRoles
         public async Task CreateRoles()
         {
             foreach (var item in Enum.GetValues(typeof(Roles)))
@@ -128,6 +128,5 @@ namespace AuthService.API.Service.Implementations
                 }
             }
         }
-        #endregion
     }
 }

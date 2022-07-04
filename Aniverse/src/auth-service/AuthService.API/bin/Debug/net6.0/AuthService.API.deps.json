@@ -12,6 +12,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.6",
+          "ProjectCommon": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.20.0"
         },
         "runtime": {
@@ -525,6 +526,11 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+      },
+      "ProjectCommon/1.0.0": {
+        "runtime": {
+          "ProjectCommon.dll": {}
+        }
       }
     }
   },
@@ -890,6 +896,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "ProjectCommon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

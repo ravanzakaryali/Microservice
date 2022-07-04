@@ -220,3 +220,5 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\auth-service\AuthService.API\obj\Debug\
 D:\Aniverse\Aniverse.Server\Aniverse\src\auth-service\AuthService.API\obj\Debug\net6.0\AuthService.API.csproj.CopyComplete
 D:\Aniverse\Aniverse.Server\Aniverse\src\auth-service\AuthService.API\obj\Debug\net6.0\AuthService.API.genruntimeconfig.cache
 D:\Aniverse\Aniverse.Server\Aniverse\src\auth-service\AuthService.API\obj\Debug\net6.0\ref\AuthService.API.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\ProjectCommon.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\auth-service\AuthService.API\bin\Debug\net6.0\ProjectCommon.pdb

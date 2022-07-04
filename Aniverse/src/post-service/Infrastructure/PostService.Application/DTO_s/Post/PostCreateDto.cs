@@ -1,4 +1,6 @@
-﻿namespace PostService.Application.DTO_s.Post
+﻿using Microsoft.AspNetCore.Http;
+
+namespace PostService.Application.DTO_s.Post
 {
     public class PostCreateDto
     {

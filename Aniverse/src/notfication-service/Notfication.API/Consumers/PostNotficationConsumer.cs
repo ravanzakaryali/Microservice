@@ -19,7 +19,6 @@ namespace Notfication.API.Consumers
                 Content = context.Message.Content,
             };
             await _service.CreateAsync(notfication);
-            var data = context.Message;
         }
     }
 }
