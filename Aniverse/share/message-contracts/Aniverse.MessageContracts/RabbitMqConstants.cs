@@ -8,6 +8,8 @@
         public const int Port = 5672;
         public const bool IsSSL = false;
         public const string NotificationServiceQueue = "notification.service";
+        public const string FileServiceSendQueue = "file.service";
         public const string SendNotfication = $"{URI}/{NotificationServiceQueue}";
+        public const string SendFileService = $"{URI}/{FileServiceSendQueue}";
     }
 }

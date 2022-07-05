@@ -6,5 +6,6 @@ namespace PostService.Application.DTO_s.Post
     {
         public string UserId { get; set; }
         public string Content { get; set; }
+        public ICollection<IFormFile> Files { get; set; }
     }
 }

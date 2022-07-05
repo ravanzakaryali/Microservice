@@ -1,5 +1,6 @@
 ﻿using Aniverse.MessageContracts;
 using Aniverse.MessageContracts.Commands;
+using Aniverse.MessageContracts.Models;
 using MassTransit;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -62,14 +63,30 @@ namespace PostService.API.Controllers
                 });
             }
         }
-        [HttpPost]
-        public async Task<ActionResult> Create(PostCreateDto post)
+        [HttpPost("create")]
+        public async Task<ActionResult> Create([FromForm] PostCreateDto post)
         {
             try
             {
                 ISendEndpoint endPoint = await _bus.GetSendEndpoint(new Uri(RabbitMqConstants.SendNotfication));
                 await endPoint.Send<IPostCommand>(post);
-                return Ok(await _service.PostService.Create(post));
+                var newPost = await _service.PostService.Create(post);
+
+                foreach (var file in post.Files)
+                {
+                    DbFile data = new()
+                    {
+                        Extension = Path.GetExtension(file.FileName),
+                        FileName = file.FileName,
+                        PostId = newPost.Id,
+                        Size = file.Length,
+                        Type = file.ContentType
+                    };
+                    ISendEndpoint endpointFiles = await _bus.GetSendEndpoint(new Uri(RabbitMqConstants.SendFileService));
+                    await endpointFiles.Send<IFileCommand>(data);
+                }
+
+                return Ok(newPost);
             }
             catch (Exception ex)
             {

@@ -21,7 +21,10 @@ namespace FileService.API.Services.Implementations.MongoDb
         {
             await _playlistCollection.InsertOneAsync(file);
         }
-
+        public async Task CreateRangeAsync(ICollection<DbFile> files)
+        {
+            await _playlistCollection.InsertManyAsync(files);
+        }
         public async Task<List<DbFile>> GetAsync()
         {
             return await _playlistCollection.Find(new BsonDocument()).ToListAsync();

@@ -36,20 +36,6 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/files/upload-images",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 7041
-        }
-      ],
-      "UpstreamPathTemplate": "/api/files/upload-images",
-      "UpstreamHttpMethod": [
-        "Post"
-      ]
-    },
-    {
       "DownstreamPathTemplate": "/api/auth/register",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -96,10 +82,9 @@
       ],
       "UpstreamPathTemplate": "/api/posts/{id}",
       "UpstreamHttpMethod": [
-        "Get",
-        "Post"
+        "Get"
       ],
-      "Key":  "Product",
+      "Key": "Post",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "TestKey",
         "AllowedScopes": []
@@ -116,10 +101,27 @@
       ],
       "UpstreamPathTemplate": "/api/files?postid={id}",
       "UpstreamHttpMethod": [
-        "Get",
+        "Get"
+      ],
+      "Key": "File",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/posts/create",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7011
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/posts/create",
+      "UpstreamHttpMethod": [
         "Post"
       ],
-      "Key":  "Files",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "TestKey",
         "AllowedScopes": []
@@ -129,8 +131,8 @@
   "Aggregates": [
     {
       "RouteKeys": [
-        "Product",
-        "Files"
+        "Post",
+        "File"
       ],
       "UpstreamPathTemplate": "/api/post/{id}"
     }

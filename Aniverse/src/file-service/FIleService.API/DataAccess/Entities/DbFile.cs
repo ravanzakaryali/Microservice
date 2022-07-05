@@ -11,7 +11,7 @@ namespace FileService.API.DataAccess.Entities
         public string UserId { get; set; }
         public string? PostId { get; set; }
         public string Name { get; set; }
-        public int Size { get; set; }
+        public long Size { get; set; }
         [BsonRepresentation(BsonType.DateTime)]
         [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
         public DateTime CreatedDate { get; set; }= DateTime.UtcNow;

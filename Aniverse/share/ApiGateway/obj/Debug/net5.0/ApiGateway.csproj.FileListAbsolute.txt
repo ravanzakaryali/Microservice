@@ -143,8 +143,6 @@ D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGatewa
 D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.AssemblyInfoInputs.cache
 D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.AssemblyInfo.cs
 D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.csproj.CoreCompileInputs.cache
-D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
-D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
 D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\scopedcss\bundle\ApiGateway.styles.css
 D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\staticwebassets\ApiGateway.StaticWebAssets.Manifest.cache
 D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.RazorTargetAssemblyInfo.cache
@@ -154,3 +152,7 @@ D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\refint\Ap
 D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.pdb
 D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.genruntimeconfig.cache
 D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ref\ApiGateway.dll
+D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.Properties.Resources.resources
+D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.csproj.GenerateResource.cache
+D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+D:\Aniverse\Aniverse.Server\Aniverse\share\ApiGateway\obj\Debug\net5.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
