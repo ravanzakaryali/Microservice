@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\share\common\ProjectCommon\ProjectCommon.csproj" />
+    <ProjectReference Include="..\PostService.Application\PostService.Application.csproj" />
+  </ItemGroup>
+
 </Project>

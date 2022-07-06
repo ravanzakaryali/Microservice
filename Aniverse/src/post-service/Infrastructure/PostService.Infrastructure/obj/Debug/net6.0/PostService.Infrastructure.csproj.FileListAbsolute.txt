@@ -34,3 +34,16 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\refint\PostService.Infrastructure.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.pdb
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\ref\PostService.Infrastructure.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Application.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Domain.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Interfaces.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Persistence.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Repository.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Application.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Domain.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Interfaces.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Persistence.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Repository.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.csproj.CopyComplete
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\ProjectCommon.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\ProjectCommon.pdb

@@ -8,6 +8,7 @@ using PostService.Application.DTO_s.Common;
 using PostService.Application.DTO_s.Post;
 using PostService.Application.Exceptions.CommonExceptions;
 using PostService.Application.Services;
+using PostService.Infrastructure.Abstractions.Storage;
 
 namespace PostService.API.Controllers
 {
@@ -18,10 +19,12 @@ namespace PostService.API.Controllers
     {
         readonly IUnitOfWorkService _service;
         readonly IBus _bus;
-        public PostsController(IUnitOfWorkService service, IBus bus)
+        readonly IStorageService _storageService;
+        public PostsController(IUnitOfWorkService service, IBus bus, IStorageService storageService)
         {
             _service = service;
             _bus = bus;
+            _storageService = storageService;
         }
         [HttpGet]
         public async Task<ActionResult> GetAllAsync([FromQuery] QueryPaginate query)
@@ -85,7 +88,7 @@ namespace PostService.API.Controllers
                     ISendEndpoint endpointFiles = await _bus.GetSendEndpoint(new Uri(RabbitMqConstants.SendFileService));
                     await endpointFiles.Send<IFileCommand>(data);
                 }
-
+                await _storageService.UploadAsync("files", post.Files,"revanzli");
                 return Ok(newPost);
             }
             catch (Exception ex)

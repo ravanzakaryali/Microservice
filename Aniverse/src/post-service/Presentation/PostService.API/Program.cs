@@ -6,6 +6,10 @@ using System.Text;
 using MassTransit;
 using Aniverse.MessageContracts;
 using Notfication.API.Consumers;
+using PostService.Infrastructure.Implementations.Stroage.Azure;
+using PostService.Infrastructure;
+using PostService.Infrastructure.Abstractions.Storage;
+using PostService.Infrastructure.Implementations.Stroage;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,10 +23,14 @@ builder.Services.AddMassTransit(x =>
             h.Password(RabbitMqConstants.Password);
         });
     }));
-});
+}); 
 builder.Services.AddMassTransitHostedService();
 
+builder.Services.AddStorage<AzureStorage>();
+builder.Services.AddScoped<IStorageService, StorageService>();
+
 builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddEndpointsApiExplorer();
 
 string authenticationProviderKey = "TestKey";
@@ -51,6 +59,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 });
 builder.Services.AddControllers();
 builder.Services.AddAppServices();
+
 
 
 var app = builder.Build();

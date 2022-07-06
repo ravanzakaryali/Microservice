@@ -254,3 +254,14 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.A
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Notfication.API.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Notfication.API.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Azure.Core.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Azure.Storage.Common.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\System.IO.Hashing.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\libman.json
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Infrastructure.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\ProjectCommon.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Infrastructure.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\ProjectCommon.pdb

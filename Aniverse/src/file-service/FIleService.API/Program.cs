@@ -51,10 +51,15 @@ builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = 
             ValidAudience = builder.Configuration["JWT:Audience"],
         };
     });
+
 builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
+
 builder.Services.AddScoped<IMongoDbService, MongoDbService>();
+
 builder.Services.AddStorage<AzureStorage>();
+
 builder.Services.AddControllers();
+
 builder.Services.AddScoped<IStorageService, StorageService>();
 
 var app = builder.Build();
