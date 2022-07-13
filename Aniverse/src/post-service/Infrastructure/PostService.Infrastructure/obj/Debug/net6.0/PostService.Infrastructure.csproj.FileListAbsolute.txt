@@ -45,5 +45,5 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Persistence.pdb
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\PostService.Repository.pdb
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\obj\Debug\net6.0\PostService.Infrastructure.csproj.CopyComplete
-D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\ProjectCommon.dll
-D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\ProjectCommon.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\Aniverse.Shared.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Infrastructure\bin\Debug\net6.0\Aniverse.Shared.pdb

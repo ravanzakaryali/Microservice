@@ -1,5 +1,5 @@
-﻿using PostService.Application.DTO_s.Upload;
-using ProjectCommon.ExtensionNameOperations;
+﻿using Aniverse.Shared.Extensions;
+using PostService.Application.DTO_s.Upload;
 
 namespace PostService.Infrastructure.Implementations.Stroage
 {

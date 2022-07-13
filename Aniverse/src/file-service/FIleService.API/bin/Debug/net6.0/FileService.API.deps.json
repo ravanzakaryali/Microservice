@@ -9,11 +9,11 @@
       "FileService.API/1.0.0": {
         "dependencies": {
           "Aniverse.MessageContracts": "1.0.0",
+          "Aniverse.Shared": "1.0.0",
           "Azure.Storage.Blobs": "12.12.0",
           "MassTransit.RabbitMQ": "8.0.3",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.6",
           "MongoDB.Driver": "2.16.1",
-          "ProjectCommon": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -477,9 +477,9 @@
           "Aniverse.MessageContracts.dll": {}
         }
       },
-      "ProjectCommon/1.0.0": {
+      "Aniverse.Shared/1.0.0": {
         "runtime": {
-          "ProjectCommon.dll": {}
+          "Aniverse.Shared.dll": {}
         }
       }
     }
@@ -880,7 +880,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ProjectCommon/1.0.0": {
+    "Aniverse.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

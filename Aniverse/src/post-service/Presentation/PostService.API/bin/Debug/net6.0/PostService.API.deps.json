@@ -922,6 +922,11 @@
           "Aniverse.MessageContracts.dll": {}
         }
       },
+      "Aniverse.Shared/1.0.0": {
+        "runtime": {
+          "Aniverse.Shared.dll": {}
+        }
+      },
       "Notfication.API/1.0.0": {
         "dependencies": {
           "Aniverse.MessageContracts": "1.0.0",
@@ -958,9 +963,9 @@
       },
       "PostService.Infrastructure/1.0.0": {
         "dependencies": {
+          "Aniverse.Shared": "1.0.0",
           "Azure.Storage.Blobs": "12.12.0",
-          "PostService.Application": "1.0.0",
-          "ProjectCommon": "1.0.0"
+          "PostService.Application": "1.0.0"
         },
         "runtime": {
           "PostService.Infrastructure.dll": {}
@@ -992,11 +997,6 @@
         },
         "runtime": {
           "PostService.Repository.dll": {}
-        }
-      },
-      "ProjectCommon/1.0.0": {
-        "runtime": {
-          "ProjectCommon.dll": {}
         }
       }
     }
@@ -1663,6 +1663,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Aniverse.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Notfication.API/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1694,11 +1699,6 @@
       "sha512": ""
     },
     "PostService.Repository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ProjectCommon/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -4,14 +4,14 @@
     "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Infrastructure\\PostService.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\ProjectCommon.csproj": {
+    "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\ProjectCommon.csproj",
-        "projectName": "ProjectCommon",
-        "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\ProjectCommon.csproj",
+        "projectUniqueName": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj",
+        "projectName": "Aniverse.Shared",
+        "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\obj\\",
+        "outputPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -306,8 +306,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\ProjectCommon.csproj": {
-                "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\ProjectCommon.csproj"
+              "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj": {
+                "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj"
               },
               "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Application\\PostService.Application.csproj": {
                 "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Application\\PostService.Application.csproj"

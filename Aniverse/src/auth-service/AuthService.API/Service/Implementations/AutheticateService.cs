@@ -1,4 +1,5 @@
-﻿using AuthService.API.Common;
+﻿using Aniverse.Shared.Extensions;
+using AuthService.API.Common;
 using AuthService.API.DataAccessLayer.Entites;
 using AuthService.API.DTO_s.Login;
 using AuthService.API.DTO_s.Register;
@@ -6,7 +7,6 @@ using AuthService.API.DTO_s.TOken;
 using AuthService.API.Service.Abstractions;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
-using ProjectCommon.ExtensionNameOperations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 

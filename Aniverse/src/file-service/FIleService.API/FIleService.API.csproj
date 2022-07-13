@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\share\common\ProjectCommon\ProjectCommon.csproj" />
+    <ProjectReference Include="..\..\..\share\Aniverse.Shared\Aniverse.Shared.csproj" />
     <ProjectReference Include="..\..\..\share\message-contracts\Aniverse.MessageContracts\Aniverse.MessageContracts.csproj" />
   </ItemGroup>
 

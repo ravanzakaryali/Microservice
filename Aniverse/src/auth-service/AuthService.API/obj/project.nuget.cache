@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Dgy9sdOTltHg/pfaKiDNbTLYHemoU7NZk+hiWPHZ/ziTO0u5/wxCg05GR4KvtLORpSdiuBULWmYEz6523MEvng==",
+  "dgSpecHash": "o1wRahczRUp9EGm6W0X0VtHlhsmHm9XHKDUWrP7AHZPBwhegDVJL/Batgc/hmyGTz6V1KZCMEctItQYtlxRgDg==",
   "success": true,
   "projectFilePath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\auth-service\\AuthService.API\\AuthService.API.csproj",
   "expectedPackageFiles": [

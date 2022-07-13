@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "PostService.Infrastructure/1.0.0": {
         "dependencies": {
+          "Aniverse.Shared": "1.0.0",
           "Azure.Storage.Blobs": "12.12.0",
-          "PostService.Application": "1.0.0",
-          "ProjectCommon": "1.0.0"
+          "PostService.Application": "1.0.0"
         },
         "runtime": {
           "PostService.Infrastructure.dll": {}
@@ -682,6 +682,11 @@
           }
         }
       },
+      "Aniverse.Shared/1.0.0": {
+        "runtime": {
+          "Aniverse.Shared.dll": {}
+        }
+      },
       "PostService.Application/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
@@ -729,11 +734,6 @@
         },
         "runtime": {
           "PostService.Repository.dll": {}
-        }
-      },
-      "ProjectCommon/1.0.0": {
-        "runtime": {
-          "ProjectCommon.dll": {}
         }
       }
     }
@@ -1192,6 +1192,11 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
+    "Aniverse.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "PostService.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1213,11 +1218,6 @@
       "sha512": ""
     },
     "PostService.Repository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ProjectCommon/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

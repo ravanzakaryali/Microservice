@@ -1,5 +1,5 @@
-﻿using FileService.API.DTO_s.Upload;
-using ProjectCommon.ExtensionNameOperations;
+﻿using Aniverse.Shared.Extensions;
+using FileService.API.DTO_s.Upload;
 
 namespace FileService.API.Services.Implementations.Storage
 {

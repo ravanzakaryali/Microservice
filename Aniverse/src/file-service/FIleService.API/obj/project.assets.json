@@ -768,14 +768,14 @@
           "bin/placeholder/Aniverse.MessageContracts.dll": {}
         }
       },
-      "ProjectCommon/1.0.0": {
+      "Aniverse.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/ProjectCommon.dll": {}
+          "bin/placeholder/Aniverse.Shared.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ProjectCommon.dll": {}
+          "bin/placeholder/Aniverse.Shared.dll": {}
         }
       }
     }
@@ -2244,20 +2244,20 @@
       "path": "../../../share/message-contracts/Aniverse.MessageContracts/Aniverse.MessageContracts.csproj",
       "msbuildProject": "../../../share/message-contracts/Aniverse.MessageContracts/Aniverse.MessageContracts.csproj"
     },
-    "ProjectCommon/1.0.0": {
+    "Aniverse.Shared/1.0.0": {
       "type": "project",
-      "path": "../../../share/common/ProjectCommon/ProjectCommon.csproj",
-      "msbuildProject": "../../../share/common/ProjectCommon/ProjectCommon.csproj"
+      "path": "../../../share/Aniverse.Shared/Aniverse.Shared.csproj",
+      "msbuildProject": "../../../share/Aniverse.Shared/Aniverse.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Aniverse.MessageContracts >= 1.0.0",
+      "Aniverse.Shared >= 1.0.0",
       "Azure.Storage.Blobs >= 12.12.0",
       "MassTransit.RabbitMQ >= 8.0.3",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.6",
       "MongoDB.Driver >= 2.16.1",
-      "ProjectCommon >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -2293,8 +2293,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\ProjectCommon.csproj": {
-              "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\ProjectCommon.csproj"
+            "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj": {
+              "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj"
             },
             "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\message-contracts\\Aniverse.MessageContracts\\Aniverse.MessageContracts.csproj": {
               "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\message-contracts\\Aniverse.MessageContracts\\Aniverse.MessageContracts.csproj"

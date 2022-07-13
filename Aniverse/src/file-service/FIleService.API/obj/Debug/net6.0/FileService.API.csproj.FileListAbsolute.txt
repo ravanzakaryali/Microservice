@@ -30,8 +30,6 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\System.IO.Hashing.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\System.Memory.Data.dll
-D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\ProjectCommon.dll
-D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\ProjectCommon.pdb
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\DnsClient.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -64,3 +62,5 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\System.Text.Json.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Aniverse.MessageContracts.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Aniverse.MessageContracts.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Aniverse.Shared.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\file-service\FileService.API\bin\Debug\net6.0\Aniverse.Shared.pdb

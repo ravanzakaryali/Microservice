@@ -884,6 +884,16 @@
           }
         }
       },
+      "Aniverse.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Aniverse.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aniverse.Shared.dll": {}
+        }
+      },
       "PostService.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -956,16 +966,6 @@
         },
         "runtime": {
           "bin/placeholder/PostService.Repository.dll": {}
-        }
-      },
-      "ProjectCommon/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ProjectCommon.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProjectCommon.dll": {}
         }
       }
     }
@@ -2611,6 +2611,11 @@
         "version.txt"
       ]
     },
+    "Aniverse.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../../../share/Aniverse.Shared/Aniverse.Shared.csproj",
+      "msbuildProject": "../../../../share/Aniverse.Shared/Aniverse.Shared.csproj"
+    },
     "PostService.Application/1.0.0": {
       "type": "project",
       "path": "../PostService.Application/PostService.Application.csproj",
@@ -2635,18 +2640,13 @@
       "type": "project",
       "path": "../PostService.Repository/PostService.Repository.csproj",
       "msbuildProject": "../PostService.Repository/PostService.Repository.csproj"
-    },
-    "ProjectCommon/1.0.0": {
-      "type": "project",
-      "path": "../../../../share/common/ProjectCommon/ProjectCommon.csproj",
-      "msbuildProject": "../../../../share/common/ProjectCommon/ProjectCommon.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Aniverse.Shared >= 1.0.0",
       "Azure.Storage.Blobs >= 12.12.0",
-      "PostService.Application >= 1.0.0",
-      "ProjectCommon >= 1.0.0"
+      "PostService.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2681,8 +2681,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\ProjectCommon.csproj": {
-              "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\common\\ProjectCommon\\ProjectCommon.csproj"
+            "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj": {
+              "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj"
             },
             "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Application\\PostService.Application.csproj": {
               "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Application\\PostService.Application.csproj"
