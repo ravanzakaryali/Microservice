@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "X8HPfjUEP3xBLdr5XoXRPrzM7Icj24v9ixUKd3fVpgs=",
+  "Source": "SagaStateMahcine.Service",
+  "BasePath": "_content/SagaStateMahcine.Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

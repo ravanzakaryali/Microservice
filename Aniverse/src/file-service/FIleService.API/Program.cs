@@ -12,8 +12,21 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
+
+builder.Services.AddScoped<IMongoDbService, MongoDbService>();
+
+builder.Services.AddStorage<AzureStorage>();
+
+builder.Services.AddControllers();
+
+builder.Services.AddScoped<IStorageService, StorageService>();
+
 builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddScoped<PostFileConsumer>();
 
 builder.Services.AddMassTransit(config =>
@@ -34,8 +47,8 @@ builder.Services.AddMassTransit(config =>
     });
 });
 
-
 string authenticationProviderKey = "TestKey";
+
 builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = authenticationProviderKey)
     .AddJwtBearer(authenticationProviderKey, options =>
     {
@@ -52,21 +65,17 @@ builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = 
         };
     });
 
-builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
 
-builder.Services.AddScoped<IMongoDbService, MongoDbService>();
-
-builder.Services.AddStorage<AzureStorage>();
-
-builder.Services.AddControllers();
-
-builder.Services.AddScoped<IStorageService, StorageService>();
 
 var app = builder.Build();
 app.UseRouting();
+
 app.UseHttpsRedirection();
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.UseStaticFiles();
+
 app.MapControllers();
 app.Run();

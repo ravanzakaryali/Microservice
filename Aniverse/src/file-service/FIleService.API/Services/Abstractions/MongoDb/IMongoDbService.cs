@@ -7,6 +7,7 @@ namespace FileService.API.Services.Abstractions.MongoDb
         public Task CreateAsync(DbFile file);
         public Task CreateRangeAsync(ICollection<DbFile> file);
         public Task<List<DbFile>> GetAsync();
+        public Task<List<DbFile>> GetAsync(string postId);
 
     }
 }

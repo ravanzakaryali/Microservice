@@ -22,9 +22,9 @@ namespace ProjectCommon.ExtensionNameOperations
                 newName = outPut.ToString();
             }
             newName = Regex.Replace(newName, @"[^a-z0-9\s-]", String.Empty);
-            newName = Regex.Replace(newName, @"[\s-]+", "").Trim();
+            newName = Regex.Replace(newName, @"[\s-]+", "_").Trim();
             newName = newName[..(newName.Length <= maxLenght ? newName.Length : maxLenght)].Trim();
-            newName = Regex.Replace(newName, @"\s", "");
+            newName = Regex.Replace(newName, @"\s", "_");
             return newName;
         }
     }

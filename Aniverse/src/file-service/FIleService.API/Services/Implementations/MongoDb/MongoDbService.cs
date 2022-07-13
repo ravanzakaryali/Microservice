@@ -28,7 +28,10 @@ namespace FileService.API.Services.Implementations.MongoDb
         public async Task<List<DbFile>> GetAsync()
         {
             return await _playlistCollection.Find(new BsonDocument()).ToListAsync();
-
+        }
+        public async Task<List<DbFile>> GetAsync(string postId)
+        {
+            return await _playlistCollection.Find(f=>f.PostId == postId).ToListAsync();
         }
     }
 }

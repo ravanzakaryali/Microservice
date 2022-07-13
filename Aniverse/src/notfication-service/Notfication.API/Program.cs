@@ -9,7 +9,16 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddScoped<PostNotficationConsumer>();
+
+builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
+
+builder.Services.AddScoped<IMongoDbService, MongoDbService>();
+
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddControllers();
 
 builder.Services.AddMassTransit(config =>
 {
@@ -29,12 +38,10 @@ builder.Services.AddMassTransit(config =>
     });
 });
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddControllers();
-
-
 string authenticationProviderKey = "TestKey";
-builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = authenticationProviderKey)
+
+builder.Services
+    .AddAuthentication(option => option.DefaultAuthenticateScheme = authenticationProviderKey)
     .AddJwtBearer(authenticationProviderKey,options =>
     {
         options.RequireHttpsMetadata = false;
@@ -49,14 +56,13 @@ builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = 
             ValidAudience = builder.Configuration["JWT:Audience"],
         };
     });
-builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
-builder.Services.AddScoped<IMongoDbService, MongoDbService>();
 
 var app = builder.Build();
 app.UseHttpsRedirection();
-
 app.UseRouting();
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 app.Run();

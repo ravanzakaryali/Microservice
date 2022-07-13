@@ -1,4 +1,5 @@
 ﻿using FileService.API.DataAccess.Entities;
+using FileService.API.DTO_s.File;
 using FileService.API.Services.Abstractions.MongoDb;
 using FileService.API.Services.Abstractions.Storage;
 using Microsoft.AspNetCore.Authorization;
@@ -44,9 +45,19 @@ namespace FileService.API.Contollers
             return Ok(datas);
         }
         [HttpGet]
-        public IActionResult GetFiles([FromQuery] string postid)
+        public async Task<IActionResult> Get([FromQuery] string postid)
         {
-            return Ok(postid);
+            var filesDb = await _dbService.GetAsync(postid);
+            List<GetFileDto> files = new();
+            foreach (var file in filesDb)
+            {
+                var newFile = new GetFileDto()
+                {
+                    Url = $"{_configuration["Storage:AzureURL"]}/files/{file.Name}"
+                };
+                files.Add(newFile);
+            }
+            return Ok(files);
         }
     }
 }

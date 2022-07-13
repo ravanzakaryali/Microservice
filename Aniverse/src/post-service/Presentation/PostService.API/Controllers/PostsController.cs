@@ -75,12 +75,13 @@ namespace PostService.API.Controllers
                 await endPoint.Send<IPostCommand>(post);
                 var newPost = await _service.PostService.Create(post);
 
+                var fileNames = await _storageService.UploadAsync("files", post.Files,"revanzli");
                 foreach (var file in post.Files)
                 {
                     DbFile data = new()
                     {
                         Extension = Path.GetExtension(file.FileName),
-                        FileName = file.FileName,
+                        FileName = fileNames[0].FileName,
                         PostId = newPost.Id,
                         Size = file.Length,
                         Type = file.ContentType
@@ -88,7 +89,6 @@ namespace PostService.API.Controllers
                     ISendEndpoint endpointFiles = await _bus.GetSendEndpoint(new Uri(RabbitMqConstants.SendFileService));
                     await endpointFiles.Send<IFileCommand>(data);
                 }
-                await _storageService.UploadAsync("files", post.Files,"revanzli");
                 return Ok(newPost);
             }
             catch (Exception ex)

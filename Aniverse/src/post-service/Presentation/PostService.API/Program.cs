@@ -24,17 +24,22 @@ builder.Services.AddMassTransit(x =>
         });
     }));
 }); 
+
 builder.Services.AddMassTransitHostedService();
 
 builder.Services.AddStorage<AzureStorage>();
+
 builder.Services.AddScoped<IStorageService, StorageService>();
 
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddEndpointsApiExplorer();
 
+builder.Services.AddControllers();
+
+builder.Services.AddAppServices();
+
 string authenticationProviderKey = "TestKey";
-SymmetricSecurityKey signInKey = new(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Security"]));
 
 builder.Services.AddAuthentication(options => options.DefaultAuthenticateScheme = authenticationProviderKey)
     .AddJwtBearer(authenticationProviderKey, options =>
@@ -43,7 +48,7 @@ builder.Services.AddAuthentication(options => options.DefaultAuthenticateScheme 
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = signInKey,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Security"])),
             ValidateIssuer = true,
             ValidIssuer = builder.Configuration["JWT:Issuer"],
             ValidateAudience = true,
@@ -57,16 +62,15 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
-builder.Services.AddControllers();
-builder.Services.AddAppServices();
-
 
 
 var app = builder.Build();
+
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
 app.Run();

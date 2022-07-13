@@ -55,7 +55,7 @@ namespace PostService.Infrastructure.Implementations.Stroage.Azure
                 response.Add(new UploadResponse
                 {
                     ContainerName = containerName,
-                    FileName = file.Name,
+                    FileName = fileNewName,
                 });
             }
             return response;

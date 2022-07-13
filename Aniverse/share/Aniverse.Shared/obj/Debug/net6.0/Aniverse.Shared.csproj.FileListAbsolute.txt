@@ -1,0 +1,12 @@
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\bin\Debug\net6.0\Aniverse.Shared.deps.json
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\bin\Debug\net6.0\Aniverse.Shared.dll
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\bin\Debug\net6.0\Aniverse.Shared.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\obj\Debug\net6.0\Aniverse.Shared.csproj.AssemblyReference.cache
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\obj\Debug\net6.0\Aniverse.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\obj\Debug\net6.0\Aniverse.Shared.AssemblyInfoInputs.cache
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\obj\Debug\net6.0\Aniverse.Shared.AssemblyInfo.cs
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\obj\Debug\net6.0\Aniverse.Shared.csproj.CoreCompileInputs.cache
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\obj\Debug\net6.0\Aniverse.Shared.dll
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\obj\Debug\net6.0\refint\Aniverse.Shared.dll
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\obj\Debug\net6.0\Aniverse.Shared.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\share\Aniverse.Shared\obj\Debug\net6.0\ref\Aniverse.Shared.dll
