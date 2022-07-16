@@ -27,7 +27,6 @@
     <ProjectReference Include="..\..\..\..\share\message-contracts\Aniverse.MessageContracts\Aniverse.MessageContracts.csproj" />
     <ProjectReference Include="..\..\..\notfication-service\Notfication.API\Notfication.API.csproj" />
     <ProjectReference Include="..\..\Infrastructure\PostService.Application\PostService.Application.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\PostService.Infrastructure\PostService.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\PostService.Persistence\PostService.Persistence.csproj" />
   </ItemGroup>
 

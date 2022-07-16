@@ -92,10 +92,10 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "MassTransit/8.0.3": {
+      "MassTransit/8.0.5": {
         "type": "package",
         "dependencies": {
-          "MassTransit.Abstractions": "8.0.3",
+          "MassTransit.Abstractions": "8.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.18",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "3.1.18",
           "Microsoft.Extensions.Hosting.Abstractions": "3.1.18",
@@ -114,7 +114,7 @@
           "lib/net6.0/MassTransit.dll": {}
         }
       },
-      "MassTransit.Abstractions/8.0.3": {
+      "MassTransit.Abstractions/8.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0/MassTransit.Abstractions.dll": {}
@@ -1364,7 +1364,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Aniverse.Shared": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Azure.Storage.Blobs": "8.0.5",
+          "MassTransit": "8.0.5",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore": "6.0.6",
@@ -1389,21 +1392,6 @@
         },
         "runtime": {
           "bin/placeholder/PostService.Domain.dll": {}
-        }
-      },
-      "PostService.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Aniverse.Shared": "1.0.0",
-          "Azure.Storage.Blobs": "12.12.0",
-          "PostService.Application": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/PostService.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PostService.Infrastructure.dll": {}
         }
       },
       "PostService.Interfaces/1.0.0": {
@@ -1575,10 +1563,10 @@
         "logo.png"
       ]
     },
-    "MassTransit/8.0.3": {
-      "sha512": "bmwSl49zyxxrT70OIbTOb4PYnhGxnieqoJyR615VPz0jqJYg8/hseQE9j8+fFzIziA4TgglLGCJqlPBEmqSRhg==",
+    "MassTransit/8.0.5": {
+      "sha512": "vO+p4NjwgcrpvZuLJlf200noD4VLWpWBiBP/iAoEkZXuxFy/UMsWNuP3nxDdqYFXH6TvGO5vKCWxY07IiL8WaA==",
       "type": "package",
-      "path": "masstransit/8.0.3",
+      "path": "masstransit/8.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1590,15 +1578,15 @@
         "lib/netstandard2.0/MassTransit.xml",
         "lib/netstandard2.1/MassTransit.dll",
         "lib/netstandard2.1/MassTransit.xml",
-        "masstransit.8.0.3.nupkg.sha512",
+        "masstransit.8.0.5.nupkg.sha512",
         "masstransit.nuspec",
         "mt-logo-small.png"
       ]
     },
-    "MassTransit.Abstractions/8.0.3": {
-      "sha512": "PpGOYhyHImNTAPmwbz3uLQ31UCnexvBB9yTYS24ZBYVCRYbq2HlM+HhZwb/VidZyJC5F04Tl6MIDdmBbUJggAg==",
+    "MassTransit.Abstractions/8.0.5": {
+      "sha512": "jXmhULE16bDRidZa7rlL/HffAiHTY+ly+cwO5iqLfaNe4rkj/1DlG0aWPRbMeXuQevWCj9quwXOgp6NWjDNdfw==",
       "type": "package",
-      "path": "masstransit.abstractions/8.0.3",
+      "path": "masstransit.abstractions/8.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1610,7 +1598,7 @@
         "lib/netstandard2.0/MassTransit.Abstractions.xml",
         "lib/netstandard2.1/MassTransit.Abstractions.dll",
         "lib/netstandard2.1/MassTransit.Abstractions.xml",
-        "masstransit.abstractions.8.0.3.nupkg.sha512",
+        "masstransit.abstractions.8.0.5.nupkg.sha512",
         "masstransit.abstractions.nuspec",
         "mt-logo-small.png"
       ]
@@ -3857,11 +3845,6 @@
       "path": "../../Core/PostService.Domain/PostService.Domain.csproj",
       "msbuildProject": "../../Core/PostService.Domain/PostService.Domain.csproj"
     },
-    "PostService.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../../Infrastructure/PostService.Infrastructure/PostService.Infrastructure.csproj",
-      "msbuildProject": "../../Infrastructure/PostService.Infrastructure/PostService.Infrastructure.csproj"
-    },
     "PostService.Interfaces/1.0.0": {
       "type": "project",
       "path": "../../Core/PostService.Interfaces/PostService.Interfaces.csproj",
@@ -3892,7 +3875,6 @@
       "Microsoft.Extensions.Identity.Core >= 6.0.6",
       "Notfication.API >= 1.0.0",
       "PostService.Application >= 1.0.0",
-      "PostService.Infrastructure >= 1.0.0",
       "PostService.Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -3937,9 +3919,6 @@
             },
             "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Application\\PostService.Application.csproj": {
               "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Application\\PostService.Application.csproj"
-            },
-            "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Infrastructure\\PostService.Infrastructure.csproj": {
-              "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Infrastructure\\PostService.Infrastructure.csproj"
             },
             "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj": {
               "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Persistence\\PostService.Persistence.csproj"

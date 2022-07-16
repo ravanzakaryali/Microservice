@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MassTransit;
 using Microsoft.AspNetCore.Http;
 using PostService.Application.DTO_s.Common;
 using PostService.Application.DTO_s.Post;
@@ -15,6 +16,9 @@ namespace PostService.Application.Services.Implementations
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly IHttpContextAccessor _accessor;
+        readonly ISendEndpointProvider _sendEndpointProvider;
+
+
         public PostService(IUnitOfWork unitOfWork, IMapper mapper, IHttpContextAccessor accessor)
         {
             _unitOfWork = unitOfWork;
@@ -37,6 +41,7 @@ namespace PostService.Application.Services.Implementations
         public async Task<GetPostDto> Create(PostCreateDto createDto)
         {
             createDto.UserId = _accessor.HttpContext.User.GetUserId();
+
             return _mapper.Map<GetPostDto>(await _unitOfWork.PostRepository.AddAsync(_mapper.Map<Post>(createDto)));
         }
     }

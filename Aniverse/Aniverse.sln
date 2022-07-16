@@ -31,8 +31,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Domain", "src\post-service\Core\PostService.Domain\PostService.Domain.csproj", "{90166189-3FF1-4F35-AC2A-0759EE5AA2C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Infrastructure", "src\post-service\Infrastructure\PostService.Infrastructure\PostService.Infrastructure.csproj", "{65D4C4BD-57E3-474E-9171-568BD40932E5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.Persistence", "src\post-service\Infrastructure\PostService.Persistence\PostService.Persistence.csproj", "{012CA297-AD56-41F4-AC11-6F7F5609BC9E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService.API", "src\post-service\Presentation\PostService.API\PostService.API.csproj", "{761848F3-130B-42FF-A9EB-3D719EA7AA16}"
@@ -53,7 +51,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aniverse.MessageContracts",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aniverse.Shared", "share\Aniverse.Shared\Aniverse.Shared.csproj", "{F1ED98F4-FB17-43F2-9645-5DDE4D37EDF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SagaStateMachine.Service", "share\SagaStateMachine.Service\SagaStateMachine.Service.csproj", "{15D17A1A-AD83-44E3-8C90-7EA3BAE27131}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SagaStateMachine.Service", "share\SagaStateMachine.Service\SagaStateMachine.Service.csproj", "{15D17A1A-AD83-44E3-8C90-7EA3BAE27131}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,10 +79,6 @@ Global
 		{90166189-3FF1-4F35-AC2A-0759EE5AA2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90166189-3FF1-4F35-AC2A-0759EE5AA2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90166189-3FF1-4F35-AC2A-0759EE5AA2C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65D4C4BD-57E3-474E-9171-568BD40932E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65D4C4BD-57E3-474E-9171-568BD40932E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65D4C4BD-57E3-474E-9171-568BD40932E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65D4C4BD-57E3-474E-9171-568BD40932E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{012CA297-AD56-41F4-AC11-6F7F5609BC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{012CA297-AD56-41F4-AC11-6F7F5609BC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{012CA297-AD56-41F4-AC11-6F7F5609BC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -138,7 +132,6 @@ Global
 		{1C5063CD-782E-465B-ABEC-A33341E1717F} = {F7E7CED8-942C-42BC-8FA4-B9967914A3DA}
 		{504298BA-E4A1-4DDF-8C81-4750F9633B8C} = {F7E7CED8-942C-42BC-8FA4-B9967914A3DA}
 		{90166189-3FF1-4F35-AC2A-0759EE5AA2C7} = {1C159406-9F48-4571-9FD0-5FA744A2604C}
-		{65D4C4BD-57E3-474E-9171-568BD40932E5} = {1C5063CD-782E-465B-ABEC-A33341E1717F}
 		{012CA297-AD56-41F4-AC11-6F7F5609BC9E} = {1C5063CD-782E-465B-ABEC-A33341E1717F}
 		{761848F3-130B-42FF-A9EB-3D719EA7AA16} = {504298BA-E4A1-4DDF-8C81-4750F9633B8C}
 		{84EBB4D7-502C-44C9-9827-6B5B3935A304} = {1C5063CD-782E-465B-ABEC-A33341E1717F}

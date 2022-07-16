@@ -261,7 +261,5 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.A
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\System.IO.Hashing.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\System.Memory.Data.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\libman.json
-D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Infrastructure.dll
-D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\PostService.Infrastructure.pdb
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Aniverse.Shared.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Aniverse.Shared.pdb

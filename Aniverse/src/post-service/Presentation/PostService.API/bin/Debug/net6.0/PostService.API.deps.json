@@ -20,7 +20,6 @@
           "Microsoft.Extensions.Identity.Core": "6.0.6",
           "Notfication.API": "1.0.0",
           "PostService.Application": "1.0.0",
-          "PostService.Infrastructure": "1.0.0",
           "PostService.Persistence": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -111,9 +110,9 @@
           }
         }
       },
-      "MassTransit/8.0.3": {
+      "MassTransit/8.0.5": {
         "dependencies": {
-          "MassTransit.Abstractions": "8.0.3",
+          "MassTransit.Abstractions": "8.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "3.1.18",
           "Microsoft.Extensions.Hosting.Abstractions": "3.1.18",
@@ -127,22 +126,22 @@
         },
         "runtime": {
           "lib/net6.0/MassTransit.dll": {
-            "assemblyVersion": "8.0.3.0",
-            "fileVersion": "8.0.3.0"
+            "assemblyVersion": "8.0.5.0",
+            "fileVersion": "8.0.5.0"
           }
         }
       },
-      "MassTransit.Abstractions/8.0.3": {
+      "MassTransit.Abstractions/8.0.5": {
         "runtime": {
           "lib/net6.0/MassTransit.Abstractions.dll": {
-            "assemblyVersion": "8.0.3.0",
-            "fileVersion": "8.0.3.0"
+            "assemblyVersion": "8.0.5.0",
+            "fileVersion": "8.0.5.0"
           }
         }
       },
       "MassTransit.RabbitMQ/8.0.3": {
         "dependencies": {
-          "MassTransit": "8.0.3",
+          "MassTransit": "8.0.5",
           "RabbitMQ.Client": "6.2.4"
         },
         "runtime": {
@@ -942,7 +941,10 @@
       },
       "PostService.Application/1.0.0": {
         "dependencies": {
+          "Aniverse.Shared": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Azure.Storage.Blobs": "12.12.0",
+          "MassTransit": "8.0.5",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore": "6.0.6",
@@ -959,16 +961,6 @@
         },
         "runtime": {
           "PostService.Domain.dll": {}
-        }
-      },
-      "PostService.Infrastructure/1.0.0": {
-        "dependencies": {
-          "Aniverse.Shared": "1.0.0",
-          "Azure.Storage.Blobs": "12.12.0",
-          "PostService.Application": "1.0.0"
-        },
-        "runtime": {
-          "PostService.Infrastructure.dll": {}
         }
       },
       "PostService.Interfaces/1.0.0": {
@@ -1056,19 +1048,19 @@
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
     },
-    "MassTransit/8.0.3": {
+    "MassTransit/8.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bmwSl49zyxxrT70OIbTOb4PYnhGxnieqoJyR615VPz0jqJYg8/hseQE9j8+fFzIziA4TgglLGCJqlPBEmqSRhg==",
-      "path": "masstransit/8.0.3",
-      "hashPath": "masstransit.8.0.3.nupkg.sha512"
+      "sha512": "sha512-vO+p4NjwgcrpvZuLJlf200noD4VLWpWBiBP/iAoEkZXuxFy/UMsWNuP3nxDdqYFXH6TvGO5vKCWxY07IiL8WaA==",
+      "path": "masstransit/8.0.5",
+      "hashPath": "masstransit.8.0.5.nupkg.sha512"
     },
-    "MassTransit.Abstractions/8.0.3": {
+    "MassTransit.Abstractions/8.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PpGOYhyHImNTAPmwbz3uLQ31UCnexvBB9yTYS24ZBYVCRYbq2HlM+HhZwb/VidZyJC5F04Tl6MIDdmBbUJggAg==",
-      "path": "masstransit.abstractions/8.0.3",
-      "hashPath": "masstransit.abstractions.8.0.3.nupkg.sha512"
+      "sha512": "sha512-jXmhULE16bDRidZa7rlL/HffAiHTY+ly+cwO5iqLfaNe4rkj/1DlG0aWPRbMeXuQevWCj9quwXOgp6NWjDNdfw==",
+      "path": "masstransit.abstractions/8.0.5",
+      "hashPath": "masstransit.abstractions.8.0.5.nupkg.sha512"
     },
     "MassTransit.RabbitMQ/8.0.3": {
       "type": "package",
@@ -1679,11 +1671,6 @@
       "sha512": ""
     },
     "PostService.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "PostService.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

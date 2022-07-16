@@ -6,10 +6,10 @@ using System.Text;
 using MassTransit;
 using Aniverse.MessageContracts;
 using Notfication.API.Consumers;
-using PostService.Infrastructure.Implementations.Stroage.Azure;
 using PostService.Infrastructure;
-using PostService.Infrastructure.Abstractions.Storage;
-using PostService.Infrastructure.Implementations.Stroage;
+using PostService.Application.Implementations.Stroage.Azure;
+using PostService.Application.Interfaces.Storage;
+using PostService.Application.Implementations.Stroage;
 
 var builder = WebApplication.CreateBuilder(args);
 

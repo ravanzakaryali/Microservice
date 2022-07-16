@@ -7,6 +7,7 @@
         public const string Password = "guest";
         public const int Port = 5672;
         public const bool IsSSL = false;
+        public const string StateMachine = "state-machine-queue";
         public const string NotificationServiceQueue = "notification.service";
         public const string FileServiceSendQueue = "file.service";
         public const string SendNotfication = $"{URI}/{NotificationServiceQueue}";

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PyGBhO7vPBsfBOcUMKwk6aX/WAjDcfDkbAp9UVwq4kgBObAGdlYOAf7Ar8awK0PJfCvO0nEqvaxqcYpwTOFN+Q==",
+  "dgSpecHash": "z3NgZw113KvzFTgJs0bSHMf9ctevLNW1l+JjjW2J7FHjmnbg5lYoYWjQwLagkvXbcmLTIiTRb1+2o8+SLNmQnA==",
   "success": true,
   "projectFilePath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Presentation\\PostService.API\\PostService.API.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\azure.storage.common\\12.11.0\\azure.storage.common.12.11.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\masstransit\\8.0.3\\masstransit.8.0.3.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\masstransit.abstractions\\8.0.3\\masstransit.abstractions.8.0.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\masstransit\\8.0.5\\masstransit.8.0.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\masstransit.abstractions\\8.0.5\\masstransit.abstractions.8.0.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\masstransit.rabbitmq\\8.0.3\\masstransit.rabbitmq.8.0.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.6\\microsoft.aspnetcore.authentication.jwtbearer.6.0.6.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.6\\microsoft.aspnetcore.cryptography.internal.6.0.6.nupkg.sha512",
