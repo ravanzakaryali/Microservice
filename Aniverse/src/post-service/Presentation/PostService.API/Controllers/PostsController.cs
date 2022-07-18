@@ -1,6 +1,5 @@
 ﻿using Aniverse.MessageContracts;
 using Aniverse.MessageContracts.Commands;
-using Aniverse.MessageContracts.Events.Post;
 using Aniverse.MessageContracts.Models;
 using MassTransit;
 using Microsoft.AspNetCore.Authorization;
@@ -19,18 +18,11 @@ namespace PostService.API.Controllers
     public class PostsController : ControllerBase
     {
         readonly IUnitOfWorkService _service;
-        readonly IBus _bus;
-        readonly IStorageService _storageService;
-        readonly IHttpContextAccessor _contextAccessor;
-        readonly ISendEndpointProvider _sendEndpointProvider;
 
-        public PostsController(IUnitOfWorkService service, IBus bus, IStorageService storageService, IHttpContextAccessor contextAccessor, ISendEndpointProvider sendEndpointProvider)
+
+        public PostsController(IUnitOfWorkService service)
         {
             _service = service;
-            _bus = bus;
-            _storageService = storageService;
-            _contextAccessor = contextAccessor;
-            _sendEndpointProvider = sendEndpointProvider;
         }
         [HttpGet]
         public async Task<ActionResult> GetAllAsync([FromQuery] QueryPaginate query)
@@ -77,10 +69,8 @@ namespace PostService.API.Controllers
         {
             try
             {
-                #region Old Code 
-                //ISendEndpoint endPoint = await _bus.GetSendEndpoint(new Uri(RabbitMqConstants.SendNotfication));
-                //await endPoint.Send<IPostCommand>(post);
-                //var newPost = await _service.PostService.Create(post);
+
+                GetPostDto newPost = await _service.PostService.Create(post);
                 //var fileNames = await _storageService.UploadAsync("files", post.Files, "revanzli");
                 //foreach (var file in post.Files)
                 //{
@@ -95,24 +85,6 @@ namespace PostService.API.Controllers
                 //    ISendEndpoint endpointFiles = await _bus.GetSendEndpoint(new Uri(RabbitMqConstants.SendFileService));
                 //    await endpointFiles.Send<IFileCommand>(data);
                 //}
-                #endregion
-
-                GetPostDto newPost = await _service.PostService.Create(post);
-
-                List<string> filesName = new();
-                foreach (IFormFile file in post.Files)
-                {
-                    filesName.Add(file.FileName);
-                }
-                PostStartedEvent postStarted = new()
-                {
-                    Content = newPost.Content,
-                    FilesName = filesName,
-                    PostId = newPost.Id,
-                    UserId = newPost.UserId,
-                };
-                ISendEndpoint sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new($"queue: {RabbitMqConstants.StateMachine}"));
-                await sendEndpoint.Send<PostStartedEvent>(postStarted);
                 return Ok(newPost);
 
             }

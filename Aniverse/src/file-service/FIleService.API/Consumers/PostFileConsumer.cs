@@ -1,11 +1,12 @@
 ﻿using Aniverse.MessageContracts.Commands;
+using Aniverse.MessageContracts.Events.Post;
 using FileService.API.DataAccess.Entities;
 using FileService.API.Services.Abstractions.MongoDb;
 using MassTransit;
 
 namespace FileService.API.Consumers
 {
-    public class PostFileConsumer : IConsumer<IFileCommand>
+    public class PostFileConsumer : IConsumer<PostCreatedEvent>
     {
         private readonly IMongoDbService _service;
         private readonly IConfiguration _configuration;
@@ -16,19 +17,25 @@ namespace FileService.API.Consumers
             _configuration = configuration;
         }
 
-        public async Task Consume(ConsumeContext<IFileCommand> context)
+        public async Task Consume(ConsumeContext<PostCreatedEvent> context)
         {
-            DbFile file = new()
+            List<DbFile> files = new();
+            foreach (var fileItem in context.Message.FilesName)
             {
-                UserId = context.Message.UserId,
-                PostId = context.Message.PostId,
-                DataType = context.Message.Type,
-                Extension = context.Message.Extension,
-                Name = context.Message.FileName,
-                Size = context.Message.Size,
-                StorageUrl = _configuration["Storage:AzureURL"],
-            };
-            await _service.CreateAsync(file);
+                DbFile newFileItem = new()
+                {
+                    CreatedDate = DateTime.Now,
+                    DataType = fileItem.Type,
+                    PostId = context.Message.PostId,
+                    UserId = context.Message.UserId,
+                    Name = fileItem.Name,
+                    Extension = Path.GetExtension(fileItem.Name),
+                    Size = fileItem.Size,
+                    StorageUrl = "https://aniversefiles.blob.core.windows.net",
+                };
+                files.Add(newFileItem);
+            }
+            await _service.CreateRangeAsync(files);
         }
     }
 }

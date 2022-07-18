@@ -14,6 +14,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService.API", "src\auth-service\AuthService.API\AuthService.API.csproj", "{3DA296AA-1D4D-4D5C-BF50-5FB726E81CF1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chat-service", "chat-service", "{697210E0-6CBD-4DF4-8C01-1E3015602840}"
+	ProjectSection(SolutionItems) = preProject
+		share\SagaStateMachine.Service\Migrations\20220718115937_Add_Files.cs = share\SagaStateMachine.Service\Migrations\20220718115937_Add_Files.cs
+		share\SagaStateMachine.Service\Migrations\20220718115937_Add_Files.Designer.cs = share\SagaStateMachine.Service\Migrations\20220718115937_Add_Files.Designer.cs
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatService.API", "src\chat-service\ChatService.API\ChatService.API.csproj", "{664EB297-F9E9-4B2F-9544-7220F4C8AC4C}"
 EndProject

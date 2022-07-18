@@ -209,7 +209,6 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.A
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.AssemblyInfoInputs.cache
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.AssemblyInfo.cs
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.csproj.CoreCompileInputs.cache
-D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.MvcApplicationPartsAssemblyInfo.cs
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\staticwebassets.build.json
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\staticwebassets.development.json
@@ -263,3 +262,4 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.A
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\libman.json
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Aniverse.Shared.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\bin\Debug\net6.0\Aniverse.Shared.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Presentation\PostService.API\obj\Debug\net6.0\PostService.API.MvcApplicationPartsAssemblyInfo.cs

@@ -376,6 +376,9 @@
               "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj": {
                 "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj"
               },
+              "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\message-contracts\\Aniverse.MessageContracts\\Aniverse.MessageContracts.csproj": {
+                "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\message-contracts\\Aniverse.MessageContracts\\Aniverse.MessageContracts.csproj"
+              },
               "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj": {
                 "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj"
               }
@@ -401,6 +404,10 @@
               "version": "[8.0.5, )"
             },
             "MassTransit": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "MassTransit.RabbitMQ": {
               "target": "Package",
               "version": "[8.0.5, )"
             },
@@ -644,9 +651,13 @@
               "target": "Package",
               "version": "[12.12.0, )"
             },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "MassTransit.RabbitMQ": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

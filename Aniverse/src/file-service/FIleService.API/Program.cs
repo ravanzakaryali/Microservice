@@ -46,7 +46,6 @@ builder.Services.AddMassTransit(config =>
         });
     });
 });
-
 string authenticationProviderKey = "TestKey";
 
 builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = authenticationProviderKey)

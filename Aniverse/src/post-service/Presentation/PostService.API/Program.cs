@@ -5,7 +5,6 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using MassTransit;
 using Aniverse.MessageContracts;
-using Notfication.API.Consumers;
 using PostService.Infrastructure;
 using PostService.Application.Implementations.Stroage.Azure;
 using PostService.Application.Interfaces.Storage;
@@ -23,9 +22,7 @@ builder.Services.AddMassTransit(x =>
             h.Password(RabbitMqConstants.Password);
         });
     }));
-}); 
-
-builder.Services.AddMassTransitHostedService();
+});
 
 builder.Services.AddStorage<AzureStorage>();
 

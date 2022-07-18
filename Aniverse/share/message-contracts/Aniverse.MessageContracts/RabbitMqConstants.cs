@@ -9,8 +9,8 @@
         public const bool IsSSL = false;
         public const string StateMachine = "state-machine-queue";
         public const string NotificationServiceQueue = "notification.service";
-        public const string FileServiceSendQueue = "file.service";
+        public const string FileServiceSendQueue = "file-started-queue";
         public const string SendNotfication = $"{URI}/{NotificationServiceQueue}";
-        public const string SendFileService = $"{URI}/{FileServiceSendQueue}";
+        public const string SendFileService = $"{URI}/{ FileServiceSendQueue}";
     }
 }

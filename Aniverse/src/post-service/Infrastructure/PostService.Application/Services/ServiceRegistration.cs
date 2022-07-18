@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PostService.Application.Interfaces.Storage;
+using PostService.Application.Services;
 
 namespace PostService.Infrastructure
 {

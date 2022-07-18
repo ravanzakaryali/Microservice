@@ -10,6 +10,5 @@ namespace Aniverse.MessageContracts.Events.File
             CorrelationId = correlationId;
         }
         public string UserId { get; set; }
-        public ICollection<string> FilesName { get; set; }
     }
 }

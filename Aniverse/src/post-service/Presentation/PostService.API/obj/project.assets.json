@@ -123,11 +123,11 @@
           "lib/net6.0/MassTransit.Abstractions.dll": {}
         }
       },
-      "MassTransit.RabbitMQ/8.0.3": {
+      "MassTransit.RabbitMQ/8.0.5": {
         "type": "package",
         "dependencies": {
-          "MassTransit": "8.0.3",
-          "RabbitMQ.Client": "6.2.4"
+          "MassTransit": "8.0.5",
+          "RabbitMQ.Client": "6.4.0"
         },
         "compile": {
           "lib/net6.0/MassTransit.RabbitMqTransport.dll": {}
@@ -889,7 +889,7 @@
           }
         }
       },
-      "RabbitMQ.Client/6.2.4": {
+      "RabbitMQ.Client/6.4.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.4",
@@ -1364,10 +1364,12 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Aniverse.MessageContracts": "1.0.0",
           "Aniverse.Shared": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Azure.Storage.Blobs": "8.0.5",
           "MassTransit": "8.0.5",
+          "MassTransit.RabbitMQ": "8.0.5",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore": "6.0.6",
@@ -1603,10 +1605,10 @@
         "mt-logo-small.png"
       ]
     },
-    "MassTransit.RabbitMQ/8.0.3": {
-      "sha512": "oBlrccrrGy7Su/uNSj3VuR/ZDEkg+AtAMF8rGyATkE81TXNOEe7EeW7TH15VcD8sa43KwOWLnI5GI94jMwf58A==",
+    "MassTransit.RabbitMQ/8.0.5": {
+      "sha512": "RE8+Dyj15jE0qYbh5G5B2n7tWup0gC+TxLCnCQvtKNSG/ZGl+0V0J455tP0MPmBn8R5LCkAtwpDzI/0P+af3dQ==",
       "type": "package",
-      "path": "masstransit.rabbitmq/8.0.3",
+      "path": "masstransit.rabbitmq/8.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1618,7 +1620,7 @@
         "lib/netstandard2.0/MassTransit.RabbitMqTransport.xml",
         "lib/netstandard2.1/MassTransit.RabbitMqTransport.dll",
         "lib/netstandard2.1/MassTransit.RabbitMqTransport.xml",
-        "masstransit.rabbitmq.8.0.3.nupkg.sha512",
+        "masstransit.rabbitmq.8.0.5.nupkg.sha512",
         "masstransit.rabbitmq.nuspec",
         "mt-logo-small.png"
       ]
@@ -2818,10 +2820,10 @@
         "runtimes/win/native/mongocrypt.dll"
       ]
     },
-    "RabbitMQ.Client/6.2.4": {
-      "sha512": "ttM7F+Ymb00EyQ25UCC44djr5GN/+cZNey2B3xD6JdJQQx7UcCtHdKBCE09zcmWuB+Afp07tFzetE14l/U8xQw==",
+    "RabbitMQ.Client/6.4.0": {
+      "sha512": "1znR1gGU+xYVSpO5z8nQolcUKA/yydnxQn7Ug9+RUXxTSLMm/eE58VKGwahPBjELXvDnX0k/kBrAitFLRjx9LA==",
       "type": "package",
-      "path": "rabbitmq.client/6.2.4",
+      "path": "rabbitmq.client/6.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2830,7 +2832,7 @@
         "lib/net461/RabbitMQ.Client.xml",
         "lib/netstandard2.0/RabbitMQ.Client.dll",
         "lib/netstandard2.0/RabbitMQ.Client.xml",
-        "rabbitmq.client.6.2.4.nupkg.sha512",
+        "rabbitmq.client.6.4.0.nupkg.sha512",
         "rabbitmq.client.nuspec"
       ]
     },
@@ -3866,7 +3868,8 @@
       "Aniverse.MessageContracts >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Azure.Storage.Blobs >= 12.12.0",
-      "MassTransit.RabbitMQ >= 8.0.3",
+      "MassTransit >= 8.0.5",
+      "MassTransit.RabbitMQ >= 8.0.5",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.6",
       "Microsoft.AspNetCore.Http >= 2.2.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.6",
@@ -3944,9 +3947,13 @@
             "target": "Package",
             "version": "[12.12.0, )"
           },
+          "MassTransit": {
+            "target": "Package",
+            "version": "[8.0.5, )"
+          },
           "MassTransit.RabbitMQ": {
             "target": "Package",
-            "version": "[8.0.3, )"
+            "version": "[8.0.5, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",

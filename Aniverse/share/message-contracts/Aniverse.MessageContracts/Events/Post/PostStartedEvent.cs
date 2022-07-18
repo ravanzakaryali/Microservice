@@ -5,6 +5,6 @@
         public string PostId { get; set; }
         public string UserId { get; set; }
         public string Content { get; set; }
-        public ICollection<string> FilesName { get; set; }
+        public List<Models.File> FilesName { get; set; }
     }
 }

@@ -100,6 +100,19 @@
           "lib/net6.0/MassTransit.Abstractions.dll": {}
         }
       },
+      "MassTransit.RabbitMQ/8.0.5": {
+        "type": "package",
+        "dependencies": {
+          "MassTransit": "8.0.5",
+          "RabbitMQ.Client": "6.4.0"
+        },
+        "compile": {
+          "lib/net6.0/MassTransit.RabbitMqTransport.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MassTransit.RabbitMqTransport.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.6": {
         "type": "package",
         "compile": {
@@ -667,6 +680,19 @@
           }
         }
       },
+      "RabbitMQ.Client/6.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Threading.Channels": "4.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -755,7 +781,7 @@
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
-      "System.Memory/4.5.3": {
+      "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -996,6 +1022,19 @@
           }
         }
       },
+      "Aniverse.MessageContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MassTransit.RabbitMQ": "8.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Aniverse.MessageContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aniverse.MessageContracts.dll": {}
+        }
+      },
       "Aniverse.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1170,6 +1209,26 @@
         "lib/netstandard2.1/MassTransit.Abstractions.xml",
         "masstransit.abstractions.8.0.5.nupkg.sha512",
         "masstransit.abstractions.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
+    "MassTransit.RabbitMQ/8.0.5": {
+      "sha512": "RE8+Dyj15jE0qYbh5G5B2n7tWup0gC+TxLCnCQvtKNSG/ZGl+0V0J455tP0MPmBn8R5LCkAtwpDzI/0P+af3dQ==",
+      "type": "package",
+      "path": "masstransit.rabbitmq/8.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/MassTransit.RabbitMqTransport.dll",
+        "lib/net461/MassTransit.RabbitMqTransport.xml",
+        "lib/net6.0/MassTransit.RabbitMqTransport.dll",
+        "lib/net6.0/MassTransit.RabbitMqTransport.xml",
+        "lib/netstandard2.0/MassTransit.RabbitMqTransport.dll",
+        "lib/netstandard2.0/MassTransit.RabbitMqTransport.xml",
+        "lib/netstandard2.1/MassTransit.RabbitMqTransport.dll",
+        "lib/netstandard2.1/MassTransit.RabbitMqTransport.xml",
+        "masstransit.rabbitmq.8.0.5.nupkg.sha512",
+        "masstransit.rabbitmq.nuspec",
         "mt-logo-small.png"
       ]
     },
@@ -2109,6 +2168,22 @@
         "version.txt"
       ]
     },
+    "RabbitMQ.Client/6.4.0": {
+      "sha512": "1znR1gGU+xYVSpO5z8nQolcUKA/yydnxQn7Ug9+RUXxTSLMm/eE58VKGwahPBjELXvDnX0k/kBrAitFLRjx9LA==",
+      "type": "package",
+      "path": "rabbitmq.client/6.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net461/RabbitMQ.Client.dll",
+        "lib/net461/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.6.4.0.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
     "System.Buffers/4.5.0": {
       "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
       "type": "package",
@@ -2265,22 +2340,24 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
-    "System.Memory/4.5.3": {
-      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "type": "package",
-      "path": "system.memory/4.5.3",
+      "path": "system.memory/4.5.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
         "lib/netcoreapp2.1/_._",
         "lib/netstandard1.1/System.Memory.dll",
         "lib/netstandard1.1/System.Memory.xml",
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.4.5.4.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -2945,6 +3022,11 @@
         "version.txt"
       ]
     },
+    "Aniverse.MessageContracts/1.0.0": {
+      "type": "project",
+      "path": "../../../../share/message-contracts/Aniverse.MessageContracts/Aniverse.MessageContracts.csproj",
+      "msbuildProject": "../../../../share/message-contracts/Aniverse.MessageContracts/Aniverse.MessageContracts.csproj"
+    },
     "Aniverse.Shared/1.0.0": {
       "type": "project",
       "path": "../../../../share/Aniverse.Shared/Aniverse.Shared.csproj",
@@ -2973,10 +3055,12 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Aniverse.MessageContracts >= 1.0.0",
       "Aniverse.Shared >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Azure.Storage.Blobs >= 8.0.5",
       "MassTransit >= 8.0.5",
+      "MassTransit.RabbitMQ >= 8.0.5",
       "Microsoft.AspNetCore.Http >= 2.2.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore >= 6.0.6",
@@ -3019,6 +3103,9 @@
             "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj": {
               "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\Aniverse.Shared\\Aniverse.Shared.csproj"
             },
+            "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\message-contracts\\Aniverse.MessageContracts\\Aniverse.MessageContracts.csproj": {
+              "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\message-contracts\\Aniverse.MessageContracts\\Aniverse.MessageContracts.csproj"
+            },
             "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj": {
               "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Infrastructure\\PostService.Repository\\PostService.Repository.csproj"
             }
@@ -3044,6 +3131,10 @@
             "version": "[8.0.5, )"
           },
           "MassTransit": {
+            "target": "Package",
+            "version": "[8.0.5, )"
+          },
+          "MassTransit.RabbitMQ": {
             "target": "Package",
             "version": "[8.0.5, )"
           },

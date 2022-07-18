@@ -63,3 +63,5 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Application\obj\Debug\net6.0\ref\PostService.Application.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Application\bin\Debug\net6.0\Aniverse.Shared.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Application\bin\Debug\net6.0\Aniverse.Shared.pdb
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Application\bin\Debug\net6.0\Aniverse.MessageContracts.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\post-service\Infrastructure\PostService.Application\bin\Debug\net6.0\Aniverse.MessageContracts.pdb

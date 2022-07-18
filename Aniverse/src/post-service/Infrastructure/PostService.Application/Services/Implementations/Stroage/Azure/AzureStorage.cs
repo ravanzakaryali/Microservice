@@ -34,7 +34,7 @@ namespace PostService.Application.Implementations.Stroage.Azure
             return _blobContainerClinet.GetBlobs().Any(b => b.Name == fileName);
         }
 
-        public async Task<List<UploadResponse>> UploadAsync(string containerName, IFormFileCollection files, string username = "")
+        public async Task<List<UploadResponse>> UploadAsync(string containerName, List<IFormFile> files, string username = "")
         {
             _blobContainerClinet = _blobServiceClient.GetBlobContainerClient(containerName);
             await _blobContainerClinet.CreateIfNotExistsAsync();
@@ -56,6 +56,7 @@ namespace PostService.Application.Implementations.Stroage.Azure
                 {
                     ContainerName = containerName,
                     FileName = fileNewName,
+                    Size = file.Length
                 });
             }
             return response;

@@ -21,8 +21,9 @@ namespace PostService.Application.Implementations.Stroage
         public bool HasFile(string containerName, string fileName) =>
             _storage.HasFile(containerName, fileName);
 
-        public Task<List<UploadResponse>> UploadAsync(string containerName, IFormFileCollection files, string
+        public Task<List<UploadResponse>> UploadAsync(string containerName, List<IFormFile> files, string
              username = "") =>
             _storage.UploadAsync(containerName, files, username);
+
     }
 }
