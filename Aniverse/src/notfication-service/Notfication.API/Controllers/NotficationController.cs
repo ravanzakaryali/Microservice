@@ -1,11 +1,7 @@
-﻿using Aniverse.MessageContracts;
-using MassTransit;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Notfication.API.Consumers;
-using Notfication.API.Extensions;
 using Notfication.API.Service;
+
 
 namespace Notfication.API.Controllers
 {
@@ -21,6 +17,7 @@ namespace Notfication.API.Controllers
             _service = service;
             _context = context;
         }
+
 
         [HttpGet]
         public async Task<List<DataAccessLayer.Entities.Notfication>> Get()
