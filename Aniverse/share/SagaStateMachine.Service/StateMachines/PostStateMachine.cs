@@ -64,6 +64,7 @@ namespace SagaStateMachine.Service.StateMachines
                 {
                     UserId = context.Message.UserId,
                     Content = context.Message.Content,
+                    Url = context.Message.PostId
                 }));
             SetCompletedWhenFinalized();
         }

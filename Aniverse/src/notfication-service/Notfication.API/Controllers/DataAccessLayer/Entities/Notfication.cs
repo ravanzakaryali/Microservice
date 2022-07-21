@@ -14,5 +14,6 @@ namespace Notfication.API.DataAccessLayer.Entities
         public bool IsUnread { get; set; }
         public DateTime CreatedDate { get; set; }
         public string? ImageUrl { get; set; }
+        public string Url { get; set; }
     }
 }

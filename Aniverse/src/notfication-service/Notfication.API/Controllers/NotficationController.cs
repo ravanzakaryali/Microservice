@@ -18,12 +18,12 @@ namespace Notfication.API.Controllers
             _context = context;
         }
 
-
         [HttpGet]
         public async Task<List<DataAccessLayer.Entities.Notfication>> Get()
         {
             return await _service.GetAsync();
         }
+
         [HttpPost]  
         public async Task<IActionResult> Post(DataAccessLayer.Entities.Notfication nofication)
         {

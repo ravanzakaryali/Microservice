@@ -1,6 +1,4 @@
-﻿using Aniverse.MessageContracts.Commands;
-using Aniverse.MessageContracts.Events.Notfication;
-using Aniverse.MessageContracts.Models;
+﻿using Aniverse.MessageContracts.Events.Notfication;
 using MassTransit;
 using Notfication.API.Service;
 
@@ -20,6 +18,7 @@ namespace Notfication.API.Consumers
                 UserId = context.Message.UserId,
                 Content = context.Message.Content,
                 CreatedDate = DateTime.Now,
+                Url = context.Message.Url,
             };
             await _service.CreateAsync(notfication);
         }

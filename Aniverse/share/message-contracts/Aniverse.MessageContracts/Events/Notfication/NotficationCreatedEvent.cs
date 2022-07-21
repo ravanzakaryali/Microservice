@@ -11,5 +11,6 @@ namespace Aniverse.MessageContracts.Events.Notfication
         }
         public string UserId { get; set; }
         public string Content { get; set; }
+        public string Url { get; set; }
     }
 }
