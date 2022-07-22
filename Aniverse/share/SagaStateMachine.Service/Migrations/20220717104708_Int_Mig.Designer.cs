@@ -11,7 +11,7 @@ using SagaStateMachine.Service.Instruments.Post;
 
 namespace SagaStateMachine.Service.Migrations
 {
-    [DbContext(typeof(PostStateDbContext))]
+    [DbContext(typeof(AppStateDbContext))]
     [Migration("20220717104708_Int_Mig")]
     partial class Int_Mig
     {

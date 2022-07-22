@@ -1,12 +1,12 @@
 ﻿using MassTransit.EntityFrameworkCoreIntegration;
 using Microsoft.EntityFrameworkCore;
-using SagaStateMachine.Service.Configurations;
+using SagaStateMachine.Service.StateMaps;
 
 namespace SagaStateMachine.Service.Instruments.Post
 {
-    public class PostStateDbContext : SagaDbContext
+    public class AppStateDbContext : SagaDbContext
     {
-        public PostStateDbContext(DbContextOptions options) : base(options)
+        public AppStateDbContext(DbContextOptions options) : base(options)
         {
         }
         protected override IEnumerable<ISagaClassMap> Configurations
@@ -14,6 +14,8 @@ namespace SagaStateMachine.Service.Instruments.Post
             get
             {
                 yield return new PostStateMap();
+                yield return new MessageStateMap();
+
             }
         }
     }

@@ -107,3 +107,7 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\obj\Debug\
 D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\obj\Debug\net6.0\ChatService.API.genruntimeconfig.cache
 D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\obj\Debug\net6.0\ref\ChatService.API.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\RabbitMQ.Client.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\MassTransit.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\MassTransit.Abstractions.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\System.Text.Json.dll

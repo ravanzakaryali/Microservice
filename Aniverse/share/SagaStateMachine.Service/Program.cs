@@ -13,7 +13,7 @@ IHost host = Host.CreateDefaultBuilder(args)
             configure.AddSagaStateMachine<PostStateMachine, PostStateInstance>()
               .EntityFrameworkRepository(options =>
               {
-                  options.AddDbContext<DbContext, PostStateDbContext>((provider, builder) =>
+                  options.AddDbContext<DbContext, AppStateDbContext>((provider, builder) =>
                   {
                       builder.UseSqlServer(hostContext.Configuration.GetConnectionString("SQLServer"));
                   });
