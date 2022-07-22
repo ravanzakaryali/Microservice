@@ -10,6 +10,7 @@
         public const string StateMachine = "state-machine-queue";
         public const string NotificationServiceQueue = "notification-started-queue";
         public const string FileServiceSendQueue = "file-started-queue";
+        public const string SendMessageQueue = "send-message-queue";
         public const string SendNotfication = $"{URI}/{NotificationServiceQueue}";
         public const string SendFileService = $"{URI}/{ FileServiceSendQueue}";
     }

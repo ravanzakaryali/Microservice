@@ -1,5 +1,3 @@
-using ChatService.API.DTOs;
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSignalR();
