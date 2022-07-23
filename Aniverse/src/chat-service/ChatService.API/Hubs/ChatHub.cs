@@ -15,13 +15,12 @@ namespace ChatService.API.Hubs
         public async Task SendMessage(string userId, string message)
         {
             ISendEndpoint sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new($"queue:{RabbitMqConstants.StateMachine}"));
-            MessageCreatedEvent messageCreated = new()
+            SendMessageEvent sendMessage = new()
             {
                 Message = message,
                 UserId = userId,
-                SendDate = DateTime.UtcNow,
             };
-            await sendEndpoint.Send<MessageCreatedEvent>(messageCreated);
+            await sendEndpoint.Send<SendMessageEvent>(sendMessage);
             await Clients.User(userId).SendAsync("receiveMessage", message);
         }
         public async Task SendMessageAll(string message)

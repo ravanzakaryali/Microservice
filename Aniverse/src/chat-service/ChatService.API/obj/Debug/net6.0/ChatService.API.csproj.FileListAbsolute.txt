@@ -111,3 +111,5 @@ D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\
 D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\MassTransit.Abstractions.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
 D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\System.Text.Json.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\Aniverse.MessageContracts.dll
+D:\Aniverse\Aniverse.Server\Aniverse\src\chat-service\ChatService.API\bin\Debug\net6.0\Aniverse.MessageContracts.pdb
