@@ -334,6 +334,19 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Aniverse.MessageContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MassTransit.RabbitMQ": "8.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Aniverse.MessageContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aniverse.MessageContracts.dll": {}
+        }
       }
     }
   },
@@ -971,10 +984,16 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Aniverse.MessageContracts/1.0.0": {
+      "type": "project",
+      "path": "../../../share/message-contracts/Aniverse.MessageContracts/Aniverse.MessageContracts.csproj",
+      "msbuildProject": "../../../share/message-contracts/Aniverse.MessageContracts/Aniverse.MessageContracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Aniverse.MessageContracts >= 1.0.0",
       "MassTransit.RabbitMQ >= 8.0.6-develop.519",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -1010,7 +1029,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\message-contracts\\Aniverse.MessageContracts\\Aniverse.MessageContracts.csproj": {
+              "projectPath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\share\\message-contracts\\Aniverse.MessageContracts\\Aniverse.MessageContracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

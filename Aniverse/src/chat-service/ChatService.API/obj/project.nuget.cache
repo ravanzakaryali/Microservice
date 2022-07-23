@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VNtLyZ/8MJiER7RWAZpXKWe0NOvYsCbzl1P4RUPCf/95qpnZUeEWeYkyqdFAYi8MN8LCIJPoTRkDTQKZGCai0A==",
+  "dgSpecHash": "tUvnkpgjabaqN3rEvE6f3hvkdGpBH2MPVu2XlqfPfVnr827CKNjDW7F++YFheMfwUWPzauth7lLqZ/3p2IlYYA==",
   "success": true,
   "projectFilePath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\chat-service\\ChatService.API\\ChatService.API.csproj",
   "expectedPackageFiles": [

@@ -1,5 +1,6 @@
 ﻿using Aniverse.MessageContracts;
 using Aniverse.MessageContracts.Events.File;
+using Aniverse.MessageContracts.Events.Message;
 using Aniverse.MessageContracts.Events.Notfication;
 using Aniverse.MessageContracts.Events.Post;
 using MassTransit;
@@ -17,6 +18,7 @@ namespace SagaStateMachine.Service.StateMachines
         //public Event<FileFailedEvent> FileFailedEvent { get; set; }
         //public State PostCompleted { get; set; }
         public State PostCreated { get; set; }
+        public State MessageCreated { get; set; }
         public State NotficationCreated { get; set; }
         //public State PostFailed { get; set; }
         public State PostStarted { get; set; }
@@ -58,7 +60,6 @@ namespace SagaStateMachine.Service.StateMachines
                 .Then(context =>
                 {
                     context.Saga.UserId = context.Message.UserId;
-                    context.Saga.Content = context.Message.Content;
                 }).TransitionTo(NotficationCreated)
                 .Send(new Uri($"queue:{RabbitMqConstants.NotificationServiceQueue}"), context => new NotficationCreatedEvent(context.Saga.CorrelationId)
                 {
