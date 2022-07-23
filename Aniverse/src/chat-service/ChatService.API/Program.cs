@@ -1,6 +1,7 @@
 using Aniverse.MessageContracts;
 using ChatService.API.Consumers;
 using ChatService.API.DataAccess.DB;
+using ChatService.API.Hubs;
 using ChatService.API.Services.Abstractions.MongoDb;
 using ChatService.API.Services.Implementations.MongoDb;
 using MassTransit;
@@ -51,5 +52,9 @@ builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = 
     });
 
 var app = builder.Build();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHub<ChatHub>("/chathub");
+});
 app.UseHttpsRedirection();
 app.Run();
