@@ -22,14 +22,16 @@ namespace SagaStateMachine.Service.StateMachines
                 When(SendMessageEvent)
                 .Then(context =>
                 {
-                    context.Saga.UserId = context.Message.UserId;
+                    context.Saga.ReceiverUserId = context.Message.ReceiverUserId;
+                    context.Saga.SenderUserId = context.Message.SenderUserId;
                     context.Saga.Message = context.Message.Message;
                 }).TransitionTo(MessagCreated)
                 .Send(new Uri($"queue:{RabbitMqConstants.SendMessageQueue}"), context => new MessageCreatedEvent(context.Saga.CorrelationId)
                 {
                     Message = context.Message.Message,
                     SendDate = context.Message.SenderDate,
-                    UserId = context.Message.UserId
+                    SenderUserId = context.Message.SenderUserId,
+                    ReceiverUserId = context.Message.ReceiverUserId,
                 }));
         }
     }

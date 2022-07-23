@@ -10,7 +10,8 @@ namespace Aniverse.MessageContracts.Events.Message
             CorrelationId = correlationId;
         }
         public string Message { get; set; }
-        public string UserId { get; set; }
+        public string SenderUserId { get; set; }
+        public string ReceiverUserId { get; set; }
         public DateTime SendDate { get; set; }
     }
 }

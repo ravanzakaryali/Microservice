@@ -1,6 +1,11 @@
 using Aniverse.MessageContracts;
 using ChatService.API.Consumers;
+using ChatService.API.DataAccess.DB;
+using ChatService.API.Services.Abstractions.MongoDb;
+using ChatService.API.Services.Implementations.MongoDb;
 using MassTransit;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMassTransit(config =>
@@ -20,8 +25,31 @@ builder.Services.AddMassTransit(config =>
         });
     });
 });
+
+builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
+builder.Services.AddScoped<IMessageService, MessageService>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSignalR();
+
+string authenticationProviderKey = "TestKey";
+
+builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = authenticationProviderKey)
+    .AddJwtBearer(authenticationProviderKey, options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            ValidateIssuer = true,
+            ValidateLifetime = true,
+            ValidateAudience = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Security"])),
+            ValidIssuer = builder.Configuration["JWT:Issuer"],
+            ValidAudience = builder.Configuration["JWT:Audience"],
+        };
+    });
+
 var app = builder.Build();
 app.UseHttpsRedirection();
 app.Run();
