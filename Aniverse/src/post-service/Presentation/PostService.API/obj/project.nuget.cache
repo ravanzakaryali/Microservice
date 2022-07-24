@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "hYVaOXO7mMQWTzu6NqlCpfYAn49hPZuo40ul7yWzpR8zXIVGnzSr+aU3TVDA9iPSYpuIxJFXZE2LE2fx/HV5Zg==",
+  "dgSpecHash": "qBeTIPG7Y+sJ+68gRNb2Z0+i/KD5qB4ToqI0vmpBwVRdvv/cWo/pKNfHp9EWeiF/bv9aJxWHZrDJQWc+mvaujw==",
   "success": true,
   "projectFilePath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\post-service\\Presentation\\PostService.API\\PostService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\azure.storage.blobs\\12.12.0\\azure.storage.blobs.12.12.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\azure.storage.common\\12.11.0\\azure.storage.common.12.11.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\azure.storage.blobs\\12.13.0\\azure.storage.blobs.12.13.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\azure.storage.common\\12.12.0\\azure.storage.common.12.12.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\masstransit\\8.0.5\\masstransit.8.0.5.nupkg.sha512",

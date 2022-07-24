@@ -12,8 +12,8 @@ using SagaStateMachine.Service.Instruments.Post;
 namespace SagaStateMachine.Service.Migrations
 {
     [DbContext(typeof(AppStateDbContext))]
-    [Migration("20220722213815_Add_Message")]
-    partial class Add_Message
+    [Migration("20220724060908_Upt_Mes")]
+    partial class Upt_Mes
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,23 +24,26 @@ namespace SagaStateMachine.Service.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("SagaStateMachine.Service.Instances.MessageStateInstance", b =>
+            modelBuilder.Entity("SagaStateMachine.Service.Instances.MessageState", b =>
                 {
-                    b.Property<Guid>("CorrelationId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Property<string>("CurrentState")
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Message")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserId")
+                    b.Property<string>("ReceiverUserId")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("CorrelationId");
+                    b.Property<string>("SenderUserId")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.ToTable("MessageStateInstance");
+                    b.HasKey("Id");
+
+                    b.ToTable("MessageState");
                 });
 
             modelBuilder.Entity("SagaStateMachine.Service.Instruments.Post.PostStateInstance", b =>
@@ -55,6 +58,9 @@ namespace SagaStateMachine.Service.Migrations
                     b.Property<string>("CurrentState")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("MessageStateId")
+                        .HasColumnType("int");
+
                     b.Property<string>("PostId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -65,7 +71,18 @@ namespace SagaStateMachine.Service.Migrations
 
                     b.HasKey("CorrelationId");
 
+                    b.HasIndex("MessageStateId");
+
                     b.ToTable("PostStateInstance");
+                });
+
+            modelBuilder.Entity("SagaStateMachine.Service.Instruments.Post.PostStateInstance", b =>
+                {
+                    b.HasOne("SagaStateMachine.Service.Instances.MessageState", "MessageState")
+                        .WithMany()
+                        .HasForeignKey("MessageStateId");
+
+                    b.Navigation("MessageState");
                 });
 #pragma warning restore 612, 618
         }

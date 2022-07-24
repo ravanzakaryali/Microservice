@@ -27,7 +27,7 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "Azure.Core/1.24.0": {
+      "Azure.Core/1.25.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -45,23 +45,23 @@
           "lib/net5.0/Azure.Core.dll": {}
         }
       },
-      "Azure.Storage.Blobs/12.12.0": {
+      "Azure.Storage.Blobs/12.13.0": {
         "type": "package",
         "dependencies": {
-          "Azure.Storage.Common": "12.11.0",
+          "Azure.Storage.Common": "12.12.0",
           "System.Text.Json": "4.7.2"
         },
         "compile": {
-          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {}
+          "lib/netstandard2.1/Azure.Storage.Blobs.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {}
+          "lib/netstandard2.1/Azure.Storage.Blobs.dll": {}
         }
       },
-      "Azure.Storage.Common/12.11.0": {
+      "Azure.Storage.Common/12.12.0": {
         "type": "package",
         "dependencies": {
-          "Azure.Core": "1.24.0",
+          "Azure.Core": "1.25.0",
           "System.IO.Hashing": "6.0.0"
         },
         "compile": {
@@ -1367,7 +1367,7 @@
           "Aniverse.MessageContracts": "1.0.0",
           "Aniverse.Shared": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "Azure.Storage.Blobs": "8.0.5",
+          "Azure.Storage.Blobs": "12.13.0",
           "MassTransit": "8.0.5",
           "MassTransit.RabbitMQ": "8.0.5",
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -1471,16 +1471,16 @@
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
-    "Azure.Core/1.24.0": {
-      "sha512": "+/qI1j2oU1S4/nvxb2k/wDsol00iGf1AyJX5g3epV7eOpQEP/2xcgh/cxgKMeFgn3U2fmgSiBnQZdkV+l5y0Uw==",
+    "Azure.Core/1.25.0": {
+      "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
       "type": "package",
-      "path": "azure.core/1.24.0",
+      "path": "azure.core/1.25.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.core.1.24.0.nupkg.sha512",
+        "azure.core.1.25.0.nupkg.sha512",
         "azure.core.nuspec",
         "azureicon.png",
         "lib/net461/Azure.Core.dll",
@@ -1493,32 +1493,34 @@
         "lib/netstandard2.0/Azure.Core.xml"
       ]
     },
-    "Azure.Storage.Blobs/12.12.0": {
-      "sha512": "DYirbNIkP2KeCz+/7AP9Un8GkrmSfHSSE+J0k4pyIlI5d8wVWndZj5Pp74rNsgjE/jDRdr3dIhJHPQwHE4ifAg==",
+    "Azure.Storage.Blobs/12.13.0": {
+      "sha512": "h5ZxRwmS/U1NOFwd+MuHJe4To1hEPu/yeBIKS1cbAHTDc+7RBZEjPf1VFeUZsIIuHvU/AzXtcRaph9BHuPRNMQ==",
       "type": "package",
-      "path": "azure.storage.blobs/12.12.0",
+      "path": "azure.storage.blobs/12.13.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.storage.blobs.12.12.0.nupkg.sha512",
+        "azure.storage.blobs.12.13.0.nupkg.sha512",
         "azure.storage.blobs.nuspec",
         "azureicon.png",
         "lib/netstandard2.0/Azure.Storage.Blobs.dll",
-        "lib/netstandard2.0/Azure.Storage.Blobs.xml"
+        "lib/netstandard2.0/Azure.Storage.Blobs.xml",
+        "lib/netstandard2.1/Azure.Storage.Blobs.dll",
+        "lib/netstandard2.1/Azure.Storage.Blobs.xml"
       ]
     },
-    "Azure.Storage.Common/12.11.0": {
-      "sha512": "BPZ1JwYvehHGoTSXhXfAmwtFYejJghE6dkKvpZtPIL0DulzSIJdll9OZI+h5W+3wLYK0yn5hc1r6mvId0q4npA==",
+    "Azure.Storage.Common/12.12.0": {
+      "sha512": "Ms0XsZ/D9Pcudfbqj+rWeCkhx/ITEq8isY0jkor9JFmDAEHsItFa2XrWkzP3vmJU6EsXQrk4snH63HkW/Jksvg==",
       "type": "package",
-      "path": "azure.storage.common/12.11.0",
+      "path": "azure.storage.common/12.12.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.storage.common.12.11.0.nupkg.sha512",
+        "azure.storage.common.12.12.0.nupkg.sha512",
         "azure.storage.common.nuspec",
         "azureicon.png",
         "lib/netstandard2.0/Azure.Storage.Common.dll",
@@ -3867,7 +3869,7 @@
     "net6.0": [
       "Aniverse.MessageContracts >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
-      "Azure.Storage.Blobs >= 12.12.0",
+      "Azure.Storage.Blobs >= 12.13.0",
       "MassTransit >= 8.0.5",
       "MassTransit.RabbitMQ >= 8.0.5",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.6",
@@ -3945,7 +3947,7 @@
           },
           "Azure.Storage.Blobs": {
             "target": "Package",
-            "version": "[12.12.0, )"
+            "version": "[12.13.0, )"
           },
           "MassTransit": {
             "target": "Package",

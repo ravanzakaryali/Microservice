@@ -11,7 +11,7 @@
           "Aniverse.MessageContracts": "1.0.0",
           "Aniverse.Shared": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "Azure.Storage.Blobs": "12.0.0",
+          "Azure.Storage.Blobs": "12.13.0",
           "MassTransit": "8.0.5",
           "MassTransit.RabbitMQ": "8.0.5",
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -47,42 +47,44 @@
           }
         }
       },
-      "Azure.Core/1.0.0": {
+      "Azure.Core/1.25.0": {
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
-          "System.Buffers": "4.5.0",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "System.Diagnostics.DiagnosticSource": "6.0.0",
-          "System.Memory": "4.5.4",
+          "System.Memory.Data": "1.0.2",
           "System.Numerics.Vectors": "4.5.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Text.Json": "6.0.2",
+          "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
-          "lib/netstandard2.0/Azure.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.19.52904"
+          "lib/net5.0/Azure.Core.dll": {
+            "assemblyVersion": "1.25.0.0",
+            "fileVersion": "1.2500.22.33004"
           }
         }
       },
-      "Azure.Storage.Blobs/12.0.0": {
+      "Azure.Storage.Blobs/12.13.0": {
         "dependencies": {
-          "Azure.Core": "1.0.0",
-          "Azure.Storage.Common": "12.0.0"
+          "Azure.Storage.Common": "12.12.0",
+          "System.Text.Json": "6.0.2"
         },
         "runtime": {
-          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.19.53104"
+          "lib/netstandard2.1/Azure.Storage.Blobs.dll": {
+            "assemblyVersion": "12.13.0.0",
+            "fileVersion": "12.1300.22.35704"
           }
         }
       },
-      "Azure.Storage.Common/12.0.0": {
+      "Azure.Storage.Common/12.12.0": {
         "dependencies": {
-          "Azure.Core": "1.0.0"
+          "Azure.Core": "1.25.0",
+          "System.IO.Hashing": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Storage.Common.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.19.53104"
+            "assemblyVersion": "12.12.0.0",
+            "fileVersion": "12.1200.22.35704"
           }
         }
       },
@@ -208,11 +210,11 @@
           }
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "4.700.19.46214"
+            "fileVersion": "4.700.20.21406"
           }
         }
       },
@@ -683,7 +685,27 @@
           }
         }
       },
+      "System.IO.Hashing/6.0.0": {
+        "runtime": {
+          "lib/net6.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
       "System.Memory/4.5.4": {},
+      "System.Memory.Data/1.0.2": {
+        "dependencies": {
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Text.Json": "6.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.Data.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.221.20802"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {},
       "System.Reflection.Emit/4.7.0": {},
       "System.Reflection.Emit.Lightweight/4.7.0": {},
@@ -766,7 +788,7 @@
         }
       },
       "System.Threading.Channels/6.0.0": {},
-      "System.Threading.Tasks.Extensions/4.5.2": {},
+      "System.Threading.Tasks.Extensions/4.5.4": {},
       "System.Windows.Extensions/4.7.0": {
         "dependencies": {
           "System.Drawing.Common": "4.7.0"
@@ -857,26 +879,26 @@
       "path": "automapper.extensions.microsoft.dependencyinjection/11.0.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
     },
-    "Azure.Core/1.0.0": {
+    "Azure.Core/1.25.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zh+W64u/WM+z6oz4NVQp6zHSGOA7ZzWp4OQ5XbZTLvjOJr173s3mXR4TltQY3C4fXfwZ/BkCHyXITd/skeRuuQ==",
-      "path": "azure.core/1.0.0",
-      "hashPath": "azure.core.1.0.0.nupkg.sha512"
+      "sha512": "sha512-X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
+      "path": "azure.core/1.25.0",
+      "hashPath": "azure.core.1.25.0.nupkg.sha512"
     },
-    "Azure.Storage.Blobs/12.0.0": {
+    "Azure.Storage.Blobs/12.13.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AEwOzlxjuza/Qb3zzOQJjdY+0yHR4soY3WY9eih8hBqSQRtvACNUKlnFL2xL6TajcZEOfQl6xzyHE1vU7eUSoA==",
-      "path": "azure.storage.blobs/12.0.0",
-      "hashPath": "azure.storage.blobs.12.0.0.nupkg.sha512"
+      "sha512": "sha512-h5ZxRwmS/U1NOFwd+MuHJe4To1hEPu/yeBIKS1cbAHTDc+7RBZEjPf1VFeUZsIIuHvU/AzXtcRaph9BHuPRNMQ==",
+      "path": "azure.storage.blobs/12.13.0",
+      "hashPath": "azure.storage.blobs.12.13.0.nupkg.sha512"
     },
-    "Azure.Storage.Common/12.0.0": {
+    "Azure.Storage.Common/12.12.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oBUP9QKDT2Gsc+ZTQ+XChAXncqvuAHnv5lQtu5Eep/OJeipooWZ7lYbsFeidPc0JI8XVk3Ha5fXIcvRjRUIIoQ==",
-      "path": "azure.storage.common/12.0.0",
-      "hashPath": "azure.storage.common.12.0.0.nupkg.sha512"
+      "sha512": "sha512-Ms0XsZ/D9Pcudfbqj+rWeCkhx/ITEq8isY0jkor9JFmDAEHsItFa2XrWkzP3vmJU6EsXQrk4snH63HkW/Jksvg==",
+      "path": "azure.storage.common/12.12.0",
+      "hashPath": "azure.storage.common.12.12.0.nupkg.sha512"
     },
     "MassTransit/8.0.5": {
       "type": "package",
@@ -948,12 +970,12 @@
       "path": "microsoft.aspnetcore.webutilities/2.2.0",
       "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
     },
-    "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+    "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw==",
-      "path": "microsoft.bcl.asyncinterfaces/1.0.0",
-      "hashPath": "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512"
+      "sha512": "sha512-yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.1",
+      "hashPath": "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
@@ -1242,12 +1264,26 @@
       "path": "system.identitymodel.tokens.jwt/6.8.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512"
     },
+    "System.IO.Hashing/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rfm2jYCaUeGysFEZjDe7j1R4x6Z6BzumS/vUT5a1AA/AWJuGX71PoGB0RmpyX3VmrGqVnAwtfMn39OHR8Y/5+g==",
+      "path": "system.io.hashing/6.0.0",
+      "hashPath": "system.io.hashing.6.0.0.nupkg.sha512"
+    },
     "System.Memory/4.5.4": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "path": "system.memory/4.5.4",
       "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Memory.Data/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw==",
+      "path": "system.memory.data/1.0.2",
+      "hashPath": "system.memory.data.1.0.2.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
@@ -1347,12 +1383,12 @@
       "path": "system.threading.channels/6.0.0",
       "hashPath": "system.threading.channels.6.0.0.nupkg.sha512"
     },
-    "System.Threading.Tasks.Extensions/4.5.2": {
+    "System.Threading.Tasks.Extensions/4.5.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
-      "path": "system.threading.tasks.extensions/4.5.2",
-      "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
     "System.Windows.Extensions/4.7.0": {
       "type": "package",

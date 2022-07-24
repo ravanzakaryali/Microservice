@@ -10,7 +10,7 @@
         "dependencies": {
           "Aniverse.MessageContracts": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "Azure.Storage.Blobs": "12.12.0",
+          "Azure.Storage.Blobs": "12.13.0",
           "MassTransit": "8.0.5",
           "MassTransit.RabbitMQ": "8.0.5",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.6",
@@ -51,7 +51,7 @@
           }
         }
       },
-      "Azure.Core/1.24.0": {
+      "Azure.Core/1.25.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "System.Diagnostics.DiagnosticSource": "6.0.0",
@@ -63,32 +63,32 @@
         },
         "runtime": {
           "lib/net5.0/Azure.Core.dll": {
-            "assemblyVersion": "1.24.0.0",
-            "fileVersion": "1.2400.22.20404"
+            "assemblyVersion": "1.25.0.0",
+            "fileVersion": "1.2500.22.33004"
           }
         }
       },
-      "Azure.Storage.Blobs/12.12.0": {
+      "Azure.Storage.Blobs/12.13.0": {
         "dependencies": {
-          "Azure.Storage.Common": "12.11.0",
+          "Azure.Storage.Common": "12.12.0",
           "System.Text.Json": "6.0.2"
         },
         "runtime": {
-          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {
-            "assemblyVersion": "12.12.0.0",
-            "fileVersion": "12.1200.22.25202"
+          "lib/netstandard2.1/Azure.Storage.Blobs.dll": {
+            "assemblyVersion": "12.13.0.0",
+            "fileVersion": "12.1300.22.35704"
           }
         }
       },
-      "Azure.Storage.Common/12.11.0": {
+      "Azure.Storage.Common/12.12.0": {
         "dependencies": {
-          "Azure.Core": "1.24.0",
+          "Azure.Core": "1.25.0",
           "System.IO.Hashing": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Storage.Common.dll": {
-            "assemblyVersion": "12.11.0.0",
-            "fileVersion": "12.1100.22.25202"
+            "assemblyVersion": "12.12.0.0",
+            "fileVersion": "12.1200.22.35704"
           }
         }
       },
@@ -945,7 +945,7 @@
           "Aniverse.MessageContracts": "1.0.0",
           "Aniverse.Shared": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "Azure.Storage.Blobs": "12.12.0",
+          "Azure.Storage.Blobs": "12.13.0",
           "MassTransit": "8.0.5",
           "MassTransit.RabbitMQ": "8.0.5",
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -1016,26 +1016,26 @@
       "path": "automapper.extensions.microsoft.dependencyinjection/11.0.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
     },
-    "Azure.Core/1.24.0": {
+    "Azure.Core/1.25.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+/qI1j2oU1S4/nvxb2k/wDsol00iGf1AyJX5g3epV7eOpQEP/2xcgh/cxgKMeFgn3U2fmgSiBnQZdkV+l5y0Uw==",
-      "path": "azure.core/1.24.0",
-      "hashPath": "azure.core.1.24.0.nupkg.sha512"
+      "sha512": "sha512-X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
+      "path": "azure.core/1.25.0",
+      "hashPath": "azure.core.1.25.0.nupkg.sha512"
     },
-    "Azure.Storage.Blobs/12.12.0": {
+    "Azure.Storage.Blobs/12.13.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-DYirbNIkP2KeCz+/7AP9Un8GkrmSfHSSE+J0k4pyIlI5d8wVWndZj5Pp74rNsgjE/jDRdr3dIhJHPQwHE4ifAg==",
-      "path": "azure.storage.blobs/12.12.0",
-      "hashPath": "azure.storage.blobs.12.12.0.nupkg.sha512"
+      "sha512": "sha512-h5ZxRwmS/U1NOFwd+MuHJe4To1hEPu/yeBIKS1cbAHTDc+7RBZEjPf1VFeUZsIIuHvU/AzXtcRaph9BHuPRNMQ==",
+      "path": "azure.storage.blobs/12.13.0",
+      "hashPath": "azure.storage.blobs.12.13.0.nupkg.sha512"
     },
-    "Azure.Storage.Common/12.11.0": {
+    "Azure.Storage.Common/12.12.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BPZ1JwYvehHGoTSXhXfAmwtFYejJghE6dkKvpZtPIL0DulzSIJdll9OZI+h5W+3wLYK0yn5hc1r6mvId0q4npA==",
-      "path": "azure.storage.common/12.11.0",
-      "hashPath": "azure.storage.common.12.11.0.nupkg.sha512"
+      "sha512": "sha512-Ms0XsZ/D9Pcudfbqj+rWeCkhx/ITEq8isY0jkor9JFmDAEHsItFa2XrWkzP3vmJU6EsXQrk4snH63HkW/Jksvg==",
+      "path": "azure.storage.common/12.12.0",
+      "hashPath": "azure.storage.common.12.12.0.nupkg.sha512"
     },
     "DnsClient/1.6.1": {
       "type": "package",

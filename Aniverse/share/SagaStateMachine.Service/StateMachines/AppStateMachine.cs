@@ -8,8 +8,12 @@ using SagaStateMachine.Service.Instruments.Post;
 
 namespace SagaStateMachine.Service.StateMachines
 {
-    public class PostStateMachine : MassTransitStateMachine<PostStateInstance>
+    public class AppStateMachine : MassTransitStateMachine<AppStateInstance>
     {
+        public Event<SendMessageEvent> SendMessageEvent { get; set; }
+        public Event<MessageCreatedEvent> MessageCreatedEvent { get; set; }
+
+        public State MessagCreated { get; set; }
         //public Event<PostCompletedEvent> PostCompletedEvent { get; set; }
         public Event<PostCreatedEvent> PostCreatedEvent { get; set; }
         public Event<NotficationCreatedEvent> NotficationCreatedEvent { get; set; }
@@ -24,13 +28,21 @@ namespace SagaStateMachine.Service.StateMachines
         public State PostStarted { get; set; }
         //public State FileFailed { get; set; }   
         //public State FileFiled { get; set; }
-        public PostStateMachine()
+        public AppStateMachine()
         {
             InstanceState(instance => instance.CurrentState);
             Event(() => PostStartedEvent,
               postStateInstance =>
               postStateInstance.CorrelateBy<string>(database => database.PostId, @event => @event.Message.PostId)
               .SelectId(e => Guid.NewGuid()));
+            Event(() => SendMessageEvent,
+                sendStateInstance =>
+                sendStateInstance.CorrelateBy<string>(database => database.MessageState.SenderUserId, @event => @event.Message.SenderUserId)
+                .SelectId(e=>Guid.NewGuid()));
+            Event(() => MessageCreatedEvent,
+             messageCreatedInstance =>
+             messageCreatedInstance.CorrelateById(@event => @event.Message.CorrelationId));
+
 
             Event(() => NotficationCreatedEvent,
                 notficationStateInstance =>
@@ -66,6 +78,24 @@ namespace SagaStateMachine.Service.StateMachines
                     UserId = context.Message.UserId,
                     Content = context.Message.Content,
                     Url = context.Message.PostId
+                }),
+                 When(SendMessageEvent)
+                 .Then(c =>
+                 {
+                     Console.WriteLine("Send message event");
+                 })
+                .Then(context =>
+                {
+                    context.Saga.MessageState.ReceiverUserId = context.Message.ReceiverUserId;
+                    context.Saga.MessageState.SenderUserId = context.Message.SenderUserId;
+                    context.Saga.MessageState.Message = context.Message.Message;
+                }).TransitionTo(MessagCreated)
+                .Send(new Uri($"queue:{RabbitMqConstants.SendMessageQueue}"), context => new MessageCreatedEvent(context.Saga.CorrelationId)
+                {
+                    Message = context.Message.Message,
+                    SendDate = context.Message.SenderDate,
+                    SenderUserId = context.Message.SenderUserId,
+                    ReceiverUserId = context.Message.ReceiverUserId,
                 }));
             SetCompletedWhenFinalized();
         }

@@ -10,7 +10,7 @@ IHost host = Host.CreateDefaultBuilder(args)
     {
         services.AddMassTransit(configure =>
         {
-            configure.AddSagaStateMachine<PostStateMachine, PostStateInstance>()
+            configure.AddSagaStateMachine<AppStateMachine, AppStateInstance>()
               .EntityFrameworkRepository(options =>
               {
                   options.AddDbContext<DbContext, AppStateDbContext>((provider, builder) =>
@@ -30,7 +30,7 @@ IHost host = Host.CreateDefaultBuilder(args)
                 {
                     ep.UseMessageRetry(r => r.Interval(2, 100));
                     ep.UseInMemoryOutbox();
-                    ep.ConfigureSaga<PostStateInstance>(provider);
+                    ep.ConfigureSaga<AppStateInstance>(provider);
                 });
             }));
         });

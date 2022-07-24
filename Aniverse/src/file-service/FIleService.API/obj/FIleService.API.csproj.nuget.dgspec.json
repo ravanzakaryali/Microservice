@@ -175,7 +175,7 @@
           "dependencies": {
             "Azure.Storage.Blobs": {
               "target": "Package",
-              "version": "[12.12.0, )"
+              "version": "[12.13.0, )"
             },
             "MassTransit.RabbitMQ": {
               "target": "Package",

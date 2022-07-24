@@ -314,7 +314,7 @@
             },
             "Azure.Storage.Blobs": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[12.13.0, )"
             },
             "MassTransit": {
               "target": "Package",

@@ -1,6 +1,5 @@
 ﻿using MassTransit.EntityFrameworkCoreIntegration;
 using Microsoft.EntityFrameworkCore;
-using SagaStateMachine.Service.StateMaps;
 
 namespace SagaStateMachine.Service.Instruments.Post
 {
@@ -13,8 +12,7 @@ namespace SagaStateMachine.Service.Instruments.Post
         {
             get
             {
-                yield return new PostStateMap();
-                yield return new MessageStateMap();
+                yield return new AppStateMap();
 
             }
         }

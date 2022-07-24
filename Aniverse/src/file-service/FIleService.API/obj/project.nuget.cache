@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LSo30egQGV+w82rPf3of8TCsM5AmMVE1xCh8qSe1BzB7TROsslZGye9F+AkwTsV+D+Cal1LinIjF7VD49xnQwg==",
+  "dgSpecHash": "0+l6hHaaZwptOcEBnMlvD+xpRsnOLYA+rPKIRSBS5Th7O+9slUVDF2zkIhj0xfOIV6jO62rnW2lzT5Mo7mUhpg==",
   "success": true,
   "projectFilePath": "D:\\Aniverse\\Aniverse.Server\\Aniverse\\src\\file-service\\FileService.API\\FileService.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\azure.storage.blobs\\12.12.0\\azure.storage.blobs.12.12.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\azure.storage.common\\12.11.0\\azure.storage.common.12.11.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\azure.storage.blobs\\12.13.0\\azure.storage.blobs.12.13.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\azure.storage.common\\12.12.0\\azure.storage.common.12.12.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\masstransit\\8.0.3\\masstransit.8.0.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\masstransit.abstractions\\8.0.3\\masstransit.abstractions.8.0.3.nupkg.sha512",

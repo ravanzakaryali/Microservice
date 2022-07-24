@@ -1,6 +1,5 @@
 ﻿using Aniverse.MessageContracts;
 using Aniverse.MessageContracts.Events.Message;
-using ChatService.API.DataAccess.Entities;
 using ChatService.API.DTOs;
 using MassTransit;
 using Microsoft.AspNetCore.SignalR;
@@ -16,6 +15,7 @@ namespace ChatService.API.Hubs
         }
         public async Task SendMessage(SendMessageDto messageDto)
         {
+            await Clients.User(messageDto.ReceiverUserId).SendAsync("receiveMessage", messageDto);
             ISendEndpoint sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new($"queue:{RabbitMqConstants.StateMachine}"));
             SendMessageEvent sendMessage = new()
             {
@@ -25,7 +25,6 @@ namespace ChatService.API.Hubs
                 SenderDate = DateTime.UtcNow,
             };
             await sendEndpoint.Send<SendMessageEvent>(sendMessage);
-            await Clients.User(messageDto.ReceiverUserId).SendAsync("receiveMessage", messageDto);
         }
         public async Task SendMessageAll(string message)
         {

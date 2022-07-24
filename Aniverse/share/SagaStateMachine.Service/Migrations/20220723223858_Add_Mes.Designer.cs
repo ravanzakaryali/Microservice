@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SagaStateMachine.Service.Instruments.Post;
 
@@ -11,9 +12,10 @@ using SagaStateMachine.Service.Instruments.Post;
 namespace SagaStateMachine.Service.Migrations
 {
     [DbContext(typeof(AppStateDbContext))]
-    partial class PostStateDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220723223858_Add_Mes")]
+    partial class Add_Mes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,6 +31,12 @@ namespace SagaStateMachine.Service.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<Guid>("CorrelationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CurrentState")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Message")
                         .HasColumnType("nvarchar(max)");
@@ -50,6 +58,7 @@ namespace SagaStateMachine.Service.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Content")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CurrentState")
@@ -59,9 +68,11 @@ namespace SagaStateMachine.Service.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("PostId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CorrelationId");

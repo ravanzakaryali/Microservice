@@ -2,10 +2,9 @@
 
 namespace SagaStateMachine.Service.Instances
 {
-    public class MessageStateInstance : SagaStateMachineInstance
+    public class MessageState
     {
-        public Guid CorrelationId { get; set; }
-        public string CurrentState { get; set; }
+        public int Id { get; set; }
         public string SenderUserId { get; set; }
         public string ReceiverUserId { get; set; }
         public string Message { get; set; }

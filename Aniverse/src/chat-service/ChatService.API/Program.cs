@@ -9,6 +9,18 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSignalR();
+builder.Services.AddCors(options =>
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("http://127.0.0.1:5500")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials();
+                }));
+
+builder.Services.AddScoped<MessageConsumer>();
 builder.Services.AddMassTransit(config =>
 {
     config.AddConsumer<MessageConsumer>();
@@ -31,7 +43,6 @@ builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("Mo
 builder.Services.AddScoped<IMessageService, MessageService>();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSignalR();
 
 string authenticationProviderKey = "TestKey";
 
@@ -51,7 +62,13 @@ builder.Services.AddAuthentication(option => option.DefaultAuthenticateScheme = 
         };
     });
 
+
+
 var app = builder.Build();
+
+app.UseHttpsRedirection();
+app.UseRouting();
+app.UseCors();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapHub<ChatHub>("/chathub");
