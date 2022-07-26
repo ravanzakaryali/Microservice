@@ -6,16 +6,17 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace ChatService.API.Hubs
 {
-    public class ChatHub : Hub
+    public class ChatHub : Hub<IChatClient>
     {
         readonly ISendEndpointProvider _sendEndpointProvider;
         public ChatHub(ISendEndpointProvider sendEndpointProvider)
         {
             _sendEndpointProvider = sendEndpointProvider;
         }
+
         public async Task SendMessage(SendMessageDto messageDto)
         {
-            await Clients.All.SendAsync("receiveMessage", messageDto);
+            await Clients.All.ReceiveMessage();
             ISendEndpoint sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new($"queue:{RabbitMqConstants.StateMachine}"));
             SendMessageEvent sendMessage = new()
             {
@@ -28,7 +29,7 @@ namespace ChatService.API.Hubs
         }
         public async Task SendMessageAll(string message)
         {
-            await Clients.All.SendAsync(message);
+            await Clients.All.ReceiveMessage();
         }
     }
 }
