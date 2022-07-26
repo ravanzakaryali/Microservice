@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SagaStateMachine.Service.Instruments.Post;
 
@@ -11,9 +12,10 @@ using SagaStateMachine.Service.Instruments.Post;
 namespace SagaStateMachine.Service.Migrations
 {
     [DbContext(typeof(AppStateDbContext))]
-    partial class PostStateDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220726124548_Add_Message")]
+    partial class Add_Message
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

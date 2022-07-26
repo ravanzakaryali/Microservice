@@ -37,7 +37,7 @@ namespace SagaStateMachine.Service.StateMachines
               .SelectId(e => Guid.NewGuid()));
             Event(() => SendMessageEvent,
                 sendStateInstance =>
-                sendStateInstance.CorrelateBy<string>(database => database.MessageState.SenderUserId, @event => @event.Message.SenderUserId)
+                sendStateInstance.CorrelateBy<string>(database => database.SenderUserId, @event => @event.Message.SenderUserId)
                 .SelectId(e=>Guid.NewGuid()));
             Event(() => MessageCreatedEvent,
              messageCreatedInstance =>
@@ -67,7 +67,7 @@ namespace SagaStateMachine.Service.StateMachines
                     UserId = context.Message.UserId,
                     PostId = context.Message.PostId,
                     FilesName = context.Message.FilesName,
-                }),
+                }).Finalize(),
                 When(PostStartedEvent)
                 .Then(context =>
                 {
@@ -80,15 +80,11 @@ namespace SagaStateMachine.Service.StateMachines
                     Url = context.Message.PostId
                 }),
                  When(SendMessageEvent)
-                 .Then(c =>
-                 {
-                     Console.WriteLine("Send message event");
-                 })
                 .Then(context =>
                 {
-                    context.Saga.MessageState.ReceiverUserId = context.Message.ReceiverUserId;
-                    context.Saga.MessageState.SenderUserId = context.Message.SenderUserId;
-                    context.Saga.MessageState.Message = context.Message.Message;
+                    context.Saga.ReceiverUserId = context.Message.ReceiverUserId;
+                    context.Saga.SenderUserId = context.Message.SenderUserId;
+                    context.Saga.Message = context.Message.Message;
                 }).TransitionTo(MessagCreated)
                 .Send(new Uri($"queue:{RabbitMqConstants.SendMessageQueue}"), context => new MessageCreatedEvent(context.Saga.CorrelationId)
                 {
@@ -96,7 +92,7 @@ namespace SagaStateMachine.Service.StateMachines
                     SendDate = context.Message.SenderDate,
                     SenderUserId = context.Message.SenderUserId,
                     ReceiverUserId = context.Message.ReceiverUserId,
-                }));
+                }).Finalize());
             SetCompletedWhenFinalized();
         }
     }

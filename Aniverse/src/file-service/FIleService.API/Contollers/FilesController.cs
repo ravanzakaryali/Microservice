@@ -1,9 +1,7 @@
-﻿using FileService.API.DataAccess.Entities;
-using FileService.API.DTO_s.File;
+﻿using FileService.API.DTO_s.File;
 using FileService.API.Services.Abstractions.MongoDb;
 using FileService.API.Services.Abstractions.Storage;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FileService.API.Contollers

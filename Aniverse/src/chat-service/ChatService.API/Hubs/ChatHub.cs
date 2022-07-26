@@ -15,7 +15,7 @@ namespace ChatService.API.Hubs
         }
         public async Task SendMessage(SendMessageDto messageDto)
         {
-            await Clients.User(messageDto.ReceiverUserId).SendAsync("receiveMessage", messageDto);
+            await Clients.All.SendAsync("receiveMessage", messageDto);
             ISendEndpoint sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new($"queue:{RabbitMqConstants.StateMachine}"));
             SendMessageEvent sendMessage = new()
             {
